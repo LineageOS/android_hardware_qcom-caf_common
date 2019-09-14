@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "88f643ae_7ce0b108",
+        "filename": "os_pickup.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2019-09-14T21:46:50Z",
+      "side": 1,
+      "message": "I\u0027m not sure I understand this one. It seems like this can be done with a check like:\n\nLOCAL_PATH :\u003d $(call my-dir)\n\nifeq ($(notdir $(LOCAL_PATH)),$(TARGET_BOARD_PLATFORM))\n\n(The assumption is that this Android.mk is always linked into a directory matching the target board platform\u0027s name, which seems to hold true for all CAF dirs, at least)",
+      "range": {
+        "startLine": 1,
+        "startChar": 45,
+        "endLine": 1,
+        "endChar": 71
+      },
+      "revId": "36206f4b49d637ea744d90b90b6402f328a52e74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
