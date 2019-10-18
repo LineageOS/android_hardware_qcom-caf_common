@@ -1,8 +1,8 @@
 # This file guards most of hardware/qcom/* from
 # being used on devices which use hardware/qcom-caf/*
 
-# CAF devices still want AOSP bootctrl and keymaster HALs.
-CAF_DIRS := bootctrl keymaster
+# Legacy CAF devices still want AOSP keymaster HAL.
+CAF_DIRS := keymaster
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
