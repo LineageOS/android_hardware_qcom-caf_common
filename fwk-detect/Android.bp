@@ -2,7 +2,7 @@ cc_library_shared {
     name: "libqti_vndfwk_detect",
     srcs: ["vndfwk-detect.c"],
     shared_libs: ["libcutils"],
-    vendor_available: true,
+    vendor: true,
     export_include_dirs: ["."],
 
     compile_multilib: "both",
@@ -29,7 +29,7 @@ cc_library_shared {
         "jni_headers",
     ],
 
-    vendor_available: true,
+    vendor: true,
     compile_multilib: "both",
 
     cflags: [
