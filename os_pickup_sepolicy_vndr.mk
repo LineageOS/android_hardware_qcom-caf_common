@@ -5,3 +5,5 @@ else ifneq ($(filter taro parrot,$(TARGET_BOARD_PLATFORM)),)
 else ifneq ($(filter kalama,$(TARGET_BOARD_PLATFORM)),)
     include device/qcom/sepolicy_vndr/sm8550/SEPolicy.mk
 endif
+
+-include device/lineage/sepolicy/qcom/sepolicy.mk
