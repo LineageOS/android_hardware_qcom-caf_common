@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -42,7 +42,9 @@ namespace {
 void qti_healthd_board_init(struct healthd_config *)
 {
     int fd;
-    unsigned char retries = 50;
+    unsigned char retries = 75;
+    int ret = 0;
+    unsigned char buf;
 
 retry:
     if (!retries) {
@@ -52,7 +54,20 @@ retry:
 
     fd = open("/sys/class/power_supply/battery/capacity", 0440);
     if (fd >= 0) {
-        ALOGI("opened battery/capacity after %d retries\n", 50 - retries);
+        ALOGI("opened battery/capacity after %d retries\n", 75 - retries);
+        while (retries) {
+            ret = read(fd, &buf, 1);
+            if(ret >= 0) {
+                ALOGI("Read Batt Capacity after %d retries ret : %d\n", 75 - retries, ret);
+                close(fd);
+                return;
+            }
+
+            retries--;
+            usleep(100000);
+        }
+
+        ALOGE("Failed to read Battery Capacity ret=%d\n", ret);
         close(fd);
         return;
     }
