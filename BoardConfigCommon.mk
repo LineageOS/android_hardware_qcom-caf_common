@@ -11,6 +11,10 @@ else
 include device/qcom/sepolicy/SEPolicy.mk
 endif
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(QTI_COMMON_PATH)/vendor_framework_compatibility_matrix.xml
+
 # WiFi
 ifneq (,$(filter init, $(PRODUCT_QTI_COMPONENTS)))
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true

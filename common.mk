@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+QTI_COMMON_PATH := $(LOCAL_PATH)
+
 # Components
 ifeq ($(PRODUCT_QTI_COMPONENTS), all)
 PRODUCT_QTI_COMPONENTS := \
