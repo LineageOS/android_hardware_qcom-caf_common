@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6bc67228_fe3e13c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-04T15:51:43Z",
+      "side": 1,
+      "message": "This is 100% opt-in as you\u0027d have to pick it up in your own device tree.",
+      "revId": "64c6192b792825d8f38e888e680b995a881ba1b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
