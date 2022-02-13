@@ -8,7 +8,7 @@ ifeq (,$(TARGET_ENFORCES_QSSI))
 UM_3_18_HAL_FAMILY += msm8937 msm8953
 UM_4_4_HAL_FAMILY += sdm660
 else
-UM_4_9_LEGACY_FAMILY := msm8937 msm8953
+UM_4_9_LEGACY_FAMILY := msm8937 msm8952 msm8953
 UM_4_19_LEGACY_FAMILY := sdm660
 endif
 
@@ -122,7 +122,7 @@ ifneq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
 endif
 
 # Enable displayconfig on every UM platform
-ifeq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+ifeq ($(filter $(BR_3_10_FAMILY) $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_displayconfig_enabled := true
 endif
 
@@ -204,7 +204,7 @@ endif
 
 # Add data-ipa-cfg-mgr to PRODUCT_SOONG_NAMESPACES if needed
 ifneq ($(USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR),true)
-    ifneq ($(filter $(LEGACY_UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+    ifneq ($(filter $(BR_3_10_FAMILY) $(LEGACY_UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
         PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
     else ifneq ($(filter $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
         PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8450/data-ipa-cfg-mgr
