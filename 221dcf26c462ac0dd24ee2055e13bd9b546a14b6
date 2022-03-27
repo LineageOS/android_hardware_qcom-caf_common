@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1af2f7d_c45923fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-03-27T02:45:21Z",
+      "side": 1,
+      "message": "Or just fork https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/healthd-ext/",
+      "revId": "221dcf26c462ac0dd24ee2055e13bd9b546a14b6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
