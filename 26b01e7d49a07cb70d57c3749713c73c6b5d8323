@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0901af0b_89053d58",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-06T20:27:22Z",
+      "side": 1,
+      "message": "[vendor.qti.nfc.chipid]: [0xa4]\n[vendor.qti.nfc.fwver]: [01.10.57]\n",
+      "revId": "26b01e7d49a07cb70d57c3749713c73c6b5d8323",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
