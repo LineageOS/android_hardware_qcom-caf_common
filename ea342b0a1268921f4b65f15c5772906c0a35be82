@@ -16,6 +16,24 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_build/+/265918",
       "revId": "ea342b0a1268921f4b65f15c5772906c0a35be82",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "353be861_ee580fa1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-08-05T14:52:33Z",
+      "side": 1,
+      "message": "I don\u0027t mind it that much when it\u0027s not in build/make",
+      "parentUuid": "31904b18_2b41ffa5",
+      "revId": "ea342b0a1268921f4b65f15c5772906c0a35be82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
