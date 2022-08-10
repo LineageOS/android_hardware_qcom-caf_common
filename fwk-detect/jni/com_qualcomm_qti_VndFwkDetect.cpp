@@ -37,8 +37,6 @@
 #include <log/log.h>
 #include <utils/misc.h>
 
-#define VNDFWK_DETECT_LIB "libqti_vndfwk_detect.so"
-
 typedef struct dlHandler {
     void *dlHandle;
     int (*vndFwkDetect)(void);

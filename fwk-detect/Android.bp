@@ -1,9 +1,7 @@
-cc_library_shared {
-    name: "libqti_vndfwk_detect",
+cc_defaults {
+    name: "libqti_vndfwk_detect_defaults",
     srcs: ["vndfwk-detect.c"],
     shared_libs: ["libcutils"],
-    system_ext_specific: true,
-    vendor_available: true,
     export_include_dirs: ["."],
 
     compile_multilib: "both",
@@ -14,10 +12,28 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "libvndfwk_detect_jni.qti",
+    name: "libqti_vndfwk_detect",
+    defaults: ["libqti_vndfwk_detect_defaults"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
+    name: "libqti_vndfwk_detect_system",
+    defaults: ["libqti_vndfwk_detect_defaults"],
+    system_ext_specific: true,
+}
+
+cc_library_shared {
+    name: "libqti_vndfwk_detect_vendor",
+    defaults: ["libqti_vndfwk_detect_defaults"],
+    vendor: true,
+}
+
+cc_defaults {
+    name: "libvndfwk_detect_jni.qti_defaults",
     srcs: ["jni/com_qualcomm_qti_VndFwkDetect.cpp"],
     shared_libs: [
-        "libqti_vndfwk_detect",
         "libcutils",
         "libutils",
         "liblog",
@@ -25,8 +41,6 @@ cc_library_shared {
     header_libs: [
         "jni_headers",
     ],
-    system_ext_specific: true,
-    vendor_available: true,
     compile_multilib: "both",
 
     cflags: [
@@ -34,8 +48,57 @@ cc_library_shared {
     ],
 }
 
+cc_library_shared {
+    name: "libvndfwk_detect_jni.qti",
+    defaults: ["libvndfwk_detect_jni.qti_defaults"],
+    system_ext_specific: true,
+    vendor_available: true,
+    shared_libs: [
+        "libqti_vndfwk_detect",
+    ],
+    cflags: [
+        "-DVNDFWK_DETECT_LIB=\"libqti_vndfwk_detect.so\"",
+    ],
+}
+
+cc_library_shared {
+    name: "libvndfwk_detect_jni.qti_system",
+    defaults: ["libvndfwk_detect_jni.qti_defaults"],
+    system_ext_specific: true,
+    shared_libs: [
+        "libqti_vndfwk_detect_system",
+    ],
+    cflags: [
+        "-DVNDFWK_DETECT_LIB=\"libqti_vndfwk_detect_system.so\"",
+    ],
+}
+
+cc_library_shared {
+    name: "libvndfwk_detect_jni.qti_vendor",
+    defaults: ["libvndfwk_detect_jni.qti_defaults"],
+    vendor: true,
+    shared_libs: [
+        "libqti_vndfwk_detect_vendor",
+    ],
+    cflags: [
+        "-DVNDFWK_DETECT_LIB=\"libqti_vndfwk_detect_vendor.so\"",
+    ],
+}
+
 java_library_static {
     name: "vndfwk.detect",
+    srcs: ["src/**/*.java"],
+    sdk_version: "current",
+}
+
+java_library_static {
+    name: "vndfwk.detect_system",
+    srcs: ["src/**/*.java"],
+    sdk_version: "current",
+}
+
+java_library_static {
+    name: "vndfwk.detect_vendor",
     srcs: ["src/**/*.java"],
     sdk_version: "current",
 }
