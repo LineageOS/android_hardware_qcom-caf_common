@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021 The Linux Foundation. All rights reserved.
  * Not a contribution
  * Copyright (C) 2016 The Android Open Source Project
  *
@@ -16,6 +16,12 @@
  * limitations under the License.
  */
 
+/*
+ * Changes from Qualcomm Innovation Center are provided under the following
+ * license:
+ * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
+ */
 #include "memtrack.h"
 
 #include <android-base/logging.h>
