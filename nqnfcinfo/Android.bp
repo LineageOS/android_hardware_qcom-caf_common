@@ -1,5 +1,6 @@
 cc_binary {
     name: "nqnfcinfo",
+    init_rc: ["nqnfcinfo.rc"],
     vendor: true,
 
     cflags: [
