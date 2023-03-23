@@ -15,6 +15,13 @@
  * limitations under the License.
  */
 
+/*
+ * Changes from Qualcomm Innovation Center are provided under the following
+ * license:
+ * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
+ */
+
 #include "memtrack.h"
 #include "memtrack_kgsl.h"
 
@@ -32,6 +39,16 @@ ndk::ScopedAStatus Memtrack::getMemory(int pid, MemtrackType type,
         type != MemtrackType::MULTIMEDIA && type != MemtrackType::CAMERA) {
         return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
     }
+
+    /* When MemtrackType is GL and pid = 0, driver should return the global total
+     * unaccounted GPU-private memory. EX_UNSUPPORTED_OPERATION can be returned when
+     * this operation is not supported. Currently driver doesn't have support for PID 0,
+     * so return EX_UNSUPPORTED_OPERATION for such request.
+     */
+    if (pid == 0 && type == MemtrackType::GL) {
+        return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+    }
+
     _aidl_return->clear();
 
     if(type == MemtrackType::GL || type == MemtrackType::GRAPHICS) {
