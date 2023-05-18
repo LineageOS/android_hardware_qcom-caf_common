@@ -16,6 +16,23 @@
       "message": "Don\u0027t you guys need this? SM8550 blobs depend on these modules.",
       "revId": "3b1c534c0405e303f4ba6bcf5c866f5e741a7124",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4f791a4e_faa1d3ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-05-18T06:48:32Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/335180/1#message-75d6288c7fb3f3bf43f1ce595b6c97a8df613340\n\nbut it was discussed on discord and we rather forked the new repositories (which is done already)",
+      "revId": "3b1c534c0405e303f4ba6bcf5c866f5e741a7124",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
