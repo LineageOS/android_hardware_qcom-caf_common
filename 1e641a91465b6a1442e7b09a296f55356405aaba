@@ -16,6 +16,24 @@
       "message": "removing this might break existing devices.",
       "revId": "1e641a91465b6a1442e7b09a296f55356405aaba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee10d612_7606e02c",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1007,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-05-23T13:15:25Z",
+      "side": 0,
+      "message": "I tested on a few devices (FP4, oplus sm8250/sm8350, moto sm6225) and build didn\u0027t break",
+      "parentUuid": "2d1edac2_72f244ea",
+      "revId": "1e641a91465b6a1442e7b09a296f55356405aaba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
