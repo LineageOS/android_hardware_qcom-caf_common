@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d9494324_dcd4dba3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-04T09:51:15Z",
+      "side": 1,
+      "message": "axolotl seems to be the only device which added this in tree already:\nhttps://github.com/LineageOS/android_device_shift_axolotl/commit/59d083b4e390bdd43f52f8e2b779a02bf87e8353",
+      "revId": "72c58940c2ee267e4d96325dd80bf3a51cfc0c29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
