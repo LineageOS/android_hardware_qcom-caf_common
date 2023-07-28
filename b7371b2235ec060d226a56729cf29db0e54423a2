@@ -16,6 +16,24 @@
       "message": "That should be fine, I think st-hal also has an -ar variant?",
       "revId": "b7371b2235ec060d226a56729cf29db0e54423a2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bdfb28e1_a0d049e1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-28T17:46:45Z",
+      "side": 1,
+      "message": "It has, but that\u0027s guarded in the repo itself via it\u0027s own flag in Android.mk.\n\nThe correct st-hal is selected in vendor/lineage - https://github.com/LineageOS/android_vendor_lineage/blob/lineage-20.0/config/BoardConfigQcom.mk#L124-L127",
+      "parentUuid": "881700c6_50dd1773",
+      "revId": "b7371b2235ec060d226a56729cf29db0e54423a2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
