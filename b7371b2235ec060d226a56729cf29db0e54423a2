@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "881700c6_50dd1773",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-07-28T17:37:36Z",
+      "side": 1,
+      "message": "That should be fine, I think st-hal also has an -ar variant?",
+      "revId": "b7371b2235ec060d226a56729cf29db0e54423a2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
