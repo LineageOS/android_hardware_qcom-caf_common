@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b31cc58e_8893df0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-27T13:48:58Z",
+      "side": 1,
+      "message": "Merge once manifest is in.",
+      "revId": "7340730dba34893fb7d8d1c71a3e0db8596da2ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
