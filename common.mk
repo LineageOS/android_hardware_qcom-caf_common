@@ -1,3 +1,5 @@
+LOCAL_PATH := $(call my-dir)
+
 # RFS APQ GNSS symlinks
 PRODUCT_PACKAGES += \
     rfs_apq_gnss_hlos_symlink \
@@ -123,3 +125,7 @@ PRODUCT_PACKAGES += \
     rfs_msm_wpss_readonly_vendor_firmware_symlink \
     rfs_msm_wpss_readwrite_symlink \
     rfs_msm_wpss_shared_symlink
+
+# Linker config
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(LOCAL_PATH)/linker.config.json
