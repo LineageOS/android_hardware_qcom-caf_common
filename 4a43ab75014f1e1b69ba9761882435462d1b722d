@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f208c85_912f66e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-12-26T09:57:51Z",
+      "side": 1,
+      "message": "From https://git.codelinaro.org/clo/la/device/qcom/vendor-common/-/tree/LA.VENDOR.13.2.0.r1-21700-KAILUA.QSSI14.0?ref_type\u003dtags.",
+      "revId": "4a43ab75014f1e1b69ba9761882435462d1b722d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
