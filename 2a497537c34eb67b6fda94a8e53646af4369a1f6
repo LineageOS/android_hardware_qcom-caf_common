@@ -16,6 +16,23 @@
       "message": "Though this change may not matter so much for most devices and decommonizing is quite easy, it is still needed for lahaina devices with blobs of this tag. Besides, it is also observed in  LA.UM.9.12.r1-18100-SMxx50.QSSI14.0.",
       "revId": "2a497537c34eb67b6fda94a8e53646af4369a1f6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb1158d3_22df0ab2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32882
+      },
+      "writtenOn": "2024-03-14T15:07:33Z",
+      "side": 1,
+      "message": "I failed to find. vendor.qti.gnss 4.3 is \"rare\".",
+      "revId": "2a497537c34eb67b6fda94a8e53646af4369a1f6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
