@@ -33,6 +33,23 @@
       "message": "I failed to find. vendor.qti.gnss 4.3 is \"rare\".",
       "revId": "2a497537c34eb67b6fda94a8e53646af4369a1f6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d9290c63_badac0ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2024-03-14T23:29:19Z",
+      "side": 1,
+      "message": "https://github.com/AOSPA/android_vendor_qcom-opensource_core-utils/commit/216654cc6e743b3bcb2353bab81b0f0720c7250c",
+      "revId": "2a497537c34eb67b6fda94a8e53646af4369a1f6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
