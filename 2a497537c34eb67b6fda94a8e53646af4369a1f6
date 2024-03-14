@@ -50,6 +50,23 @@
       "message": "https://github.com/AOSPA/android_vendor_qcom-opensource_core-utils/commit/216654cc6e743b3bcb2353bab81b0f0720c7250c",
       "revId": "2a497537c34eb67b6fda94a8e53646af4369a1f6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f8bcc2d_641e196a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2024-03-14T23:30:36Z",
+      "side": 1,
+      "message": "and the commit that came before\n\nhttps://github.com/AOSPA/android_vendor_qcom-opensource_core-utils/commit/a7363d5efd3494495bcccdd7d064572b21bd61c5",
+      "revId": "2a497537c34eb67b6fda94a8e53646af4369a1f6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
