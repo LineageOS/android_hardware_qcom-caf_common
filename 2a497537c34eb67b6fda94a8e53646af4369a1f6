@@ -85,6 +85,24 @@
       "parentUuid": "d9290c63_badac0ad",
       "revId": "2a497537c34eb67b6fda94a8e53646af4369a1f6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba5bcd1e_97a392ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-03-15T10:28:43Z",
+      "side": 1,
+      "message": "from my point of view, you could just cherry-pick both of these changes and i\u0027ll merge them right away.",
+      "parentUuid": "bf7e4c11_33a20288",
+      "revId": "2a497537c34eb67b6fda94a8e53646af4369a1f6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
