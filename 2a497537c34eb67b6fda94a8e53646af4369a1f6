@@ -67,6 +67,24 @@
       "message": "and the commit that came before\n\nhttps://github.com/AOSPA/android_vendor_qcom-opensource_core-utils/commit/a7363d5efd3494495bcccdd7d064572b21bd61c5",
       "revId": "2a497537c34eb67b6fda94a8e53646af4369a1f6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf7e4c11_33a20288",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32882
+      },
+      "writtenOn": "2024-03-15T10:25:30Z",
+      "side": 1,
+      "message": "From my point of view, cherry-picking just for cherry-picking lacks significance for such a trivial change that anyone can do. Besides, previous contributors to this file also adds missing entries directly. But considering your opinion, perhaps updating the whole FCM will be a better choice. （https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/386190）",
+      "parentUuid": "d9290c63_badac0ad",
+      "revId": "2a497537c34eb67b6fda94a8e53646af4369a1f6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
