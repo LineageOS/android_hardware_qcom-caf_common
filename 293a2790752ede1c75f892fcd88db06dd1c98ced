@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "724b89e1_632a3344",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32882
+      },
+      "writtenOn": "2024-03-16T13:01:13Z",
+      "side": 1,
+      "message": "Introduce more new HALs.",
+      "revId": "293a2790752ede1c75f892fcd88db06dd1c98ced",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
