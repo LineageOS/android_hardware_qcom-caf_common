@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3119dc86_ee957377",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2024-12-10T19:27:18Z",
+      "side": 1,
+      "message": "Fixes building issues.\n\nWas:\n```\nERROR: files are incompatible: The following instances are in the device manifest but not specified in framework compatibility matrix:\nvendor.qti.hardware.radio.uim_remote_client@1.2::IUimRemoteServiceClient/uimRemoteClient0    \nvendor.qti.hardware.radio.uim_remote_client@1.2::IUimRemoteServiceClient/uimRemoteClient1```",
+      "revId": "81f40e105384272281d945376432458ab23db7f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
