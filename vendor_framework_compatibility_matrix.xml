@@ -569,6 +569,8 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.uim_remote_client</name>
         <version>1.0</version>
+        <version>1.1</version>
+        <version>1.2</version>
         <interface>
             <name>IUimRemoteServiceClient</name>
             <instance>uimRemoteClient0</instance>
