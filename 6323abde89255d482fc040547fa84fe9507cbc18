@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e16f7ef9_7b480091",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-13T15:12:24Z",
+      "side": 1,
+      "message": "Please check if there\u0027s a qcom change for this, and pick it just like I did there: https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/396359/",
+      "revId": "6323abde89255d482fc040547fa84fe9507cbc18",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
