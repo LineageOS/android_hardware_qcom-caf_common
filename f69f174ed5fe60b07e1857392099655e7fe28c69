@@ -16,6 +16,24 @@
       "message": "Btw, this could use range version (1.0-2) instead of declaring each version one by one.",
       "revId": "f69f174ed5fe60b07e1857392099655e7fe28c69",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e0d514db_faf8ac24",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 571,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2024-12-13T13:50:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0385401b_68944da0",
+      "revId": "f69f174ed5fe60b07e1857392099655e7fe28c69",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
