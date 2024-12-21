@@ -120,6 +120,7 @@ SOONG_CONFIG_qtidisplay += \
     var2 \
     var3 \
     wide_color \
+    target_needs_raw10_buffer_fix \
     target_no_raw10_custom_format \
     target_uses_aligned_ycbcr_height \
     target_uses_aligned_ycrcb_height \
@@ -144,6 +145,7 @@ SOONG_CONFIG_qtidisplay_var1 ?= false
 SOONG_CONFIG_qtidisplay_var2 ?= false
 SOONG_CONFIG_qtidisplay_var3 ?= false
 SOONG_CONFIG_qtidisplay_wide_color ?= false
+SOONG_CONFIG_qtidisplay_target_needs_raw10_buffer_fix ?= false
 SOONG_CONFIG_qtidisplay_target_no_raw10_custom_format ?= false
 SOONG_CONFIG_qtidisplay_target_uses_aligned_ycbcr_height ?= false
 SOONG_CONFIG_qtidisplay_target_uses_aligned_ycrcb_height ?= false
@@ -170,6 +172,10 @@ ifeq ($(TARGET_USES_FOD_ZPOS),true)
 endif
 
 # For libgrallocutils features
+ifeq ($(TARGET_NEEDS_RAW10_BUFFER_FIX),true)
+    SOONG_CONFIG_qtidisplay_target_needs_raw10_buffer_fix := true
+endif
+
 ifeq ($(TARGET_NO_RAW10_CUSTOM_FORMAT),true)
     SOONG_CONFIG_qtidisplay_target_no_raw10_custom_format := true
 endif
