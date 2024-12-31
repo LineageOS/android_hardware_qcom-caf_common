@@ -59,6 +59,7 @@ SOONG_CONFIG_qtidisplay += \
     displayconfig_enabled \
     udfps \
     default \
+    master_side_cp \
     shift_horizontal \
     shift_vertical \
     var1 \
@@ -80,6 +81,7 @@ SOONG_CONFIG_qtidisplay_gralloc4 ?= false
 SOONG_CONFIG_qtidisplay_displayconfig_enabled ?= false
 SOONG_CONFIG_qtidisplay_udfps ?= false
 SOONG_CONFIG_qtidisplay_default ?= true
+SOONG_CONFIG_qtidisplay_master_side_cp ?= false
 SOONG_CONFIG_qtidisplay_shift_horizontal ?= 0
 SOONG_CONFIG_qtidisplay_shift_vertical ?= 0
 SOONG_CONFIG_qtidisplay_var1 ?= false
@@ -190,6 +192,9 @@ endif
 
 # List of targets that use master side content protection
 MASTER_SIDE_CP_TARGET_LIST := msm8996 $(UM_4_4_FAMILY) $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY)
+ifeq ($(filter $(MASTER_SIDE_CP_TARGET_LIST),$(TARGET_BOARD_PLATFORM)),)
+    SOONG_CONFIG_qtidisplay_master_side_cp := true
+endif
 
 # Opt-in for old rmnet_data driver
 ifeq ($(filter $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
