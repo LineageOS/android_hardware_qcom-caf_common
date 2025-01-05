@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac1b7e78_6c16b54a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-01-05T19:26:12Z",
+      "side": 1,
+      "message": "Doesn\u0027t hurt to merge these before the HAL conversion",
+      "revId": "c89b361cdc9f20e84cfc40de33817562744a8c7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
