@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "12cff2cb_0ed2b079",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 587,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-01-07T09:19:12Z",
+      "side": 1,
+      "message": "This one too.",
+      "range": {
+        "startLine": 587,
+        "startChar": 11,
+        "endLine": 587,
+        "endChar": 38
+      },
+      "revId": "1a37ae930457804b60a531368c3ed1e5f81ef9c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
