@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "095e32c5_f751750f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2025-01-07T21:57:33Z",
+      "side": 1,
+      "message": "Works fine in socrates, but would be nice to verify in other platforms (SM8450 for example).",
+      "revId": "3a3cf379e6f7eeb57cb2f8fd24f8e88c5dca88a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

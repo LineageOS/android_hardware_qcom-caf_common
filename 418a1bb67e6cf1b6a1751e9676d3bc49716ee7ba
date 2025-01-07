@@ -16,6 +16,24 @@
       "message": "can we unset that?",
       "revId": "418a1bb67e6cf1b6a1751e9676d3bc49716ee7ba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74334a70_3e2ac376",
+        "filename": "qtitelephony-compat/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2025-01-07T21:57:33Z",
+      "side": 1,
+      "message": "Would require enabling platform APIs, not needed for now, I\u0027d just leave the sdk_version set.",
+      "parentUuid": "46165447_6f1f88ee",
+      "revId": "418a1bb67e6cf1b6a1751e9676d3bc49716ee7ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
