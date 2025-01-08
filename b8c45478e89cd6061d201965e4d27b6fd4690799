@@ -16,6 +16,24 @@
       "message": "Is there no qualcomm commit for it?",
       "revId": "b8c45478e89cd6061d201965e4d27b6fd4690799",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8cf1ef1a_0acd6017",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-01-08T18:43:05Z",
+      "side": 1,
+      "message": "Nope, I couldn\u0027t find one at least so I took this from stock",
+      "parentUuid": "7c82408f_84f79033",
+      "revId": "b8c45478e89cd6061d201965e4d27b6fd4690799",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
