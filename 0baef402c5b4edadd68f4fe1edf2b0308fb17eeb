@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e727d54e_81202151",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 511,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-01-13T09:54:36Z",
+      "side": 1,
+      "message": "Wondering if isn\u0027t it better to name it with \"qcom_\" prefix, otherwise we will need to add a soong namespace here.",
+      "range": {
+        "startLine": 511,
+        "startChar": 11,
+        "endLine": 511,
+        "endChar": 17
+      },
+      "revId": "0baef402c5b4edadd68f4fe1edf2b0308fb17eeb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
