@@ -81,6 +81,30 @@
       },
       "revId": "0baef402c5b4edadd68f4fe1edf2b0308fb17eeb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "26ad8d34_702c3a34",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 511,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-01-13T15:21:15Z",
+      "side": 1,
+      "message": "Imagine the drama if Exynos or Tegra also want/need to same mountpoints, but they live in a Qcom repo.",
+      "parentUuid": "7ea7ae6a_e5d2d24c",
+      "range": {
+        "startLine": 511,
+        "startChar": 11,
+        "endLine": 511,
+        "endChar": 17
+      },
+      "revId": "0baef402c5b4edadd68f4fe1edf2b0308fb17eeb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
