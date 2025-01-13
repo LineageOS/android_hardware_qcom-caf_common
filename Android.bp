@@ -507,6 +507,27 @@ install_symlink {
     symlink_target: "/mnt/vendor/persist/rfs/shared",
 }
 
+install_symlink {
+    name: "vendor_bt_firmware_mountpoint",
+    vendor: true,
+    installed_location: "bt_firmware/empty",
+    symlink_target: "nonexistent",
+}
+
+install_symlink {
+    name: "vendor_dsp_mountpoint",
+    vendor: true,
+    installed_location: "dsp/empty",
+    symlink_target: "nonexistent",
+}
+
+install_symlink {
+    name: "vendor_firmware_mnt_mountpoint",
+    vendor: true,
+    installed_location: "firmware_mnt/empty",
+    symlink_target: "nonexistent",
+}
+
 prebuilt_hidl_interfaces {
     name: "hidl_com_qualcomm_qti_dpm_api_interface",
     interfaces: [
