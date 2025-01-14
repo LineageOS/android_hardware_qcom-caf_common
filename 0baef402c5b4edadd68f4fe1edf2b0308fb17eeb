@@ -105,6 +105,30 @@
       },
       "revId": "0baef402c5b4edadd68f4fe1edf2b0308fb17eeb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5fa27a4_68fa0c18",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 511,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-01-14T07:50:12Z",
+      "side": 1,
+      "message": "Well, this repo is synced by default so they would have the mountpoint targets already. And if they don\u0027t want to use them, they can add their duplicate theoretical targets with a prefix",
+      "parentUuid": "26ad8d34_702c3a34",
+      "range": {
+        "startLine": 511,
+        "startChar": 11,
+        "endLine": 511,
+        "endChar": 17
+      },
+      "revId": "0baef402c5b4edadd68f4fe1edf2b0308fb17eeb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
