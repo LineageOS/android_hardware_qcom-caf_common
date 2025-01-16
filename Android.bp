@@ -566,6 +566,13 @@ install_symlink {
 }
 
 install_symlink {
+    name: "vendor_firmware-modem_mountpoint",
+    vendor: true,
+    installed_location: "firmware-modem/.keep",
+    symlink_target: "/dev/null",
+}
+
+install_symlink {
     name: "vendor_vm-system_mountpoint",
     vendor: true,
     installed_location: "vm-system/.keep",
