@@ -1,0 +1,4 @@
+sh_binary_host {
+    name: "generate_qcril_db",
+    src: "generate_qcril_db.sh",
+}
