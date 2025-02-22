@@ -13,7 +13,7 @@ soong_config_module_type {
 
 soong_config_string_variable {
     name: "mpss_firmware_symlink_target",
-    values: ["firmware_mnt", "firmware_modem"],
+    values: ["firmware_mnt", "firmware_modem", "modem_firmware"],
 }
 
 install_symlink {
@@ -431,6 +431,9 @@ mpss_firmware_symlink {
             },
             firmware_modem: {
                 symlink_target: "/vendor/firmware-modem",
+            },
+            modem_firmware: {
+                symlink_target: "/vendor/modem_firmware",
             },
             conditions_default: {
                 symlink_target: "/vendor/firmware_mnt",
