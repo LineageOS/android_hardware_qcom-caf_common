@@ -556,6 +556,7 @@ install_symlink {
     symlink_target: select(soong_config_variable("rfs", "mpss_firmware_symlink_target"), {
         "firmware": "/firmware",
         "firmware_modem": "/vendor/firmware-modem",
+        "modem_firmware": "/vendor/modem_firmware",
         default: "/vendor/firmware_mnt",
     }),
 }
