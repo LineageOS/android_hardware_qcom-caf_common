@@ -186,7 +186,7 @@ install_symlink {
     name: "rfs_mdm_mpss_readonly_firmware_symlink",
     vendor: true,
     installed_location: "rfs/mdm/mpss/readonly/firmware",
-    symlink_target: select(soong_config_variable("rfs", "mpss_firmware_symlink_target"), {
+    symlink_target: select(soong_config_variable("rfs", "mdm_mpss_firmware_symlink_target"), {
         "firmware": "/firmware",
         "firmware_modem": "/vendor/firmware-modem",
         default: "/vendor/firmware_mnt",
@@ -511,9 +511,10 @@ install_symlink {
     name: "rfs_msm_mpss_readonly_firmware_symlink",
     vendor: true,
     installed_location: "rfs/msm/mpss/readonly/firmware",
-    symlink_target: select(soong_config_variable("rfs", "mpss_firmware_symlink_target"), {
+    symlink_target: select(soong_config_variable("rfs", "msm_mpss_firmware_symlink_target"), {
         "firmware": "/firmware",
         "firmware_modem": "/vendor/firmware-modem",
+        "modem_firmware": "/vendor/modem_firmware",
         default: "/vendor/firmware_mnt",
     }),
 }
