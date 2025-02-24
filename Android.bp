@@ -13,7 +13,7 @@ soong_config_module_type {
 
 soong_config_string_variable {
     name: "mpss_firmware_symlink_target",
-    values: ["firmware_mnt", "firmware_modem"],
+    values: ["firmware", "firmware_mnt", "firmware_modem"],
 }
 
 soong_config_module_type {
@@ -295,6 +295,9 @@ mpss_firmware_symlink {
     installed_location: "rfs/mdm/mpss/readonly/firmware",
     soong_config_variables: {
         mpss_firmware_symlink_target: {
+            firmware: {
+                symlink_target: "/firmware",
+            },
             firmware_mnt: {
                 symlink_target: "/vendor/firmware_mnt",
             },
@@ -775,6 +778,9 @@ mpss_firmware_symlink {
     installed_location: "rfs/msm/mpss/readonly/firmware",
     soong_config_variables: {
         mpss_firmware_symlink_target: {
+            firmware: {
+                symlink_target: "/firmware",
+            },
             firmware_mnt: {
                 symlink_target: "/vendor/firmware_mnt",
             },
