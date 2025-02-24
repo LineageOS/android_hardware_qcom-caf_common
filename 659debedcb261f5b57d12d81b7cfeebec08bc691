@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1beca744_2bcfb711",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-02-24T19:12:44Z",
+      "side": 1,
+      "message": "just use BOARD_ROOT_EXTRA_SYMLINKS?",
+      "revId": "659debedcb261f5b57d12d81b7cfeebec08bc691",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
