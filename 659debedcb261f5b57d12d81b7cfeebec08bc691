@@ -16,6 +16,24 @@
       "message": "just use BOARD_ROOT_EXTRA_SYMLINKS?",
       "revId": "659debedcb261f5b57d12d81b7cfeebec08bc691",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91c57827_0efbc3ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-02-24T21:43:18Z",
+      "side": 1,
+      "message": "I tried this, it _refused_ to boot still. Wahoo is due for a much larger cleanup tbh. Ugh.",
+      "parentUuid": "1beca744_2bcfb711",
+      "revId": "659debedcb261f5b57d12d81b7cfeebec08bc691",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
