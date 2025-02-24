@@ -16,6 +16,24 @@
       "message": "also here",
       "revId": "dddb7b71e50faec8fd320d977b689c61bbf04dd0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8892bd4c_6bb5e576",
+        "filename": "BoardConfigQcom.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 31655
+      },
+      "writtenOn": "2025-02-24T21:25:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cd93a308_6ad17c6c",
+      "revId": "dddb7b71e50faec8fd320d977b689c61bbf04dd0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
