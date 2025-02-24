@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd93a308_6ad17c6c",
+        "filename": "BoardConfigQcom.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-02-24T21:22:30Z",
+      "side": 1,
+      "message": "also here",
+      "revId": "dddb7b71e50faec8fd320d977b689c61bbf04dd0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
