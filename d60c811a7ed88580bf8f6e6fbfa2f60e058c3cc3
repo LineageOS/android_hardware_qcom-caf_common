@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c2f178b2_c184262a",
+        "filename": "BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-02-24T20:54:48Z",
+      "side": 1,
+      "message": "put above?",
+      "revId": "d60c811a7ed88580bf8f6e6fbfa2f60e058c3cc3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "94f55c9f_7774880a",
+        "filename": "BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-02-24T20:54:48Z",
+      "side": 1,
+      "message": "put above?",
+      "revId": "d60c811a7ed88580bf8f6e6fbfa2f60e058c3cc3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
