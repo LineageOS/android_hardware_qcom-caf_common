@@ -16,6 +16,24 @@
       "message": "This will indeed break every device with custom bootctrl:\n\nbuild/make/core/base_rules.mk:300: error: hardware/qcom-caf/bootctrl/1.1/libboot_control_qti: MODULE.TARGET.HEADER_LIBRARIES.libboot_control_qti_headers.recovery already defined by device/motorola/sm6375-common/bo\notctrl/1.1/libboot_control_qti.",
       "revId": "dffc7c9be772a79c39445cf5fa3a1307d7ceb0ab",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4b84b37_9011e75a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-02-28T00:38:19Z",
+      "side": 1,
+      "message": "Introduce USE_DEVICE_SPECIFIC_BOOTCTRL then?",
+      "parentUuid": "ad716048_d1fe5706",
+      "revId": "dffc7c9be772a79c39445cf5fa3a1307d7ceb0ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
