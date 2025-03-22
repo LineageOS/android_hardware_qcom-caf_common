@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c565e8d_34080a60",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-03-22T09:07:47Z",
+      "side": 1,
+      "message": "I\u0027d make this not be display specific.\nMaybe this?\n`$(call soong_config_set,ANDROID,target_kernel_version,$(TARGET_KERNEL_VERSION))`",
+      "revId": "404e6fe6769c89893f8a6251845fd2f791eedf74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
