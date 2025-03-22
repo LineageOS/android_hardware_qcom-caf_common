@@ -114,6 +114,7 @@ SOONG_CONFIG_qtidisplay += \
     udfps \
     default \
     master_side_cp \
+    kernel_version \
     shift_horizontal \
     shift_vertical \
     var1 \
@@ -138,6 +139,7 @@ SOONG_CONFIG_qtidisplay_displayconfig_enabled ?= false
 SOONG_CONFIG_qtidisplay_udfps ?= false
 SOONG_CONFIG_qtidisplay_default ?= true
 SOONG_CONFIG_qtidisplay_master_side_cp ?= false
+SOONG_CONFIG_qtidisplay_kernel_version ?= $(TARGET_KERNEL_VERSION)
 SOONG_CONFIG_qtidisplay_shift_horizontal ?= 0
 SOONG_CONFIG_qtidisplay_shift_vertical ?= 0
 SOONG_CONFIG_qtidisplay_var1 ?= false
