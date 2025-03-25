@@ -16,6 +16,23 @@
       "message": "Do you want this moved to lineage-22.2?",
       "revId": "1ef8f3ffe326122acb0826bedde0e4b09be6ce65",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "25f17846_0b085fa1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-03-25T23:03:45Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/q/topic:%2214-pineapple%22 also exists, can be moved",
+      "revId": "1ef8f3ffe326122acb0826bedde0e4b09be6ce65",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
