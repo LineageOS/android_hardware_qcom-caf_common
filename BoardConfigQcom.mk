@@ -356,25 +356,18 @@ $(call soong_config_set,qtidisplay,gralloc_handle_has_reserved_size,$(TARGET_GRA
 $(call soong_config_set,qtidisplay,gralloc_handle_has_ubwcp_format,$(TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT))
 
 ifneq ($(filter $(UM_3_18_HAL_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-    MSM_VIDC_TARGET_LIST := $(UM_3_18_HAL_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8996
 else ifneq ($(filter $(UM_4_9_LEGACY_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-    MSM_VIDC_TARGET_LIST := $(UM_4_9_LEGACY_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8953
 else ifneq ($(filter $(UM_4_4_HAL_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-    MSM_VIDC_TARGET_LIST := $(UM_4_4_HAL_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8998
 else ifneq ($(filter $(UM_4_19_LEGACY_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-    MSM_VIDC_TARGET_LIST := $(UM_4_19_LEGACY_FAMILY)
     QCOM_HARDWARE_VARIANT := sdm660
 else ifneq ($(filter $(UM_4_9_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-    MSM_VIDC_TARGET_LIST := $(UM_4_9_FAMILY)
     QCOM_HARDWARE_VARIANT := sdm845
 else ifneq ($(filter $(UM_4_14_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-    MSM_VIDC_TARGET_LIST := $(UM_4_14_FAMILY)
     QCOM_HARDWARE_VARIANT := sm8150
 else ifneq ($(filter $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-    MSM_VIDC_TARGET_LIST := $(UM_4_19_FAMILY)
     QCOM_HARDWARE_VARIANT := sm8250
 else ifneq ($(filter $(UM_5_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     QCOM_HARDWARE_VARIANT := sm8350
@@ -387,7 +380,6 @@ else ifneq ($(filter $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
 else ifneq ($(filter $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     QCOM_HARDWARE_VARIANT := sm8750
 else
-    MSM_VIDC_TARGET_LIST := $(TARGET_BOARD_PLATFORM)
     QCOM_HARDWARE_VARIANT := $(TARGET_BOARD_PLATFORM)
 endif
 
