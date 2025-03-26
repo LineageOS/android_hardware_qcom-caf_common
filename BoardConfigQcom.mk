@@ -326,15 +326,17 @@ PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/bootctrl
 
 # Add display-commonsys to PRODUCT_SOONG_NAMESPACES for QSSI supported platforms
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/commonsys/display \
-    vendor/qcom/opensource/commonsys-intf/display
+    PRODUCT_SOONG_NAMESPACES += \
+        vendor/qcom/opensource/commonsys/display \
+        vendor/qcom/opensource/commonsys-intf/display
 
-ifeq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/display
-endif
-
+    ifeq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+        PRODUCT_SOONG_NAMESPACES += \
+            vendor/qcom/opensource/display
+    endif
+    $(call soong_config_set,qtidisplay,headers_namespace,vendor/qcom/opensource/commonsys-intf/display)
+else
+    $(call soong_config_set,qtidisplay,headers_namespace,$(QCOM_SOONG_NAMESPACE)/display)
 endif
 
 # Add data-ipa-cfg-mgr to PRODUCT_SOONG_NAMESPACES if needed
