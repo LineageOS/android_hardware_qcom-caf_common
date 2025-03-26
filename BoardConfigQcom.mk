@@ -275,6 +275,11 @@ ifeq ($(filter $(UM_5_15_FAMILY) $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     $(call soong_config_set,rmnetctl,old_rmnet_data,true)
 endif
 
+# Set QTI gralloc struct defaults
+TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE ?= false
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
+TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT ?= false
+
 # Use full QTI gralloc struct for GKI 2.0 targets
 ifneq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE ?= true
@@ -285,6 +290,10 @@ endif
 ifneq ($(filter $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT ?= true
 endif
+
+$(call soong_config_set,qtidisplay,gralloc_handle_has_custom_content_md_reserved_size,$(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE))
+$(call soong_config_set,qtidisplay,gralloc_handle_has_reserved_size,$(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE))
+$(call soong_config_set,qtidisplay,gralloc_handle_has_ubwcp_format,$(TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT))
 
 ifneq ($(filter $(UM_3_18_HAL_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_3_18_HAL_FAMILY)
