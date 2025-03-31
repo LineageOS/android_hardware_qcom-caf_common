@@ -70,6 +70,24 @@
       "parentUuid": "a9681e03_22e411bc",
       "revId": "b62f88389a4842b814788b8a3c1c25a3386e38e7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "37d30146_119cdce0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-03-31T04:36:08Z",
+      "side": 1,
+      "message": "if you want to trust that line then pineapple is 5.15 too...\n\nhttps://git.codelinaro.org/clo/la/platform/vendor/qcom/pineapple/-/blob/LA.VENDOR.14.3.0.r1-20200-lanai.0/pineapple.mk?ref_type\u003dtags#L180",
+      "parentUuid": "13eb0384_21853098",
+      "revId": "b62f88389a4842b814788b8a3c1c25a3386e38e7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
