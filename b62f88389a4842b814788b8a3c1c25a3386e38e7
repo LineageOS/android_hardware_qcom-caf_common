@@ -52,6 +52,24 @@
       "parentUuid": "eb8ff687_d35c0007",
       "revId": "b62f88389a4842b814788b8a3c1c25a3386e38e7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13eb0384_21853098",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33708
+      },
+      "writtenOn": "2025-03-31T02:32:44Z",
+      "side": 1,
+      "message": "but, amethyst and asteroids use kernel 6.1:\n\nhttps://github.com/NothingOSS/android_kernel_msm-6.1_nothing_sm7635\n\nhttps://dumps.tadiphone.dev/dumps/redmi/amethyst/-/blob/missi-user-15-AQ3A.240912.001-OS2.0.4.0.VOPCNXM-release-keys/aosp-device-tree/BoardConfig.mk?ref_type\u003dheads#L84",
+      "parentUuid": "a9681e03_22e411bc",
+      "revId": "b62f88389a4842b814788b8a3c1c25a3386e38e7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
