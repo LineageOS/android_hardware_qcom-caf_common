@@ -34,6 +34,24 @@
       "parentUuid": "bb05d1d0_1f816c80",
       "revId": "b62f88389a4842b814788b8a3c1c25a3386e38e7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9681e03_22e411bc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33843
+      },
+      "writtenOn": "2025-03-31T01:22:33Z",
+      "side": 1,
+      "message": "\u003e actually cliffs seems to be pineapple too, not sure about volcano.\n\nVolcano uses 5.15 kernel, maybe belong to kalama\n\nhttps://git.codelinaro.org/clo/la/platform/vendor/qcom/volcano/-/blob/LA.VENDOR.14.3.0.r1-20200-lanai.0/volcano.mk?ref_type\u003dtags#L184",
+      "parentUuid": "eb8ff687_d35c0007",
+      "revId": "b62f88389a4842b814788b8a3c1c25a3386e38e7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
