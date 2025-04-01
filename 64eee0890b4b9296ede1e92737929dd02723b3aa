@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7b22fef3_399b0b4f",
+        "filename": "BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 309,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-01T23:07:14Z",
+      "side": 1,
+      "message": "This was introduced with UM6.1, so I am assuming it\u0027s also used on UM6.6.",
+      "range": {
+        "startLine": 306,
+        "startChar": 0,
+        "endLine": 309,
+        "endChar": 5
+      },
+      "revId": "64eee0890b4b9296ede1e92737929dd02723b3aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
