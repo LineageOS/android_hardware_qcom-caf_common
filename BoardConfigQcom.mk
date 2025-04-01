@@ -111,6 +111,7 @@ SOONG_CONFIG_qtidisplay += \
     llvmsa \
     gralloc4 \
     displayconfig_enabled \
+    samsungudfps \
     udfps \
     default \
     master_side_cp \
@@ -135,6 +136,7 @@ SOONG_CONFIG_qtidisplay_headless ?= false
 SOONG_CONFIG_qtidisplay_llvmsa ?= false
 SOONG_CONFIG_qtidisplay_gralloc4 ?= false
 SOONG_CONFIG_qtidisplay_displayconfig_enabled ?= false
+SOONG_CONFIG_qtidisplay_samsungudfps ?= false
 SOONG_CONFIG_qtidisplay_udfps ?= false
 SOONG_CONFIG_qtidisplay_default ?= true
 SOONG_CONFIG_qtidisplay_master_side_cp ?= false
