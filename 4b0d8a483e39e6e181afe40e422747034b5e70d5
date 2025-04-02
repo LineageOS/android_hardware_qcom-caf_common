@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "932ec298_43b7a0ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-02T08:29:07Z",
+      "side": 1,
+      "message": "I would like to avoid adding OEM specific things here. Set soong config from the device tree.",
+      "revId": "4b0d8a483e39e6e181afe40e422747034b5e70d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
