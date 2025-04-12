@@ -3,19 +3,6 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-soong_config_module_type {
-    name: "mpss_firmware_symlink",
-    module_type: "install_symlink",
-    config_namespace: "rfs",
-    variables: ["mpss_firmware_symlink_target"],
-    properties: ["symlink_target"],
-}
-
-soong_config_string_variable {
-    name: "mpss_firmware_symlink_target",
-    values: ["firmware_mnt", "firmware_modem"],
-}
-
 install_symlink {
     name: "rfs_apq_gnss_hlos_symlink",
     vendor: true,
@@ -156,23 +143,14 @@ install_symlink {
     symlink_target: "/data/vendor/tombstones/rfs/modem",
 }
 
-mpss_firmware_symlink {
+install_symlink {
     name: "rfs_mdm_mpss_readonly_firmware_symlink",
     vendor: true,
     installed_location: "rfs/mdm/mpss/readonly/firmware",
-    soong_config_variables: {
-        mpss_firmware_symlink_target: {
-            firmware_mnt: {
-                symlink_target: "/vendor/firmware_mnt",
-            },
-            firmware_modem: {
-                symlink_target: "/vendor/firmware-modem",
-            },
-            conditions_default: {
-                symlink_target: "/vendor/firmware_mnt",
-            }
-        },
-    },
+    symlink_target: select(soong_config_variable("rfs", "mpss_firmware_symlink_target"), {
+        "firmware_modem": "/vendor/firmware-modem",
+        default: "/vendor/firmware_mnt",
+    }),
 }
 
 install_symlink {
@@ -420,23 +398,14 @@ install_symlink {
     symlink_target: "/data/vendor/tombstones/rfs/modem",
 }
 
-mpss_firmware_symlink {
+install_symlink {
     name: "rfs_msm_mpss_readonly_firmware_symlink",
     vendor: true,
     installed_location: "rfs/msm/mpss/readonly/firmware",
-    soong_config_variables: {
-        mpss_firmware_symlink_target: {
-            firmware_mnt: {
-                symlink_target: "/vendor/firmware_mnt",
-            },
-            firmware_modem: {
-                symlink_target: "/vendor/firmware-modem",
-            },
-            conditions_default: {
-                symlink_target: "/vendor/firmware_mnt",
-            }
-        },
-    },
+    symlink_target: select(soong_config_variable("rfs", "mpss_firmware_symlink_target"), {
+        "firmware_modem": "/vendor/firmware-modem",
+        default: "/vendor/firmware_mnt",
+    }),
 }
 
 install_symlink {
