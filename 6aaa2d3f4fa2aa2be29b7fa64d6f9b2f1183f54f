@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9cbf6ed_46c6f3ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35348
+      },
+      "writtenOn": "2025-05-18T06:33:43Z",
+      "side": 1,
+      "message": "Btw, taro and kalama have been updated in pakala tags to 6.6 kernel version.\nWe will leave them as now?",
+      "revId": "6aaa2d3f4fa2aa2be29b7fa64d6f9b2f1183f54f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
