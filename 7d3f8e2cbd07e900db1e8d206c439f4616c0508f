@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf54637c_3f0b8626",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-06-12T23:34:18Z",
+      "side": 1,
+      "message": "Makes sense to place this here instead of vendor/lineage",
+      "revId": "7d3f8e2cbd07e900db1e8d206c439f4616c0508f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
