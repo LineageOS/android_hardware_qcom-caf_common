@@ -1925,4 +1925,12 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.qegahal</name>
+        <version>1</version>
+        <interface>
+            <name>IQegahal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
