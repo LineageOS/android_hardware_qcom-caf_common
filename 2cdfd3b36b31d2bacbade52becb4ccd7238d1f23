@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4426720c_c0dcefd5",
+        "filename": "BoardConfigQcom.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-03T23:03:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "630f1e56_a82a8dac",
+      "revId": "2cdfd3b36b31d2bacbade52becb4ccd7238d1f23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e779d15b_3c823f27",
@@ -31,6 +49,24 @@
       "writtenOn": "2025-07-01T11:13:30Z",
       "side": 1,
       "message": "Same here.",
+      "revId": "2cdfd3b36b31d2bacbade52becb4ccd7238d1f23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b745973e_79a9468e",
+        "filename": "BoardConfigQcom.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 260,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-03T23:03:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e779d15b_3c823f27",
       "revId": "2cdfd3b36b31d2bacbade52becb4ccd7238d1f23",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
