@@ -16,6 +16,24 @@
       "message": "There\u0027s also another issue: Qualcomm also updated taro, kalama, blair, lahaina, parrot (named as parrot66) to 6.6 kernel and Android V in \"pakala\" tags.\nMotorola already has devices based on taro with 6.6 kernel and Android V.\n\nI think we should check kernel version (not board name) to distinguish between taro on 5.10 kernel and 6.6 kernel, for example",
       "revId": "1fbb544ab01847cd1873fb51c190ed74f8e5bb17",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "074e14b9_0f7b328d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-07-04T10:55:19Z",
+      "side": 1,
+      "message": "this has nothing to do with sun.",
+      "parentUuid": "894a47f6_33447ad3",
+      "revId": "1fbb544ab01847cd1873fb51c190ed74f8e5bb17",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
