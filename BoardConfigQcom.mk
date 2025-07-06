@@ -56,22 +56,71 @@ SOONG_CONFIG_NAMESPACES += qtiaudio
 
 # Add supported variables to qtiaudio config
 SOONG_CONFIG_qtiaudio += \
+    cirrus_calibration_resistance \
+    feature_agm_hidl \
+    feature_disabled_dts_eagle \
+    feature_dlkm \
+    feature_dynamic_sr \
+    feature_ec_ref_capture \
     feature_ext_amplifier \
     feature_extended_compress_format \
     feature_gef_support \
     feature_gki \
     feature_hal_v7 \
     feature_instance_id \
-    feature_sound_trigger
+    feature_lsm_hidl \
+    feature_mcs \
+    feature_pal_hidl \
+    feature_sound_trigger \
+    feature_true_stereo \
+    pal_spkr_protection_path \
+    ultrasound_proximity
 
 # Set default values for qtiaudio config
+SOONG_CONFIG_qtiaudio_cirrus_calibration_resistance ?= false
+SOONG_CONFIG_qtiaudio_feature_agm_hidl ?= false
+SOONG_CONFIG_qtiaudio_feature_disabled_dts_eagle ?= false
+SOONG_CONFIG_qtiaudio_feature_dlkm ?= false
+SOONG_CONFIG_qtiaudio_feature_dynamic_sr ?= false
+SOONG_CONFIG_qtiaudio_feature_ec_ref_capture ?= false
 SOONG_CONFIG_qtiaudio_feature_ext_amplifier ?= false
 SOONG_CONFIG_qtiaudio_feature_extended_compress_format ?= false
 SOONG_CONFIG_qtiaudio_feature_gef_support ?= false
 SOONG_CONFIG_qtiaudio_feature_gki ?= false
 SOONG_CONFIG_qtiaudio_feature_hal_v7 ?= false
 SOONG_CONFIG_qtiaudio_feature_instance_id ?= false
+SOONG_CONFIG_qtiaudio_feature_lsm_hidl ?= false
+SOONG_CONFIG_qtiaudio_feature_mcs ?= false
+SOONG_CONFIG_qtiaudio_feature_pal_hidl ?= false
 SOONG_CONFIG_qtiaudio_feature_sound_trigger ?= false
+SOONG_CONFIG_qtiaudio_feature_true_stereo ?= false
+SOONG_CONFIG_qtiaudio_pal_spkr_protection_path ?= false
+SOONG_CONFIG_qtiaudio_ultrasound_proximity ?= false
+
+
+ifeq ($(AUDIO_FEATURE_ENABLED_CIRRUS_CALIBRATION_RESISTANCE),true)
+    SOONG_CONFIG_qtiaudio_cirrus_calibration_resistance := true
+endif
+
+ifeq ($(AUDIO_FEATURE_ENABLED_AGM_HIDL),true)
+    SOONG_CONFIG_qtiaudio_feature_agm_hidl := true
+endif
+
+ifeq ($(AUDIO_FEATURE_DISABLED_DTS_EAGLE),true)
+    SOONG_CONFIG_qtiaudio_feature_disabled_dts_eagle := true
+endif
+
+ifeq ($(AUDIO_FEATURE_ENABLED_DLKM),true)
+    SOONG_CONFIG_qtiaudio_feature_dlkm := true
+endif
+
+ifeq ($(AUDIO_FEATURE_ENABLED_DYNAMIC_SR),true)
+    SOONG_CONFIG_qtiaudio_feature_dynamic_sr := true
+endif
+
+ifeq ($(AUDIO_FEATURE_ENABLED_EC_REF_CAPTURE),true)
+    SOONG_CONFIG_qtiaudio_feature_ec_ref_capture := true
+endif
 
 ifeq ($(AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER),true)
     SOONG_CONFIG_qtiaudio_feature_ext_amplifier := true
@@ -97,12 +146,36 @@ ifeq ($(AUDIO_FEATURE_ENABLED_INSTANCE_ID),true)
     SOONG_CONFIG_qtiaudio_feature_instance_id := true
 endif
 
+ifeq ($(AUDIO_FEATURE_ENABLED_LSM_HIDL),true)
+    SOONG_CONFIG_qtiaudio_feature_lsm_hidl := true
+endif
+
+ifeq ($(AUDIO_FEATURE_ENABLED_MCS),true)
+    SOONG_CONFIG_qtiaudio_feature_mcs := true
+endif
+
+ifeq ($(AUDIO_FEATURE_ENABLED_PAL_HIDL),true)
+    SOONG_CONFIG_qtiaudio_feature_pal_hidl := true
+endif
+
 ifeq ($(BOARD_SUPPORTS_SOUND_TRIGGER),true)
     SOONG_CONFIG_qtiaudio_feature_sound_trigger := true
 endif
 
 ifeq ($(BOARD_SUPPORTS_SOUND_TRIGGER_HAL),true)
     SOONG_CONFIG_qtiaudio_feature_sound_trigger := true
+endif
+
+ifeq ($(AUDIO_FEATURE_ENABLED_TRUE_STEREO),true)
+    SOONG_CONFIG_qtiaudio_feature_true_stereo := true
+endif
+
+ifeq ($(TARGET_PAL_SPKR_PROTECTION_PATH),true)
+    SOONG_CONFIG_qtiaudio_pal_spkr_protection_path := true
+endif
+
+ifeq ($(AUDIO_FEATURE_ENABLED_ULTRASOUND_PROXIMITY),true)
+    SOONG_CONFIG_qtiaudio_ultrasound_proximity := true
 endif
 
 # Add qtidisplay to soong config namespaces
