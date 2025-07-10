@@ -4,50 +4,10 @@ include hardware/qcom-caf/common/qcom_defs.mk
 UM_3_18_HAL_FAMILY := msm8996
 UM_4_4_HAL_FAMILY := msm8998
 
-ifeq (,$(TARGET_ENFORCES_QSSI))
-UM_3_18_HAL_FAMILY += msm8937 msm8953
-UM_4_4_HAL_FAMILY += sdm660
-else
-UM_4_9_LEGACY_FAMILY := msm8937 msm8953
-UM_4_19_LEGACY_FAMILY := sdm660
-endif
-
-UM_PLATFORMS := \
-    $(UM_3_18_FAMILY) \
-    $(UM_4_4_FAMILY) \
-    $(UM_4_9_FAMILY) \
-    $(UM_4_14_FAMILY) \
-    $(UM_4_19_FAMILY) \
-    $(UM_5_4_FAMILY) \
-    $(UM_5_10_FAMILY) \
-    $(UM_5_15_FAMILY) \
-    $(UM_6_1_FAMILY) \
-    $(UM_6_6_FAMILY)
-
-LEGACY_UM_PLATFORMS := \
-    $(UM_3_18_FAMILY) \
-    $(UM_4_4_FAMILY) \
-    $(UM_4_9_FAMILY) \
-    $(UM_4_14_FAMILY) \
-    $(UM_4_19_FAMILY) \
-    $(UM_5_4_FAMILY)
-
-QSSI_SUPPORTED_PLATFORMS := \
-    $(UM_4_9_LEGACY_FAMILY) \
-    $(UM_4_19_LEGACY_FAMILY) \
-    $(UM_4_9_FAMILY) \
-    $(UM_4_14_FAMILY) \
-    $(UM_4_19_FAMILY) \
-    $(UM_5_4_FAMILY) \
-    $(UM_5_10_FAMILY) \
-    $(UM_5_15_FAMILY) \
-    $(UM_6_1_FAMILY) \
-    $(UM_6_6_FAMILY)
-
 BOARD_USES_ADRENO := true
 
 # Disable thermal HAL netlink framework on UM platforms that do not support it
-ifneq ($(filter $(LEGACY_UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+ifeq (,$(filter 3.18 4.4 4.9 4.14 4.19, $(TARGET_KERNEL_VERSION)))
     $(call soong_config_set,qti_thermal,netlink,false)
 endif
 
@@ -247,7 +207,7 @@ ifneq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FA
 endif
 
 # Enable displayconfig on every UM platform
-ifeq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+ifeq ($(filter $(QCOM_BOARD_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_displayconfig_enabled := true
 endif
 
@@ -270,12 +230,15 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 13)
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 21)
 
 # Mark GRALLOC_USAGE_PRIVATE_HEIF_VIDEO as valid gralloc bit on UM platforms that support it
-ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq (,$(filter 4.9 4.14 4.19 5.4 5.10 5.15 6.1 6.6, $(TARGET_KERNEL_VERSION)))
     TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 27)
 endif
 
 # Enable master side content protection on UM platforms that support it
-MASTER_SIDE_CP_TARGET_LIST := msm8996 $(UM_4_4_FAMILY) $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY)
+ifneq (,$(filter 3.18 4.4 4.9 4.14 4.19, $(TARGET_KERNEL_VERSION)))
+# List of targets that use master side content protection.
+MASTER_SIDE_CP_TARGET_LIST := \
+endif
 ifneq ($(filter $(MASTER_SIDE_CP_TARGET_LIST),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_master_side_cp := true
 endif
@@ -317,24 +280,24 @@ else ifneq ($(filter $(UM_4_4_HAL_FAMILY),$(TARGET_BOARD_PLATFORM)),)
 else ifneq ($(filter $(UM_4_19_LEGACY_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_4_19_LEGACY_FAMILY)
     QCOM_HARDWARE_VARIANT := sdm660
-else ifneq ($(filter $(UM_4_9_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq (,$(filter 4.9, $(TARGET_KERNEL_VERSION)))
     MSM_VIDC_TARGET_LIST := $(UM_4_9_FAMILY)
     QCOM_HARDWARE_VARIANT := sdm845
-else ifneq ($(filter $(UM_4_14_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq (,$(filter 4.14, $(TARGET_KERNEL_VERSION)))
     MSM_VIDC_TARGET_LIST := $(UM_4_14_FAMILY)
     QCOM_HARDWARE_VARIANT := sm8150
-else ifneq ($(filter $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq (,$(filter 4.19, $(TARGET_KERNEL_VERSION)))
     MSM_VIDC_TARGET_LIST := $(UM_4_19_FAMILY)
     QCOM_HARDWARE_VARIANT := sm8250
-else ifneq ($(filter $(UM_5_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq (,$(filter 5.4, $(TARGET_KERNEL_VERSION)))
     QCOM_HARDWARE_VARIANT := sm8350
-else ifneq ($(filter $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
     QCOM_HARDWARE_VARIANT := sm8450
-else ifneq ($(filter $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq (,$(filter 5.15, $(TARGET_KERNEL_VERSION)))
     QCOM_HARDWARE_VARIANT := sm8550
-else ifneq ($(filter $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq (,$(filter 6.1, $(TARGET_KERNEL_VERSION)))
     QCOM_HARDWARE_VARIANT := sm8650
-else ifneq ($(filter $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq (,$(filter 6.6, $(TARGET_KERNEL_VERSION)))
     QCOM_HARDWARE_VARIANT := sm8750
 else
     MSM_VIDC_TARGET_LIST := $(TARGET_BOARD_PLATFORM)
@@ -352,12 +315,12 @@ PRODUCT_SOONG_NAMESPACES += $(QCOM_SOONG_NAMESPACE)
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/bootctrl
 
 # Add display-commonsys to PRODUCT_SOONG_NAMESPACES for QSSI supported platforms
-ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+ifeq (,$(filter 4.4 4.9 4.14 4.19 5.4 5.10 5.15 6.1 6.6, $(TARGET_KERNEL_VERSION)))
     PRODUCT_SOONG_NAMESPACES += \
         vendor/qcom/opensource/commonsys/display \
         vendor/qcom/opensource/commonsys-intf/display
 
-    ifeq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    ifeq (,$(filter 5.10 5.15 6.1 6.6, $(TARGET_KERNEL_VERSION)))
         PRODUCT_SOONG_NAMESPACES += \
             vendor/qcom/opensource/display
     endif
@@ -368,16 +331,16 @@ endif
 
 # Add data-ipa-cfg-mgr to PRODUCT_SOONG_NAMESPACES if needed
 ifneq ($(USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR),true)
-    ifneq ($(filter $(LEGACY_UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
-        PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
-    else ifneq ($(filter $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    else ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
         PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8450/data-ipa-cfg-mgr
-    else ifneq ($(filter $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    else ifeq (,$(filter 5.15, $(TARGET_KERNEL_VERSION)))
         PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8550/data-ipa-cfg-mgr
-    else ifneq ($(filter $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    else ifeq (,$(filter 6.1, $(TARGET_KERNEL_VERSION)))
         PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8650/data-ipa-cfg-mgr
-    else ifneq ($(filter $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    else ifeq (,$(filter 6.6, $(TARGET_KERNEL_VERSION)))
         PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8750/data-ipa-cfg-mgr
+    else
+         PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
     endif
 endif
 
@@ -387,7 +350,7 @@ ifneq ($(USE_DEVICE_SPECIFIC_DATASERVICES),true)
 endif
 
 # Add thermal HAL to PRODUCT_SOONG_NAMESPACES
-ifneq ($(filter $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifeq (,$(filter 6.6, $(TARGET_KERNEL_VERSION)))
     PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/thermal
 else
     PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/thermal-legacy-um
