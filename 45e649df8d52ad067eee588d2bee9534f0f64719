@@ -22,6 +22,30 @@
       },
       "revId": "45e649df8d52ad067eee588d2bee9534f0f64719",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "102c1a0a_712b9193",
+        "filename": "BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 424,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-07-12T10:43:48Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "84bc3394_ef1682f9",
+      "range": {
+        "startLine": 416,
+        "startChar": 4,
+        "endLine": 424,
+        "endChar": 9
+      },
+      "revId": "45e649df8d52ad067eee588d2bee9534f0f64719",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
