@@ -96,6 +96,14 @@ ifeq ($(AUDIO_FEATURE_ENABLED_INSTANCE_ID),true)
     $(call soong_config_set,qtiaudio,feature_instance_id,true)
 endif
 
+ifeq ($(AUDIO_FEATURE_ENABLED_KEEP_ALIVE),true)
+    $(call soong_config_set,qtiaudio,feature_keep_alive,true)
+endif
+
+ifeq ($(SOUND_TRIGGER_FEATURE_LPMA_ENABLED),true)
+    $(call soong_config_set,qtiaudio,feature_lpma,true)
+endif
+
 ifeq ($(AUDIO_FEATURE_ENABLED_LSM_HIDL),true)
     $(call soong_config_set,qtiaudio,feature_lsm_hidl,true)
 endif
@@ -108,12 +116,24 @@ ifeq ($(AUDIO_FEATURE_ENABLED_PAL_HIDL),true)
     $(call soong_config_set,qtiaudio,feature_pal_hidl,true)
 endif
 
+ifeq ($(BOARD_SUPPORTS_QSTHW_API),true)
+    $(call soong_config_set,qtiaudio,feature_qsthw_api,true)
+endif
+
 ifeq ($(BOARD_SUPPORTS_SOUND_TRIGGER),true)
     $(call soong_config_set,qtiaudio,feature_sound_trigger,true)
 endif
 
 ifeq ($(BOARD_SUPPORTS_SOUND_TRIGGER_HAL),true)
     $(call soong_config_set,qtiaudio,feature_sound_trigger,true)
+endif
+
+ifeq ($(BOARD_SUPPORTS_SOUND_TRIGGER_CPU_AFFINITY_SET),true)
+    $(call soong_config_set,qtiaudio,feature_sound_trigger_cpu_affinity_set,true)
+endif
+
+ifeq ($(AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE),true)
+    $(call soong_config_set,qtiaudio,feature_sva_multi_stage,true)
 endif
 
 ifeq ($(AUDIO_FEATURE_ENABLED_TRUE_STEREO),true)
