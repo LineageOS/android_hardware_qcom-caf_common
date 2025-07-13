@@ -108,6 +108,9 @@ endif
 # Add qtidisplay to soong config namespaces
 SOONG_CONFIG_NAMESPACES += qtidisplay
 
+# Add qtimedia to soong config namespaces
+SOONG_CONFIG_NAMESPACES += qtimedia
+
 # Add supported variables to qtidisplay config
 SOONG_CONFIG_qtidisplay += \
     composer_version \
@@ -134,10 +137,15 @@ SOONG_CONFIG_qtidisplay += \
     target_no_raw10_custom_format \
     target_uses_aligned_ycbcr_height \
     target_uses_aligned_ycrcb_height \
+    target_uses_legacy_camera \
     target_uses_unaligned_nv21_zsl \
     target_uses_unaligned_ycrcb \
     target_uses_ycrcb_camera_preview \
     target_uses_ycrcb_venus_camera_preview
+
+# Add supported variables to qtimedia config
+SOONG_CONFIG_qtimedia += \
+    target_uses_legacy_misr_info
 
 # Set default values for qtidisplay config
 SOONG_CONFIG_qtidisplay_composer_version ?= v3_3
@@ -164,10 +172,14 @@ SOONG_CONFIG_qtidisplay_target_kernel_version ?= 0
 SOONG_CONFIG_qtidisplay_target_no_raw10_custom_format ?= false
 SOONG_CONFIG_qtidisplay_target_uses_aligned_ycbcr_height ?= false
 SOONG_CONFIG_qtidisplay_target_uses_aligned_ycrcb_height ?= false
+SOONG_CONFIG_qtidisplay_target_uses_legacy_camera ?= false
 SOONG_CONFIG_qtidisplay_target_uses_unaligned_nv21_zsl ?= false
 SOONG_CONFIG_qtidisplay_target_uses_unaligned_ycrcb ?= false
 SOONG_CONFIG_qtidisplay_target_uses_ycrcb_camera_preview ?= false
 SOONG_CONFIG_qtidisplay_target_uses_ycrcb_venus_camera_preview ?= false
+
+# Set default values for qtimedia config
+SOONG_CONFIG_qtimedia_target_uses_legacy_misr_info ?= false
 
 ifneq ($(TARGET_DISPLAY_SHIFT_HORIZONTAL),)
     SOONG_CONFIG_qtidisplay_shift_horizontal := $(TARGET_DISPLAY_SHIFT_HORIZONTAL)
@@ -379,6 +391,12 @@ ifneq ($(USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR),true)
     else ifneq ($(filter $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
         PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8750/data-ipa-cfg-mgr
     endif
+endif
+
+# Enable legacy gralloc and media configs for sdm845
+ifneq ($(filter sdm845,$(TARGET_BOARD_PLATFORM)),)
+    $(call soong_config_set,qtidisplay,target_uses_legacy_camera,true)
+    $(call soong_config_set,qtimedia,target_uses_legacy_misr_info,true)
 endif
 
 # Add dataservices to PRODUCT_SOONG_NAMESPACES if needed
