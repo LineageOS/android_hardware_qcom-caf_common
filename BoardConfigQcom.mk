@@ -192,6 +192,7 @@ SOONG_CONFIG_qtidisplay += \
     ubwcp_headers \
     wide_color \
     target_kernel_version \
+    target_no_camera_custom_format \
     target_no_raw10_custom_format \
     target_uses_aligned_ycbcr_height \
     target_uses_aligned_ycrcb_height \
@@ -226,6 +227,7 @@ SOONG_CONFIG_qtidisplay_mapper_ext ?= true
 SOONG_CONFIG_qtidisplay_ubwcp_headers ?= false
 SOONG_CONFIG_qtidisplay_wide_color ?= false
 SOONG_CONFIG_qtidisplay_target_kernel_version ?= 0
+SOONG_CONFIG_qtidisplay_target_no_camera_custom_format ?= false
 SOONG_CONFIG_qtidisplay_target_no_raw10_custom_format ?= false
 SOONG_CONFIG_qtidisplay_target_uses_aligned_ycbcr_height ?= false
 SOONG_CONFIG_qtidisplay_target_uses_aligned_ycrcb_height ?= false
@@ -289,6 +291,13 @@ endif
 # Enable Gralloc4 on UM platforms that support it
 ifneq ($(filter $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_4_19_LEGACY_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY) $(UM_6_12_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_gralloc4 := true
+endif
+
+# Enable TARGET_NO_CAMERA_CUSTOM_FORMAT on sdm845 devices with kernel 4.19
+ifneq ($(filter sdm845,$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    SOONG_CONFIG_qtidisplay_target_no_camera_custom_format := true
+endif
 endif
 
 # Select AR variant of A-HAL dependencies
