@@ -357,7 +357,11 @@ else ifneq ($(filter $(UM_4_4_HAL_FAMILY),$(TARGET_BOARD_PLATFORM)),)
 else ifneq ($(filter $(UM_4_19_LEGACY_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     QCOM_HARDWARE_VARIANT := sdm660
 else ifneq ($(filter $(UM_4_9_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-    QCOM_HARDWARE_VARIANT := sdm845
+    ifneq ($(TARGET_KERNEL_VERSION), 4.19)
+        QCOM_HARDWARE_VARIANT := sdm845
+    else
+        QCOM_HARDWARE_VARIANT := sm8250
+    endif
 else ifneq ($(filter $(UM_4_14_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     QCOM_HARDWARE_VARIANT := sm8150
 else ifneq ($(filter $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
