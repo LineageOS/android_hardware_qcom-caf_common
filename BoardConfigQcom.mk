@@ -108,6 +108,9 @@ endif
 # Add qtidisplay to soong config namespaces
 SOONG_CONFIG_NAMESPACES += qtidisplay
 
+# Add qtimedia to soong config namespaces
+SOONG_CONFIG_NAMESPACES += qtimedia
+
 # Add supported variables to qtidisplay config
 SOONG_CONFIG_qtidisplay += \
     composer_version \
@@ -139,6 +142,10 @@ SOONG_CONFIG_qtidisplay += \
     target_uses_ycrcb_camera_preview \
     target_uses_ycrcb_venus_camera_preview
 
+# Add supported variables to qtimedia config
+SOONG_CONFIG_qtimedia += \
+    disable_ubwc
+
 # Set default values for qtidisplay config
 SOONG_CONFIG_qtidisplay_composer_version ?= v3_3
 SOONG_CONFIG_qtidisplay_drmpp ?= false
@@ -168,6 +175,9 @@ SOONG_CONFIG_qtidisplay_target_uses_unaligned_nv21_zsl ?= false
 SOONG_CONFIG_qtidisplay_target_uses_unaligned_ycrcb ?= false
 SOONG_CONFIG_qtidisplay_target_uses_ycrcb_camera_preview ?= false
 SOONG_CONFIG_qtidisplay_target_uses_ycrcb_venus_camera_preview ?= false
+
+# Set default values for qtimedia config
+SOONG_CONFIG_qtimedia_disable_ubwc ?= false
 
 ifneq ($(TARGET_DISPLAY_SHIFT_HORIZONTAL),)
     SOONG_CONFIG_qtidisplay_shift_horizontal := $(TARGET_DISPLAY_SHIFT_HORIZONTAL)
@@ -379,6 +389,10 @@ ifneq ($(USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR),true)
     else ifneq ($(filter $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
         PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8750/data-ipa-cfg-mgr
     endif
+endif
+
+ifeq ($(TARGET_DISABLED_UBWC),true)
+    $(call soong_config_set,qtimedia,disable_ubwc,true)
 endif
 
 # Add dataservices to PRODUCT_SOONG_NAMESPACES if needed
