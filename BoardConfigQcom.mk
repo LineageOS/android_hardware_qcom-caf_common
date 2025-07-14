@@ -12,6 +12,12 @@ UM_4_9_LEGACY_FAMILY := msm8937 msm8953
 UM_4_19_LEGACY_FAMILY := sdm660
 endif
 
+ifneq ($(TARGET_KERNEL_VERSION), 4.19)
+UM_SDM845_HAL_FAMILY := sdm845
+else
+UM_SDM845_HAL_FAMILY := sdm845-next
+endif
+
 UM_PLATFORMS := \
     $(UM_3_18_FAMILY) \
     $(UM_4_4_FAMILY) \
@@ -188,6 +194,7 @@ SOONG_CONFIG_qtidisplay += \
     target_no_raw10_custom_format \
     target_uses_aligned_ycbcr_height \
     target_uses_aligned_ycrcb_height \
+    target_uses_legacy_camera \
     target_uses_unaligned_nv21_zsl \
     target_uses_unaligned_ycrcb \
     target_uses_ycrcb_camera_preview \
@@ -195,7 +202,8 @@ SOONG_CONFIG_qtidisplay += \
 
 # Add supported variables to qtimedia config
 SOONG_CONFIG_qtimedia += \
-    disable_ubwc
+    disable_ubwc \
+    target_uses_legacy_misr_info
 
 # Set default values for qtidisplay config
 SOONG_CONFIG_qtidisplay_composer_version ?= v3_3
@@ -222,6 +230,7 @@ SOONG_CONFIG_qtidisplay_target_kernel_version ?= 0
 SOONG_CONFIG_qtidisplay_target_no_raw10_custom_format ?= false
 SOONG_CONFIG_qtidisplay_target_uses_aligned_ycbcr_height ?= false
 SOONG_CONFIG_qtidisplay_target_uses_aligned_ycrcb_height ?= false
+SOONG_CONFIG_qtidisplay_target_uses_legacy_camera ?= false
 SOONG_CONFIG_qtidisplay_target_uses_unaligned_nv21_zsl ?= false
 SOONG_CONFIG_qtidisplay_target_uses_unaligned_ycrcb ?= false
 SOONG_CONFIG_qtidisplay_target_uses_ycrcb_camera_preview ?= false
@@ -229,6 +238,7 @@ SOONG_CONFIG_qtidisplay_target_uses_ycrcb_venus_camera_preview ?= false
 
 # Set default values for qtimedia config
 SOONG_CONFIG_qtimedia_disable_ubwc ?= false
+SOONG_CONFIG_qtimedia_target_uses_legacy_misr_info ?= false
 
 ifneq ($(TARGET_DISPLAY_SHIFT_HORIZONTAL),)
     SOONG_CONFIG_qtidisplay_shift_horizontal := $(TARGET_DISPLAY_SHIFT_HORIZONTAL)
@@ -380,7 +390,7 @@ else ifneq ($(filter $(UM_4_19_LEGACY_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     QCOM_HARDWARE_VARIANT := sdm660
 else ifneq ($(filter $(UM_4_9_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_4_9_FAMILY)
-    QCOM_HARDWARE_VARIANT := sdm845
+    QCOM_HARDWARE_VARIANT := $(UM_SDM845_HAL_FAMILY)
 else ifneq ($(filter $(UM_4_14_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_4_14_FAMILY)
     QCOM_HARDWARE_VARIANT := sm8150
@@ -444,6 +454,15 @@ endif
 
 ifeq ($(TARGET_DISABLED_UBWC),true)
     $(call soong_config_set,qtimedia,disable_ubwc,true)
+endif
+
+# Enable gralloc and media configs for sdm845
+ifneq ($(filter sdm845,$(TARGET_BOARD_PLATFORM)),)
+ifeq ($(TARGET_KERNEL_VERSION), 4.19)
+    SOONG_CONFIG_qtidisplay_gralloc4 := true
+    $(call soong_config_set,qtidisplay,target_uses_legacy_camera,true)
+    $(call soong_config_set,qtimedia,target_uses_legacy_misr_info,true)
+endif
 endif
 
 # Add dataservices to PRODUCT_SOONG_NAMESPACES if needed
