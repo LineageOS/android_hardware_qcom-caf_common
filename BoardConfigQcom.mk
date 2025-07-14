@@ -286,6 +286,14 @@ ifneq ($(filter $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_4_19_LEGACY_FAMILY) $(U
     SOONG_CONFIG_qtidisplay_gralloc4 := true
 endif
 
+# Enable Gralloc4 on sdm845 devices with kernel 4.19
+ifneq ($(filter sdm845,$(TARGET_BOARD_PLATFORM)),)
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
+    SOONG_CONFIG_qtidisplay_gralloc4 := true
+    SOONG_CONFIG_qtidisplay_target_no_camera_custom_format := true
+endif
+endif
+
 # Select AR variant of A-HAL dependencies
 ifneq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     TARGET_USES_QCOM_AUDIO_AR ?= true
@@ -359,7 +367,11 @@ else ifneq ($(filter $(UM_4_4_HAL_FAMILY),$(TARGET_BOARD_PLATFORM)),)
 else ifneq ($(filter $(UM_4_19_LEGACY_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     QCOM_HARDWARE_VARIANT := sdm660
 else ifneq ($(filter $(UM_4_9_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-    QCOM_HARDWARE_VARIANT := sdm845
+    ifneq ($(TARGET_KERNEL_VERSION), 4.19)
+        QCOM_HARDWARE_VARIANT := sdm845
+    else
+        QCOM_HARDWARE_VARIANT := sm8250
+    endif
 else ifneq ($(filter $(UM_4_14_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     QCOM_HARDWARE_VARIANT := sm8150
 else ifneq ($(filter $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
