@@ -98,6 +98,24 @@
       "parentUuid": "54962296_e1643840",
       "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c1e5bbc3_c4f0228d",
+        "filename": "Android.bp",
+        "patchSetId": 8
+      },
+      "lineNbr": 517,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-07-15T11:52:31Z",
+      "side": 1,
+      "message": "yes, it\u0027d accidentally work, but probably not something one should rely on.",
+      "parentUuid": "a0f7bc25_72dc1ca7",
+      "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
