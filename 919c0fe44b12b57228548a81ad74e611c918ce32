@@ -62,6 +62,24 @@
       "message": "Why don\u0027t you keep the actual variable name and just add this new option? For the mdm usecase, it would fall into dafault, right?",
       "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54962296_e1643840",
+        "filename": "Android.bp",
+        "patchSetId": 8
+      },
+      "lineNbr": 517,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-07-15T11:37:12Z",
+      "side": 1,
+      "message": "the reason is explained in the commit message, but if we *really* want to do this, then we\u0027d need to fix all devices overriding mpss_firmware_symlink_target at the same time.",
+      "parentUuid": "299f3f10_2097df5c",
+      "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
