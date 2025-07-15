@@ -80,6 +80,24 @@
       "parentUuid": "299f3f10_2097df5c",
       "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a0f7bc25_72dc1ca7",
+        "filename": "Android.bp",
+        "patchSetId": 8
+      },
+      "lineNbr": 517,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-15T11:51:40Z",
+      "side": 1,
+      "message": "Yea, but again, would it not work if \"modem_firmware\" was added here and not on the other one? The other one would fall into \"default\".",
+      "parentUuid": "54962296_e1643840",
+      "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
