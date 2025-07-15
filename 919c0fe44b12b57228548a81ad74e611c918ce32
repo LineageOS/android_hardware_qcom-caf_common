@@ -116,6 +116,24 @@
       "parentUuid": "a0f7bc25_72dc1ca7",
       "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3fa0919c_20e36cb0",
+        "filename": "Android.bp",
+        "patchSetId": 8
+      },
+      "lineNbr": 517,
+      "author": {
+        "id": 33843
+      },
+      "writtenOn": "2025-07-15T13:24:41Z",
+      "side": 1,
+      "message": "Most of the OEMs have been using the same symlink target except Xiaomi so far. At the same time, UBL of Xiaomi is becoming impossible especially on CN variant.\nAs a result, keeping the variable name of \"mpss_firmware_symlink_target\" is a good solution, thought not the best one.\nIt just depends on that whether you are willing to fix all the devices calling this variable. Or do it later if some target else found on QCOM devices which is hardly possible.",
+      "parentUuid": "c1e5bbc3_c4f0228d",
+      "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
