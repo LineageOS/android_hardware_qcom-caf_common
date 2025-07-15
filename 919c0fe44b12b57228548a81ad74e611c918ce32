@@ -45,6 +45,23 @@
       },
       "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "299f3f10_2097df5c",
+        "filename": "Android.bp",
+        "patchSetId": 8
+      },
+      "lineNbr": 517,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-15T09:36:08Z",
+      "side": 1,
+      "message": "Why don\u0027t you keep the actual variable name and just add this new option? For the mdm usecase, it would fall into dafault, right?",
+      "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
