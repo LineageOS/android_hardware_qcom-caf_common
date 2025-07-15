@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1927380d_17de2b7c",
+        "filename": "Android.bp",
+        "patchSetId": 8
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-15T09:34:29Z",
+      "side": 1,
+      "message": "This change will break existing devices.",
+      "range": {
+        "startLine": 189,
+        "startChar": 57,
+        "endLine": 189,
+        "endChar": 89
+      },
+      "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c65684c_21115459",
+        "filename": "Android.bp",
+        "patchSetId": 8
+      },
+      "lineNbr": 514,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-15T09:34:29Z",
+      "side": 1,
+      "message": "same here.",
+      "range": {
+        "startLine": 514,
+        "startChar": 57,
+        "endLine": 514,
+        "endChar": 89
+      },
+      "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
