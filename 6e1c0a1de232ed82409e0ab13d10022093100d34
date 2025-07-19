@@ -16,6 +16,24 @@
       "message": "With these changes sources not buildable it\u0027s showing error related to sm8250-media",
       "revId": "6e1c0a1de232ed82409e0ab13d10022093100d34",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce0bde41_6f36f6ec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-19T13:53:40Z",
+      "side": 1,
+      "message": "This chain is experimental, use at your own risk.",
+      "parentUuid": "7272a26f_ce403a8f",
+      "revId": "6e1c0a1de232ed82409e0ab13d10022093100d34",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
