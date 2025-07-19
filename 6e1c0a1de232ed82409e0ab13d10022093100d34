@@ -34,6 +34,24 @@
       "parentUuid": "7272a26f_ce403a8f",
       "revId": "6e1c0a1de232ed82409e0ab13d10022093100d34",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0789304_5e461d3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35652
+      },
+      "writtenOn": "2025-07-19T15:15:03Z",
+      "side": 1,
+      "message": "With these LineageOS/android_hardware_qcom-caf_common changes device detected sm8250-media hals.but 4.19 use sm8150-media hals",
+      "parentUuid": "7272a26f_ce403a8f",
+      "revId": "6e1c0a1de232ed82409e0ab13d10022093100d34",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
