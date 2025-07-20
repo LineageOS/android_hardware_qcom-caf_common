@@ -134,6 +134,24 @@
       "parentUuid": "c1e5bbc3_c4f0228d",
       "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3f3c0e16_0d5d161c",
+        "filename": "Android.bp",
+        "patchSetId": 8
+      },
+      "lineNbr": 517,
+      "author": {
+        "id": 34682
+      },
+      "writtenOn": "2025-07-20T19:12:18Z",
+      "side": 1,
+      "message": "qcom xiaomi (that shipped with android 14 and newer) only care if rfs/msm/mpss/readonly/firmware is link against /vendor/modem_firmware \n\nso i don\u0027t think we need to modify any soong variable, just add modem_firmware and call it with\n\n$(call soong_config_set,rfs,mpss_firmware_symlink_target,modem_firmware)\n\nis enough to get RIL working on xiaomi that shipped with android 14 or newer",
+      "parentUuid": "3fa0919c_20e36cb0",
+      "revId": "919c0fe44b12b57228548a81ad74e611c918ce32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
