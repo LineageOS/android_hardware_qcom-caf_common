@@ -50,6 +50,160 @@
       "message": "SPDX license",
       "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aa2775c2_1c9566df",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:43:24Z",
+      "side": 1,
+      "message": "`companion object` at the end of everything",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0546627_073b0b45",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:43:24Z",
+      "side": 1,
+      "message": "Kotlin doesn\u0027t use `m` prefix for class attributes",
+      "range": {
+        "startLine": 29,
+        "startChar": 16,
+        "endLine": 29,
+        "endChar": 23
+      },
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a28c7350_71ba945d",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:43:24Z",
+      "side": 1,
+      "message": "You can use `by lazy { ExtTelephonyManager.getInstance(applicationContext) }` to initialize the variable once it\u0027s first used, and avoid setting it in `onCreate()` (also making it a `val` instead of a `var`)",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "60abe07d_005570b2",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:43:24Z",
+      "side": 1,
+      "message": "Given it\u0027s only used once, you can just use `applicationContext.packageName`",
+      "range": {
+        "startLine": 34,
+        "startChar": 16,
+        "endLine": 34,
+        "endChar": 28
+      },
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "208cc84f_f7aac817",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:43:24Z",
+      "side": 1,
+      "message": "Call the super method at the end",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e2563e3_f7715c2e",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:43:24Z",
+      "side": 1,
+      "message": "Please place class attributes before class methods, we use the following convention with apps:\n- Private attributes\n- Public attributes\n- Overridden attributes\n- Overridden methods\n- Public methods\n- Private methods",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70dddca7_bb9ec4c2",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:43:24Z",
+      "side": 1,
+      "message": "nit: It really doesn\u0027t fit in 100 chars?",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0bea7200_74d319df",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:43:24Z",
+      "side": 1,
+      "message": "Shouldn\u0027t be needed with Kotlin",
+      "range": {
+        "startLine": 124,
+        "startChar": 38,
+        "endLine": 124,
+        "endChar": 46
+      },
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
