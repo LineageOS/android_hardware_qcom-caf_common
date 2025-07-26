@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "96b749f5_49c8b752",
+        "filename": "qtitelephony-compat-service/Android.bp",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:29:53Z",
+      "side": 1,
+      "message": "Copy the license header format from AndroidManifest.xml",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "661f7ec3_799df3c2",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/BootReceiver.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:29:53Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "53b26dad_fd0ea2a0",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-07-26T12:29:53Z",
+      "side": 1,
+      "message": "SPDX license",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
