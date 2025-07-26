@@ -8,4 +8,29 @@
 
     <protected-broadcast android:name="org.codeaurora.intent.action.RADIO_POWER_STATE" />
     <protected-broadcast android:name="org.codeaurora.intent.action.ESSENTIAL_RECORDS_LOADED" />
+
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.qualcomm.qti.permission.USE_EXT_TELEPHONY_SERVICE" />
+
+    <application
+        android:persistent="true"
+        android:directBootAware="true">
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".QtiTelephonyCompatService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
 </manifest>

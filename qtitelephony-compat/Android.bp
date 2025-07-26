@@ -6,6 +6,21 @@
 
 android_app {
     name: "QtiTelephonyCompat",
-    sdk_version: "current",
+    certificate: "platform",
+    platform_apis: true,
+    privileged: true,
+    required: ["privapp-permissions-org.lineageos.qtitelephony.compat.xml"],
+    srcs: ["src/**/*.java"],
+    static_libs: [
+        "androidx.annotation_annotation",
+        "extphonelib",
+    ],
+    system_ext_specific: true,
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-org.lineageos.qtitelephony.compat.xml",
+    src: "privapp-permissions-org.lineageos.qtitelephony.compat.xml",
+    sub_dir: "permissions",
     system_ext_specific: true,
 }
