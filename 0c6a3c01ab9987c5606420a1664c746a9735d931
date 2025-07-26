@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "64a10c5a_ceee04c6",
+        "filename": "qtitelephony-compat-service/Android.bp",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T17:27:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "96b749f5_49c8b752",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "661f7ec3_799df3c2",
@@ -31,6 +49,24 @@
       "writtenOn": "2025-07-26T12:29:53Z",
       "side": 1,
       "message": "ditto",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00ce0fd0_61beb1e6",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/BootReceiver.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T17:27:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "661f7ec3_799df3c2",
       "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -52,6 +88,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2aa3d3fc_48715732",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T17:27:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "53b26dad_fd0ea2a0",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aa2775c2_1c9566df",
@@ -65,6 +119,24 @@
       "writtenOn": "2025-07-26T12:43:24Z",
       "side": 1,
       "message": "`companion object` at the end of everything",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cadc08a4_1abba2a6",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T17:27:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "aa2775c2_1c9566df",
       "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -92,6 +164,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a94b00f_10364ec7",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T17:27:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d0546627_073b0b45",
+      "range": {
+        "startLine": 29,
+        "startChar": 16,
+        "endLine": 29,
+        "endChar": 23
+      },
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a28c7350_71ba945d",
@@ -105,6 +201,24 @@
       "writtenOn": "2025-07-26T12:43:24Z",
       "side": 1,
       "message": "You can use `by lazy { ExtTelephonyManager.getInstance(applicationContext) }` to initialize the variable once it\u0027s first used, and avoid setting it in `onCreate()` (also making it a `val` instead of a `var`)",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c09b94f_66672c0f",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T17:27:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a28c7350_71ba945d",
       "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -132,6 +246,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea6049a8_21af850f",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T17:27:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "60abe07d_005570b2",
+      "range": {
+        "startLine": 34,
+        "startChar": 16,
+        "endLine": 34,
+        "endChar": 28
+      },
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "208cc84f_f7aac817",
@@ -149,6 +287,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4cbfd37_0f70a57c",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T17:27:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "208cc84f_f7aac817",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3e2563e3_f7715c2e",
@@ -162,6 +318,24 @@
       "writtenOn": "2025-07-26T12:43:24Z",
       "side": 1,
       "message": "Please place class attributes before class methods, we use the following convention with apps:\n- Private attributes\n- Public attributes\n- Overridden attributes\n- Overridden methods\n- Public methods\n- Private methods",
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3f68676_156f3b9c",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T17:27:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3e2563e3_f7715c2e",
       "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -196,6 +370,30 @@
       "writtenOn": "2025-07-26T12:43:24Z",
       "side": 1,
       "message": "Shouldn\u0027t be needed with Kotlin",
+      "range": {
+        "startLine": 124,
+        "startChar": 38,
+        "endLine": 124,
+        "endChar": 46
+      },
+      "revId": "0c6a3c01ab9987c5606420a1664c746a9735d931",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d28832a_2c34f113",
+        "filename": "qtitelephony-compat-service/src/org/lineageos/qtitelephonyservice/compat/QtiTelephonyServiceCompat.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T17:27:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0bea7200_74d319df",
       "range": {
         "startLine": 124,
         "startChar": 38,
