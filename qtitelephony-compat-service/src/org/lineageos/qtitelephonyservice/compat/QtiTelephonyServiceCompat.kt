@@ -11,12 +11,15 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.os.Build
 import android.os.IBinder
 import android.os.PersistableBundle
 import android.telephony.CarrierConfigManager
 import android.telephony.SubscriptionManager
+import android.telephony.ims.ProvisioningManager
 import android.util.Log
 import androidx.annotation.RequiresPermission
+import com.android.ims.ImsManager
 import com.android.internal.telephony.util.ArrayUtils
 import com.qti.extphone.Client
 import com.qti.extphone.ExtPhoneCallbackListener
@@ -87,9 +90,11 @@ class QtiTelephonyServiceCompat : Service() {
                 val bundle =
                     carrierConfigManager.getConfigForSubId(
                         subId,
-                        CarrierConfigManager.KEY_CARRIER_NR_AVAILABILITIES_INT_ARRAY
+                        CarrierConfigManager.KEY_CARRIER_NR_AVAILABILITIES_INT_ARRAY,
+                        CarrierConfigManager.Ims.KEY_IMS_USER_AGENT_STRING
                     )
                 updateCarrierNrConfig(bundle, slotId)
+                updateImsUserAgent(context, bundle, slotId)
             }
         }
     }
@@ -135,6 +140,29 @@ class QtiTelephonyServiceCompat : Service() {
 
         client?.let {
             extTelephonyManager.setNrConfig(slotId, nrConfig, it)
+        }
+    }
+
+    private fun updateImsUserAgent(context: Context, bundle: PersistableBundle, slotId: Int) {
+        val imsManager = ImsManager.getInstance(context, slotId)
+        val userAgent = bundle.getString(CarrierConfigManager.Ims.KEY_IMS_USER_AGENT_STRING)
+
+        if (userAgent.isNullOrBlank()) {
+            return
+        }
+
+        val finalUserAgent = userAgent
+            .replace("#MANUFACTURER#", Build.MANUFACTURER ?: "")
+            .replace("#MANUFACTURE#", Build.MANUFACTURER ?: "")
+            .replace("#MODEL#", Build.MODEL ?: "")
+            .replace("#AV#", Build.VERSION.RELEASE ?: "")
+            .replace("#BUILD#", Build.ID ?: "")
+
+        try {
+            imsManager.setConfig(ProvisioningManager.KEY_REGISTRATION_DOMAIN_NAME, finalUserAgent)
+            Log.d(LOG_TAG, "updateImsUserAgent: $finalUserAgent")
+        } catch (e: Exception) {
+            Log.w(LOG_TAG, "Failed to set IMS user agent: ${e.message}", e)
         }
     }
 
