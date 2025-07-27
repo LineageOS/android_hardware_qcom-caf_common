@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0abfc07b_17acc479",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-27T13:24:31Z",
+      "side": 1,
+      "message": "I\u0027d split patchset 10 changes into a new commit.",
+      "revId": "9e35c15e88630fd6be24e8caf7b76e0924c93595",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
