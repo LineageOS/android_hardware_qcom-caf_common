@@ -6,6 +6,7 @@
 android_app {
     name: "QtiTelephonyServiceCompat",
     certificate: "platform",
+    libs: ["ims-common"],
     platform_apis: true,
     privileged: true,
     required: ["privapp-permissions-org.lineageos.qtitelephonyservice.compat.xml"],
