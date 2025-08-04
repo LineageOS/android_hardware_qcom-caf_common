@@ -16,6 +16,24 @@
       "message": "Can\u0027t you just set the soong config in device?",
       "revId": "35b894d5278c1f8b52ebff78e418202cb1864962",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0f86519_7533f51b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2025-08-04T16:09:19Z",
+      "side": 1,
+      "message": "Sure",
+      "parentUuid": "bd4d44f5_2ef2699c",
+      "revId": "35b894d5278c1f8b52ebff78e418202cb1864962",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
