@@ -16,6 +16,24 @@
       "message": "What about 6.6? Can you check, Luk?",
       "revId": "138353b9bd5e7e463cf25e348c128d957549ad53",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0bfc27ef_4609a3cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-08-18T23:18:53Z",
+      "side": 1,
+      "message": "It\u0027s present in QSSI.14 \u0026 QSSI.16, but not QSSI.15, so 6.1 is the only supported target on 22.2 affected by this. May need to add 6.12 to this later on but not released yet.",
+      "parentUuid": "9b57e58d_18fadff4",
+      "revId": "138353b9bd5e7e463cf25e348c128d957549ad53",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
