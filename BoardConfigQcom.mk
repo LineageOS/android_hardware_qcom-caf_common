@@ -301,9 +301,17 @@ else
     TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT ?= false
 endif
 
+# Use full PPDETuningCfg struct
+ifneq ($(filter $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    TARGET_COLOR_MANAGER_SHARPEN_FILTER_CFG ?= true
+else
+    TARGET_COLOR_MANAGER_SHARPEN_FILTER_CFG ?= false
+endif
+
 $(call soong_config_set,qtidisplay,gralloc_handle_has_custom_content_md_reserved_size,$(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE))
 $(call soong_config_set,qtidisplay,gralloc_handle_has_reserved_size,$(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE))
 $(call soong_config_set,qtidisplay,gralloc_handle_has_ubwcp_format,$(TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT))
+$(call soong_config_set,qtidisplay,color_manager_sharpen_filter_cfg,$(TARGET_COLOR_MANAGER_SHARPEN_FILTER_CFG))
 
 ifneq ($(filter $(UM_3_18_HAL_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_3_18_HAL_FAMILY)
