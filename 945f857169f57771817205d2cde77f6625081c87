@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88ab709f_1f45c2c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-09-02T11:22:32Z",
+      "side": 1,
+      "message": "These need to be fixed:\n\n```\ndevice/xiaomi/msm8996-common/camera/QCamera2/Android.mk\n62:ifeq ($(TARGET_USES_MEDIA_EXTENSIONS), true)\n\ndevice/samsung/gtowifi/camera/QCamera2/Android.mk\n104:ifeq ($(TARGET_USES_MEDIA_EXTENSIONS), true)\n```",
+      "revId": "945f857169f57771817205d2cde77f6625081c87",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
