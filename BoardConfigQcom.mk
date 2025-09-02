@@ -80,6 +80,10 @@ ifeq ($(AUDIO_FEATURE_ENABLED_EC_REF_CAPTURE),true)
     $(call soong_config_set,qtiaudio,feature_ec_ref_capture,true)
 endif
 
+ifeq ($(AUDIO_FEATURE_ELLIPTIC_ULTRASOUND_SUPPORT),true)
+    $(call soong_config_set,qtiaudio,feature_elliptic_ultrasound,true)
+endif
+
 ifeq ($(AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER),true)
     $(call soong_config_set,qtiaudio,feature_ext_amplifier,true)
 endif
