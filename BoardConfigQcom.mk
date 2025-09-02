@@ -73,6 +73,10 @@ SOONG_CONFIG_qtiaudio_feature_hal_v7 ?= false
 SOONG_CONFIG_qtiaudio_feature_instance_id ?= false
 SOONG_CONFIG_qtiaudio_feature_sound_trigger ?= false
 
+ifeq ($(AUDIO_FEATURE_ELLIPTIC_ULTRASOUND_SUPPORT),true)
+    $(call soong_config_set,qtiaudio,feature_elliptic_ultrasound,true)
+endif
+
 ifeq ($(AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER),true)
     SOONG_CONFIG_qtiaudio_feature_ext_amplifier := true
 endif
