@@ -56,6 +56,7 @@ SOONG_CONFIG_NAMESPACES += qtiaudio
 
 # Add supported variables to qtiaudio config
 SOONG_CONFIG_qtiaudio += \
+    feature_elliptic_ultrasound \
     feature_ext_amplifier \
     feature_extended_compress_format \
     feature_gef_support \
@@ -65,6 +66,7 @@ SOONG_CONFIG_qtiaudio += \
     feature_sound_trigger
 
 # Set default values for qtiaudio config
+SOONG_CONFIG_qtiaudio_feature_feature_elliptic_ultrasound ?= false
 SOONG_CONFIG_qtiaudio_feature_ext_amplifier ?= false
 SOONG_CONFIG_qtiaudio_feature_extended_compress_format ?= false
 SOONG_CONFIG_qtiaudio_feature_gef_support ?= false
@@ -72,6 +74,10 @@ SOONG_CONFIG_qtiaudio_feature_gki ?= false
 SOONG_CONFIG_qtiaudio_feature_hal_v7 ?= false
 SOONG_CONFIG_qtiaudio_feature_instance_id ?= false
 SOONG_CONFIG_qtiaudio_feature_sound_trigger ?= false
+
+ifeq ($(AUDIO_FEATURE_ELLIPTIC_ULTRASOUND_SUPPORT),true)
+    SOONG_CONFIG_qtiaudio_feature_elliptic_ultrasound := true
+endif
 
 ifeq ($(AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER),true)
     SOONG_CONFIG_qtiaudio_feature_ext_amplifier := true
