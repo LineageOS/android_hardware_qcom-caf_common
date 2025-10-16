@@ -156,6 +156,14 @@ ifneq ($(TARGET_PAL_SPKR_PROTECTION_PATH),)
     $(call soong_config_set,qtiaudio,pal_spkr_protection_path,$(TARGET_PAL_SPKR_PROTECTION_PATH))
 endif
 
+ifneq ($(TARGET_PAL_SPKR_PROTECTION_PATH1),)
+    $(call soong_config_set,qtiaudio,pal_spkr_protection_path1,$(TARGET_PAL_SPKR_PROTECTION_PATH1))
+endif
+
+ifneq ($(TARGET_PAL_SPKR_PROTECTION_PATH2),)
+    $(call soong_config_set,qtiaudio,pal_spkr_protection_path2,$(TARGET_PAL_SPKR_PROTECTION_PATH2))
+endif
+
 ifeq ($(AUDIO_FEATURE_ENABLED_ULTRASOUND_PROXIMITY),true)
     $(call soong_config_set,qtiaudio,ultrasound_proximity,true)
 endif
