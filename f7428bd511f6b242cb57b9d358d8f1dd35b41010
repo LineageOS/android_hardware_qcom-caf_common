@@ -51,6 +51,24 @@
       "message": "I would just keep this in device tree and only keep qualcomm flags here (yes we need to clean up our own additions in another change)",
       "revId": "f7428bd511f6b242cb57b9d358d8f1dd35b41010",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ea58d37_16aefada",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-11-17T12:48:07Z",
+      "side": 1,
+      "message": "Yea, this change can be avoided. Just call it from the device tree.",
+      "parentUuid": "06768f19_94d8394e",
+      "revId": "f7428bd511f6b242cb57b9d358d8f1dd35b41010",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
