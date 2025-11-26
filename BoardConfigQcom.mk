@@ -275,7 +275,7 @@ endif
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 # Enable DRM PP driver on UM platforms that support it
-ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq (,$(filter 4.9 4.14 4.19 5.4 5.10 5.15 6.1 6.6, $(TARGET_KERNEL_VERSION)))
     SOONG_CONFIG_qtidisplay_drmpp := true
 endif
 
@@ -295,12 +295,12 @@ ifeq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 endif
 
 # Enable SMMU proxy on UM platforms that support it
-ifneq ($(filter $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq (,$(filter 6.1 6.6, $(TARGET_KERNEL_VERSION)))
     SOONG_CONFIG_qtidisplay_smmu_proxy := true
 endif
 
 # Expose UBWCP headers to UM platforms that require it
-ifneq ($(filter $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq (,$(filter 6.1 6.6,$(TARGET_KERNEL_VERSION)))
     SOONG_CONFIG_qtidisplay_ubwcp_headers := true
 endif
 
@@ -313,7 +313,7 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 13)
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 21)
 
 # Mark GRALLOC_USAGE_PRIVATE_HEIF_VIDEO as valid gralloc bit on UM platforms that support it
-ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq (,$(filter 4.9 4.14 4.19 5.4 5.10 5.15 6.1 6.6, $(TARGET_KERNEL_VERSION)))
     TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 27)
 endif
 
@@ -339,7 +339,7 @@ else
 endif
 
 # Use QTI gralloc UBWCP struct
-ifneq ($(filter $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq (,$(filter 6.1 6.6, $(TARGET_BOARD_PLATFORM)))
     TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT ?= true
 else
     TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT ?= false
@@ -393,7 +393,7 @@ ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
         vendor/qcom/opensource/commonsys/display \
         vendor/qcom/opensource/commonsys-intf/display
 
-    ifeq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    ifeq (,$(filter 5.10 5.15 6.1 6.6,$(TARGET_KERNEL_VERSION)))
         PRODUCT_SOONG_NAMESPACES += \
             vendor/qcom/opensource/display
     endif
@@ -427,7 +427,7 @@ ifeq ($(BOARD_SUPPORTS_OPENSOURCE_STHAL),true)
     ifneq ($(filter $(LEGACY_UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
         PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/audio-hal/st-hal
     else
-        ifneq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+        ifneq ($(filter 5.10 5.15 6.1, $(TARGET_KERNEL_VERSION)),)
             PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/audio-hal/st-hal-ar-legacy
             $(call soong_config_set,qtiaudio,legacy_headers_namespace,$(QCOM_SOONG_NAMESPACE))
             $(call soong_config_set,qtiaudio,legacy_libarpal_namespace,$(QCOM_SOONG_NAMESPACE))
