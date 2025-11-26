@@ -13,3 +13,25 @@ UM_5_10_FAMILY := taro parrot
 UM_5_15_FAMILY := kalama crow
 UM_6_1_FAMILY := pineapple volcano
 UM_6_6_FAMILY := sun
+
+ifeq ($(call is-board-platform-in-list,$(6_6_FAMILY)),true)
+TARGET_KERNEL_VERSION ?= 6.6
+else ifeq ($(call is-board-platform-in-list,$(6_1_FAMILY)),true)
+TARGET_KERNEL_VERSION ?= 6.1
+else ifeq ($(call is-board-platform-in-list,$(5_15_FAMILY)),true)
+TARGET_KERNEL_VERSION ?= 5.15
+else ifeq ($(call is-board-platform-in-list,$(5_10_FAMILY)),true)
+TARGET_KERNEL_VERSION ?= 5.10
+else ifeq ($(call is-board-platform-in-list,$(5_4_FAMILY)),true)
+TARGET_KERNEL_VERSION ?= 5.4
+else ifeq ($(call is-board-platform-in-list,$(4_19_FAMILY)),true)
+TARGET_KERNEL_VERSION ?= 4.19
+else ifeq ($(call is-board-platform-in-list,$(4_14_FAMILY)),true)
+TARGET_KERNEL_VERSION ?= 4.14
+else ifeq ($(call is-board-platform-in-list,$(4_9_FAMILY)),true)
+TARGET_KERNEL_VERSION ?= 4.9
+else ifeq ($(call is-board-platform-in-list,$(4_4_FAMILY)),true)
+TARGET_KERNEL_VERSION ?= 4.4
+else ifeq ($(call is-board-platform-in-list,$(3_18_FAMILY)),true)
+TARGET_KERNEL_VERSION ?= 3.18
+endif
