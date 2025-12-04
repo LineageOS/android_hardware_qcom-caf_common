@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4aebd368_c5b145ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33310
+      },
+      "writtenOn": "2025-12-04T23:39:19Z",
+      "side": 1,
+      "message": "SM-6375 moved to blair platform, which shares some internal components to pineapple. Kernel has been bumped, 5.4 -\u003e 6.1.128 hence the change\n\nTo my knowledge, only SM6375 device that has been upgraded to new base. \n\nReference: https://gitlab.com/clexan/android_firmware_dump-gta9pwifi",
+      "revId": "c9916a8240f8886260f66da95dfe8fa775bfd183",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
