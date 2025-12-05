@@ -807,6 +807,12 @@ mkdir {
 }
 
 mkdir {
+    name: "vendor_soccp_firmware_mountpoint",
+    dir: "soccp_firmware",
+    vendor: true,
+}
+
+mkdir {
     name: "vendor_firmware-modem_mountpoint",
     dir: "firmware-modem",
     vendor: true,
