@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40a00101_fab84813",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33310
+      },
+      "writtenOn": "2025-12-05T00:05:40Z",
+      "side": 1,
+      "message": "SM6375 has been moved to the Blair platform, which shares several internal components with Pineapple. The kernel has been bumped from 5.4 to 6.1.128, which is the main reason for this change.\n\nAs far as I\u0027m aware, the only SM6375 device thats been upgraded to the new base is the gta9p/wifi (SM-X21*)  \n\nRef: https://git.codelinaro.org/clo/la/platform/vendor/qcom/blair/-/tree/qcom-devices.lnx.16.0.r3-rel",
+      "revId": "552d27b8c3ff67bc9fd2b4fa649c0f5e705f4bd5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
