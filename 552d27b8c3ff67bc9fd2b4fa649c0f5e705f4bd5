@@ -50,6 +50,24 @@
       "message": "Wait, you also need custom HALs for blair (not a sm8650, it is incompatible)",
       "revId": "552d27b8c3ff67bc9fd2b4fa649c0f5e705f4bd5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ef1a407_c0fa04d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33310
+      },
+      "writtenOn": "2025-12-05T17:53:33Z",
+      "side": 1,
+      "message": "While it\u0027s no sm8650, it\u0027s not a feature port. The new blair runs on (6.1.128) and shares hals common to pineapple and volcano. 5.4 -\u003e 6.1 is a facelift for old holi -\u003e blair devices. So, from previous lahaina (SM8350) -\u003e pineapple base(SM8650)  which should regardless place blair under UM_6_1_FAMILY\n\nDisplay stack HIDL -\u003e AIDL, including demura \nAGM and AR-PAL audio stack fully supported\nThermal netlink fwk now supported.\n\n\nAs far as I can tell, the Tab A9+ is the only device to benefit from the new platform for now.\n@NikitaSavc@yandex.ru\n\n[1] https://gitlab.com/clexan/android_firmware_dump-gta9pwifi\n[2] https://git.codelinaro.org/clo/la/platform/vendor/qcom/blair/-/blob/qcom-devices.lnx.16.0.r3-rel/BoardConfig.mk?ref_type\u003dheads#L32",
+      "parentUuid": "0d57737c_3b8f1360",
+      "revId": "552d27b8c3ff67bc9fd2b4fa649c0f5e705f4bd5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
