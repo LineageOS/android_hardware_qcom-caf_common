@@ -33,6 +33,23 @@
       "message": "That\u0027s fine because Qualcomm renamed TARGET_BOARD_PLATFORM for holi (5.4) to blair.",
       "revId": "552d27b8c3ff67bc9fd2b4fa649c0f5e705f4bd5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d57737c_3b8f1360",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2025-12-05T15:01:03Z",
+      "side": 1,
+      "message": "Wait, you also need custom HALs for blair (not a sm8650, it is incompatible)",
+      "revId": "552d27b8c3ff67bc9fd2b4fa649c0f5e705f4bd5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
