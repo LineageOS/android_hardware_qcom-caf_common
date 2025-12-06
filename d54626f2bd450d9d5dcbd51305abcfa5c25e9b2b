@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "181ff9d5_d729d650",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36323
+      },
+      "writtenOn": "2025-12-06T19:59:00Z",
+      "side": 1,
+      "message": "this commit need to be merged because a newly launched SOC sm4635 uses board pitti, and its not available on caf common",
+      "revId": "d54626f2bd450d9d5dcbd51305abcfa5c25e9b2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
