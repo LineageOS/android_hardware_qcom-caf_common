@@ -33,6 +33,24 @@
       "message": "is this actually tested?",
       "revId": "d54626f2bd450d9d5dcbd51305abcfa5c25e9b2b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6fb5930f_13995109",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2025-12-11T12:33:12Z",
+      "side": 1,
+      "message": "I think it should work because pitti uses same branches as pineapple and volcano.\nBut it shouldn\u0027t be merged until we ship device with platform though.",
+      "parentUuid": "31058063_d5f4468b",
+      "revId": "d54626f2bd450d9d5dcbd51305abcfa5c25e9b2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
