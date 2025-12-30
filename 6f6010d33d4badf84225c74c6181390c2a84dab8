@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aba61818_cab1d4f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35494
+      },
+      "writtenOn": "2025-12-30T07:15:04Z",
+      "side": 1,
+      "message": "Hi, this is my first time using Gerrit and I accidentally voted while learning the workflow. Sorry about that",
+      "revId": "6f6010d33d4badf84225c74c6181390c2a84dab8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
