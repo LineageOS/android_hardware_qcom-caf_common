@@ -69,6 +69,24 @@
       "parentUuid": "57b3cd48_d42b84ae",
       "revId": "6f6010d33d4badf84225c74c6181390c2a84dab8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "978b1a3a_bbbc7217",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35494
+      },
+      "writtenOn": "2025-12-30T09:59:59Z",
+      "side": 1,
+      "message": "yes and it does build vendor.qti.hardware.display.allocator-service in sdm660 4.19.\nref: https://dumps.tadiphone.dev/dumps/cat/s62pro/-/blob/sdm660_64-user-11-RKQ1.210406.002-1.016.00-release-keys/vendor/bin/hw/vendor.qti.hardware.display.allocator-service",
+      "parentUuid": "b02dd9d0_03d1358c",
+      "revId": "6f6010d33d4badf84225c74c6181390c2a84dab8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
