@@ -51,6 +51,24 @@
       "parentUuid": "31058063_d5f4468b",
       "revId": "d54626f2bd450d9d5dcbd51305abcfa5c25e9b2b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bfc6ac5d_ff9f76ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36323
+      },
+      "writtenOn": "2026-01-12T13:20:46Z",
+      "side": 1,
+      "message": "i have poco c75 5g aka redmi a4 5g which uses this board \"pitti\" and i booted lineage os on my device, this is 100% tested and working. \n\nRefer to https://github.com/realzarakinyu/android_hardware_qcom-caf_common\n\nand i am currently working on that device https://github.com/realzarakinyu/android_device_xiaomi_sm4635-common ( booted )",
+      "parentUuid": "31058063_d5f4468b",
+      "revId": "d54626f2bd450d9d5dcbd51305abcfa5c25e9b2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
