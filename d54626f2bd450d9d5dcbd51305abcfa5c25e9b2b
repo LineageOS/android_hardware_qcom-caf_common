@@ -69,6 +69,24 @@
       "parentUuid": "31058063_d5f4468b",
       "revId": "d54626f2bd450d9d5dcbd51305abcfa5c25e9b2b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7485ccf0_80c66f5d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34841
+      },
+      "writtenOn": "2026-01-12T13:27:33Z",
+      "side": 1,
+      "message": "those repos are dead, probably your account is on private setting.",
+      "parentUuid": "bfc6ac5d_ff9f76ff",
+      "revId": "d54626f2bd450d9d5dcbd51305abcfa5c25e9b2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
