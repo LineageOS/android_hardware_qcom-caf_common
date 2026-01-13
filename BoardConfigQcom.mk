@@ -439,7 +439,7 @@ ifeq ($(BOARD_SUPPORTS_OPENSOURCE_STHAL),true)
 endif
 
 # Add thermal HAL to PRODUCT_SOONG_NAMESPACES
-ifneq ($(filter $(LEGACY_UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter $(UM_6_1_FAMILY) $(LEGACY_UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
     PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/thermal-legacy-um
 else
     PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/thermal
