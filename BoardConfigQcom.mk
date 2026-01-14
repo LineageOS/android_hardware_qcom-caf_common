@@ -371,7 +371,11 @@ else ifneq ($(filter $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
 else ifneq ($(filter $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     QCOM_HARDWARE_VARIANT := sm8650
 else ifneq ($(filter $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter taro parrot,$(TARGET_BOARD_PLATFORM)),)
+    QCOM_HARDWARE_VARIANT := sm8450-6.6
+else
     QCOM_HARDWARE_VARIANT := sm8750
+endif
 else
     QCOM_HARDWARE_VARIANT := $(TARGET_BOARD_PLATFORM)
 endif
@@ -412,7 +416,11 @@ ifneq ($(USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR),true)
     else ifneq ($(filter $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
         PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8650/data-ipa-cfg-mgr
     else ifneq ($(filter $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
-        PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8750/data-ipa-cfg-mgr
+        ifneq ($(filter taro parrot,$(TARGET_BOARD_PLATFORM)),)
+            PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8450-6.6/data-ipa-cfg-mgr
+        else
+            PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8750/data-ipa-cfg-mgr
+        endif
     endif
 endif
 
