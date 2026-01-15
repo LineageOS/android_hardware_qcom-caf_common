@@ -10,6 +10,8 @@ else ifneq ($(filter $(UM_6_1_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     include device/qcom/sepolicy_vndr/sm8650/SEPolicy.mk
 else ifneq ($(filter $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     include device/qcom/sepolicy_vndr/sm8750/SEPolicy.mk
+else  
+    include device/qcom/sepolicy_vndr/$(TARGET_BOARD_PLATFORM)/SEPolicy.mk
 endif
 
 -include device/lineage/sepolicy/qcom/sepolicy.mk
