@@ -39,6 +39,24 @@
       "message": "We get called with two parameters: \u003ctarget_slot\u003e \u003cstatus_fd\u003e\n* \u003ctarget_slot\u003e is the slot where the new system was just copied. This is\n  normally either 0 or 1. You can get the target suffix running\n  `bootctl get-suffix ${target_slot}`\n* \u003cstatus_fd\u003e is a file descriptor number where this script can write to to\n  report the progress of the process. See examples below.\n\nif [ \"$TARGET_SLOT\" \u003d \"0\" ] ; then\n  TARGET_SLOT_SUFFIX\u003d\"_a\"\nelif [ \"$TARGET_SLOT\" \u003d \"1\" ] ; then\n  TARGET_SLOT_SUFFIX\u003d\"_b\"\nelse\n  echo \"$0: Unknown target slot $TARGET_SLOT\"\n  exit 1\nfi\n\nprint -u${status_fd} \"global_progress 0\"\nprint -u${status_fd} \"global_progress 0.5\"\nprint -u${status_fd} \"global_progress 1\"\n\nI guess if you want",
       "revId": "59fbb0b25cf3958964d39f4cb21875e07ecf8986",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9cff5b8a_1aaad15e",
+        "filename": "xbl_config_arb_check/main.cpp",
+        "patchSetId": 5
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-01-26T11:30:33Z",
+      "side": 1,
+      "message": "ah, i\u0027ll do the target_slot one.",
+      "parentUuid": "6b811165_a1019136",
+      "revId": "59fbb0b25cf3958964d39f4cb21875e07ecf8986",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
