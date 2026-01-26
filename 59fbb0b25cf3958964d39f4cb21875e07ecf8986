@@ -48,6 +48,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe5c5623_15e66c81",
+        "filename": "xbl_config_arb_check/main.cpp",
+        "patchSetId": 5
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-01-26T11:54:28Z",
+      "side": 1,
+      "message": "Marked as resolved.",
+      "parentUuid": "75e1e835_304341a4",
+      "range": {
+        "startLine": 102,
+        "startChar": 0,
+        "endLine": 102,
+        "endChar": 64
+      },
+      "revId": "59fbb0b25cf3958964d39f4cb21875e07ecf8986",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6b811165_a1019136",
@@ -79,6 +103,24 @@
       "side": 1,
       "message": "ah, i\u0027ll do the target_slot one.",
       "parentUuid": "6b811165_a1019136",
+      "revId": "59fbb0b25cf3958964d39f4cb21875e07ecf8986",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "395a78c0_eed21431",
+        "filename": "xbl_config_arb_check/main.cpp",
+        "patchSetId": 5
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-01-26T11:54:28Z",
+      "side": 1,
+      "message": "Marked as resolved.",
+      "parentUuid": "9cff5b8a_1aaad15e",
       "revId": "59fbb0b25cf3958964d39f4cb21875e07ecf8986",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
