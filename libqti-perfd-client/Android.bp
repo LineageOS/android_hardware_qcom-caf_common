@@ -9,8 +9,10 @@ soong_namespace {
 
 cc_library_shared {
     name: "libqti-perfd-client",
-    srcs: ["client.c"],
+    srcs: ["client.cpp"],
     shared_libs: [
+        "android.hardware.power-V6-ndk",
+        "libbinder_ndk",
         "liblog",
         "libutils",
     ],
