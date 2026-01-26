@@ -33,6 +33,23 @@
       "message": "Not really",
       "revId": "28e41faa850af0cc137e3b0384ed0ea440262979",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0800e9db_8ffe0322",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-01-26T17:56:31Z",
+      "side": 1,
+      "message": "btw I need +2 on selinux changes.",
+      "revId": "28e41faa850af0cc137e3b0384ed0ea440262979",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
