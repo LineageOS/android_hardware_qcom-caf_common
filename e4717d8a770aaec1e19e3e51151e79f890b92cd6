@@ -69,6 +69,30 @@
       },
       "revId": "e4717d8a770aaec1e19e3e51151e79f890b92cd6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aeecf3a1_167c9375",
+        "filename": "xbl_config_arb_check/main.cpp",
+        "patchSetId": 7
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2026-01-26T14:23:03Z",
+      "side": 1,
+      "message": "ig they are unlikely to break a 10+-year-old api",
+      "parentUuid": "e1abc7ee_6409cfed",
+      "range": {
+        "startLine": 89,
+        "startChar": 4,
+        "endLine": 99,
+        "endChar": 40
+      },
+      "revId": "e4717d8a770aaec1e19e3e51151e79f890b92cd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
