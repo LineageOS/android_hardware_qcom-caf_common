@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d83213cc_cd9570d1",
+        "filename": "xbl_config_arb_check/main.cpp",
+        "patchSetId": 7
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2026-01-26T13:52:18Z",
+      "side": 1,
+      "message": "rename to pascal case per naming convention",
+      "range": {
+        "startLine": 88,
+        "startChar": 24,
+        "endLine": 88,
+        "endChar": 50
+      },
+      "revId": "e4717d8a770aaec1e19e3e51151e79f890b92cd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4637ace3_f3c87ee9",
+        "filename": "xbl_config_arb_check/main.cpp",
+        "patchSetId": 7
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2026-01-26T13:52:18Z",
+      "side": 1,
+      "message": "use android::base::ReadFileToString?",
+      "range": {
+        "startLine": 89,
+        "startChar": 4,
+        "endLine": 99,
+        "endChar": 40
+      },
+      "revId": "e4717d8a770aaec1e19e3e51151e79f890b92cd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
