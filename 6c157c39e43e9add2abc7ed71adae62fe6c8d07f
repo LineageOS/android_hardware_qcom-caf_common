@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1d07bb6_5eaa84cf",
+        "filename": "xbl_arb_check/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-01-26T08:55:04Z",
+      "side": 1,
+      "message": "since only one postinstall script can be used for each partition, this in fact *cannot* be moved to vendor.",
+      "revId": "6c157c39e43e9add2abc7ed71adae62fe6c8d07f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
