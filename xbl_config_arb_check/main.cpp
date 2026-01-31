@@ -126,12 +126,28 @@ std::optional<uint32_t> ReadAntiRollbackVersion(const std::string& path) {
     return {};
 }
 
+FILE* status_file = nullptr;
+
+void UpdateEngineLogger(android::base::LogId /*log_buffer_id*/,
+                        android::base::LogSeverity /*severity*/, const char* tag,
+                        const char* /*file*/, unsigned int /*line*/, const char* message) {
+    if (status_file) {
+        fprintf(status_file, "ui_print %s: %s\n", tag, message);
+        fflush(status_file);
+    }
+}
+
 int main(int argc, char* argv[]) {
-    android::base::SetLogger(android::base::StdioLogger);
+    android::base::SetLogger(
+            android::base::TeeLogger(android::base::StdioLogger, UpdateEngineLogger));
 
     if (argc != 3) {
         LOG(ERROR) << "Usage: ./xbl_config_arb_check <target_slot> <status_fd>";
         return EXIT_FAILURE;
+    }
+
+    if (auto status_fd = atoi(argv[2])) {
+        status_file = fdopen(status_fd, "w");
     }
 
     if (!std::ifstream("/dev/block/by-name/xbl_config_a").good() ||
