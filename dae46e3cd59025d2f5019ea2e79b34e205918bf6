@@ -46,6 +46,29 @@
       },
       "revId": "dae46e3cd59025d2f5019ea2e79b34e205918bf6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0dad3451_3af20e6b",
+        "filename": "libqti-perfd-client/client.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-02-06T14:51:37Z",
+      "side": 1,
+      "message": "this works 99% of the times, but if power hal ever crashes you\u0027re going to have issues.\n\nif you want to properly handle this case you need a binder death listener and reset the gPowerHal to nullptr",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 46
+      },
+      "revId": "dae46e3cd59025d2f5019ea2e79b34e205918bf6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
