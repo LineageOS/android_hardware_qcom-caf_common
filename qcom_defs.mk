@@ -13,3 +13,4 @@ UM_5_10_FAMILY := taro parrot
 UM_5_15_FAMILY := kalama crow
 UM_6_1_FAMILY := pineapple volcano
 UM_6_6_FAMILY := sun
+UM_6_12_FAMILY := canoe
