@@ -16,6 +16,23 @@
       "message": "Actually not sure about this change, I think not all devices have 2 SIMs and it wouldn\u0027t be good in common overlays?",
       "revId": "1207330c0ce2edb737d1ea69327d239058995243",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61ca1a84_b0d48cff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-02-06T13:20:45Z",
+      "side": 1,
+      "message": "This is device-specific.",
+      "revId": "1207330c0ce2edb737d1ea69327d239058995243",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
