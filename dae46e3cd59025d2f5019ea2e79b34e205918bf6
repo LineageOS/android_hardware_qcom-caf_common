@@ -22,6 +22,30 @@
       },
       "revId": "dae46e3cd59025d2f5019ea2e79b34e205918bf6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "51de82db_69b65ebb",
+        "filename": "libqti-perfd-client/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-02-06T10:49:22Z",
+      "side": 1,
+      "message": "Actually:\n\n```\n    defaults: [\n        \"android.hardware.power-ndk_shared\",\n    ],\n```",
+      "parentUuid": "4554b893_00e31f95",
+      "range": {
+        "startLine": 14,
+        "startChar": 9,
+        "endLine": 14,
+        "endChar": 38
+      },
+      "revId": "dae46e3cd59025d2f5019ea2e79b34e205918bf6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
