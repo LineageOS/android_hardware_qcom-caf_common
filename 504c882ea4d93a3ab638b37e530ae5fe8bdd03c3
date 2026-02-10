@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "575e2f34_25543572",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-02-10T09:56:53Z",
+      "side": 1,
+      "message": "Needed for updated tags on my Moto parrot66 devices.",
+      "revId": "504c882ea4d93a3ab638b37e530ae5fe8bdd03c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
