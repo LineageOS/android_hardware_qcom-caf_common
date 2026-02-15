@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5b141882_fecd51a6",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1498,
+      "author": {
+        "id": 36466
+      },
+      "writtenOn": "2026-02-15T04:42:02Z",
+      "side": 1,
+      "message": "```suggestion\n    \u003chal format\u003d\"aidl\" optional\u003d\"true\"\u003e\n        \u003cname\u003evendor.qti.hardware.agm\u003c/name\u003e\n        \u003cversion\u003e1-3\u003c/version\u003e\n        \u003cinterface\u003e\n           \u003cname\u003eIAGM\u003c/name\u003e\n           \u003cinstance\u003edefault\u003c/instance\u003e\n        \u003c/interface\u003e\n        \u003cinterface\u003e\n           \u003cname\u003eICodecIpc\u003c/name\u003e\n           \u003cinstance\u003edefault\u003c/instance\u003e\n        \u003c/interface\u003e\n    \u003c/hal\u003e\n```",
+      "range": {
+        "startLine": 1491,
+        "startChar": 4,
+        "endLine": 1498,
+        "endChar": 10
+      },
+      "revId": "05beb7e2239e841794463bf6172456bb9fdd832c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
