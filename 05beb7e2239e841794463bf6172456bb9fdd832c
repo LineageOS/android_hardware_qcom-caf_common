@@ -22,6 +22,30 @@
       },
       "revId": "05beb7e2239e841794463bf6172456bb9fdd832c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c73661d2_61426b3f",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1498,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-02-15T11:20:28Z",
+      "side": 1,
+      "message": "It was made on upstream, not by me. Is it fine to apply this edit, @bgcngm@gmail.com?",
+      "parentUuid": "5b141882_fecd51a6",
+      "range": {
+        "startLine": 1491,
+        "startChar": 4,
+        "endLine": 1498,
+        "endChar": 10
+      },
+      "revId": "05beb7e2239e841794463bf6172456bb9fdd832c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
