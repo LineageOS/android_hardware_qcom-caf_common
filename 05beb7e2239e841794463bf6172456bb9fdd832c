@@ -46,6 +46,30 @@
       },
       "revId": "05beb7e2239e841794463bf6172456bb9fdd832c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "850e9686_ffb60710",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1498,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-02-15T11:22:17Z",
+      "side": 1,
+      "message": "I had the same idea about it, but thought that I need follow upstream.",
+      "parentUuid": "c73661d2_61426b3f",
+      "range": {
+        "startLine": 1491,
+        "startChar": 4,
+        "endLine": 1498,
+        "endChar": 10
+      },
+      "revId": "05beb7e2239e841794463bf6172456bb9fdd832c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
