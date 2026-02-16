@@ -87,6 +87,30 @@
       },
       "revId": "05beb7e2239e841794463bf6172456bb9fdd832c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3a6bbd0_651b8e9d",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1498,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-02-16T20:29:22Z",
+      "side": 1,
+      "message": "Maybe leave that one as is for better diff\u0027ing against CLO.",
+      "parentUuid": "850e9686_ffb60710",
+      "range": {
+        "startLine": 1491,
+        "startChar": 4,
+        "endLine": 1498,
+        "endChar": 10
+      },
+      "revId": "05beb7e2239e841794463bf6172456bb9fdd832c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
