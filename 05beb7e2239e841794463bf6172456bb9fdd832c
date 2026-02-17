@@ -128,6 +128,30 @@
       },
       "revId": "05beb7e2239e841794463bf6172456bb9fdd832c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed3fc395_b3831180",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1498,
+      "author": {
+        "id": 36466
+      },
+      "writtenOn": "2026-02-17T03:52:55Z",
+      "side": 1,
+      "message": "All the other entries in this file follow the same structure. Just this one looks a little odd",
+      "parentUuid": "a3a6bbd0_651b8e9d",
+      "range": {
+        "startLine": 1491,
+        "startChar": 4,
+        "endLine": 1498,
+        "endChar": 10
+      },
+      "revId": "05beb7e2239e841794463bf6172456bb9fdd832c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
