@@ -33,6 +33,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rfs_mdm_mpss_hlos_symlink \
     rfs_mdm_mpss_ramdumps_symlink \
+    rfs_mdm_mpss_readonly_dycnvbk_symlink \
     rfs_mdm_mpss_readonly_firmware_symlink \
     rfs_mdm_mpss_readonly_vendor_firmware_symlink \
     rfs_mdm_mpss_readwrite_symlink \
@@ -96,6 +97,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rfs_msm_mpss_hlos_symlink \
     rfs_msm_mpss_ramdumps_symlink \
+    rfs_msm_mpss_readonly_dycnvbk_symlink \
     rfs_msm_mpss_readonly_firmware_symlink \
     rfs_msm_mpss_readonly_vendor_firmware_symlink \
     rfs_msm_mpss_readwrite_symlink \
