@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "517acd03_fed13b05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-02-27T10:14:10Z",
+      "side": 1,
+      "message": "any thoughts about doing it this way?\n\nthis requires setting `TARGET_KERNEL_VERSION :\u003d 6.6` in the device tree since otherwise it\u0027ll include wrong selinux repo.",
+      "revId": "09856bee0042e4c4821c2d6ae0b10800a3d1baf1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
