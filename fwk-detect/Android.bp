@@ -45,4 +45,5 @@ install_symlink {
     vendor: true,
     installed_location: "app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so",
     symlink_target: "/vendor/lib64/libvndfwk_detect_jni.qti.so",
+    required: ["libvndfwk_detect_jni.qti.vendor"],
 }
