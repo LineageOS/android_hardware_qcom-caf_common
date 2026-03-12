@@ -10,6 +10,7 @@
 #include <aidl/android/hardware/power/Mode.h>
 
 #include <android/binder_auto_utils.h>
+#include <android/binder_ibinder.h>
 #include <android/binder_manager.h>
 #include <log/log.h>
 
@@ -22,11 +23,32 @@ using aidl::android::hardware::power::Mode;
 
 namespace {
 
-static std::shared_ptr<IPower> getPowerHal() {
-    static std::mutex gMutex;
-    static std::shared_ptr<IPower> gPowerHal;
+static std::mutex gMutex;
+static std::shared_ptr<IPower> gPowerHal;
 
+static void powerHalDied(void* cookie) {
+    auto* deathCookie = static_cast<DeathCookie*>(cookie);
+
+    ALOGW("Power HAL binder died");
+
+    std::lock_guard<std::mutex> lock(gMutex);
+
+    if (gPowerHal &&
+        gPowerHal->asBinder().get() == deathCookie->binder) {
+        gPowerHal.reset();
+    }
+}
+
+static ndk::ScopedAIBinder_DeathRecipient gDeathRecipient([] {
+    auto* recipient = AIBinder_DeathRecipient_new(powerHalDied);
+    AIBinder_DeathRecipient_setOnUnlinked(
+            recipient, powerHalUnlinked);
+    return recipient;
+}());
+
+static std::shared_ptr<IPower> getPowerHal() {
     std::lock_guard<std::mutex> _l(gMutex);
+
     if (gPowerHal) {
         return gPowerHal;
     }
@@ -37,6 +59,14 @@ static std::shared_ptr<IPower> getPowerHal() {
     if (!binder.get()) {
         ALOGE("Power HAL AIDL service \"%s\" not found", instance.c_str());
         return nullptr;
+    }
+
+    auto* cookie = new DeathCookie{binder.get()};
+
+    binder_status_t status =
+        AIBinder_linkToDeath(binder.get(), gDeathRecipient.get(), cookie);
+    if (status != STATUS_OK) {
+        ALOGW("linkToDeath failed: %d", status);
     }
 
     gPowerHal = IPower::fromBinder(binder);
