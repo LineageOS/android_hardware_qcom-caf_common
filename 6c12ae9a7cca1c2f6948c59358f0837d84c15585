@@ -33,6 +33,23 @@
       "message": "Tested on SM8450 (ziyi):\n- build OK\n- boots OK\n- no regressions observed",
       "revId": "6c12ae9a7cca1c2f6948c59358f0837d84c15585",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "391dcfbd_d85a2486",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-23T06:13:08Z",
+      "side": 1,
+      "message": "@dkpost3@gmail.com then leave a V+ vote...",
+      "revId": "6c12ae9a7cca1c2f6948c59358f0837d84c15585",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
