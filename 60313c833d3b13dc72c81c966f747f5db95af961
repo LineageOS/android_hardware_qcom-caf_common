@@ -16,6 +16,23 @@
       "message": "As I seen, FrameworksResCommon, SystemUIResCommon, TelephonyResCommon, WifiResCommon are almost same for all QCOM devices in LineageOS. \nIt would be great to centralize this I guess.",
       "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "835c6113_85e51b77",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-06T19:59:23Z",
+      "side": 1,
+      "message": "Anything about it? ^^",
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
