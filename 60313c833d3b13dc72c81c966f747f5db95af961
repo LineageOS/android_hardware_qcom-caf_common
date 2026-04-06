@@ -68,6 +68,782 @@
       "message": "Since there were no +/-1 votes or any reviewers added, I can see why it got no activity",
       "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ba05da9a_d3f95b91",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "defs need heavy follow on cleanup - not sure if makes sense.\n\nAlso, beautify pls.",
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6167b9f0_9969e304",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "samsung qcom is supported, this is not true",
+      "range": {
+        "startLine": 21,
+        "startChar": 16,
+        "endLine": 21,
+        "endChar": 46
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c0ae23e_85f25cce",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "samsung qcom is supported, this is not true",
+      "range": {
+        "startLine": 24,
+        "startChar": 16,
+        "endLine": 24,
+        "endChar": 45
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3564bc70_31774c42",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "samsung qcom is supported, this is not true",
+      "range": {
+        "startLine": 27,
+        "startChar": 16,
+        "endLine": 27,
+        "endChar": 42
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "40c43f3d_b1c1ce6c",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "samsung qcom is supported, this is not true",
+      "range": {
+        "startLine": 30,
+        "startChar": 16,
+        "endLine": 30,
+        "endChar": 47
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "406a187f_86cbca0f",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "QCOM Car/ATV targets would disagree, at minimum whole thing would be guarded to those",
+      "range": {
+        "startLine": 34,
+        "startChar": 16,
+        "endLine": 34,
+        "endChar": 50
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d83e3bf8_036e81fd",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "in vnedor/lineage",
+      "range": {
+        "startLine": 37,
+        "startChar": 16,
+        "endLine": 37,
+        "endChar": 40
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ae87c12_d6af5e89",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "vendor/lineage",
+      "range": {
+        "startLine": 44,
+        "startChar": 16,
+        "endLine": 44,
+        "endChar": 51
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "32e41771_1de9d337",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "HWKeys exist still",
+      "range": {
+        "startLine": 48,
+        "startChar": 16,
+        "endLine": 48,
+        "endChar": 40
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9cd1e3ac_95ae98fc",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "not all QOCM targets are telephony?",
+      "range": {
+        "startLine": 51,
+        "startChar": 16,
+        "endLine": 51,
+        "endChar": 49
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8f70ee69_e9772bd2",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "telephony only",
+      "range": {
+        "startLine": 63,
+        "startChar": 16,
+        "endLine": 63,
+        "endChar": 61
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d94cb39_be63ebff",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "ATV/Car guard",
+      "range": {
+        "startLine": 66,
+        "startChar": 16,
+        "endLine": 66,
+        "endChar": 42
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0413a3e1_0537c266",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "telephony only",
+      "range": {
+        "startLine": 69,
+        "startChar": 16,
+        "endLine": 69,
+        "endChar": 51
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "16bb5b47_298803cb",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "defs not, many don\u0027t ship QCOM QFD, and AOSP WFD",
+      "range": {
+        "startLine": 83,
+        "startChar": 16,
+        "endLine": 83,
+        "endChar": 58
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bba7ea52_e1bff1bc",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "telephony only",
+      "range": {
+        "startLine": 87,
+        "startChar": 16,
+        "endLine": 87,
+        "endChar": 48
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9969b6c_d44180f5",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "???",
+      "range": {
+        "startLine": 97,
+        "startChar": 19,
+        "endLine": 97,
+        "endChar": 48
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d59d1a49_a9fec298",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "we shouldn\u0027t set this. Some devices do smooth display",
+      "range": {
+        "startLine": 107,
+        "startChar": 19,
+        "endLine": 107,
+        "endChar": 44
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b85e643_27490738",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "vendor/lineage",
+      "range": {
+        "startLine": 110,
+        "startChar": 19,
+        "endLine": 110,
+        "endChar": 47
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "884cab6b_c26180bf",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "every panel is diff",
+      "range": {
+        "startLine": 115,
+        "startChar": 19,
+        "endLine": 115,
+        "endChar": 46
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ead898c7_7892e5b2",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "very device specific...",
+      "range": {
+        "startLine": 122,
+        "startChar": 25,
+        "endLine": 122,
+        "endChar": 64
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "782e2775_53605dfa",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "every panel is diff",
+      "range": {
+        "startLine": 153,
+        "startChar": 25,
+        "endLine": 153,
+        "endChar": 52
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c485c69_6a62450b",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "no way accurate for all",
+      "range": {
+        "startLine": 164,
+        "startChar": 25,
+        "endLine": 164,
+        "endChar": 51
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9f00ce99_f47ddda4",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "dead?",
+      "range": {
+        "startLine": 184,
+        "startChar": 24,
+        "endLine": 184,
+        "endChar": 49
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "981d7822_87e4f3fa",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "dead? Also probably not true for all",
+      "range": {
+        "startLine": 211,
+        "startChar": 24,
+        "endLine": 211,
+        "endChar": 41
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b726af5c_98e98c4b",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "only telephone",
+      "range": {
+        "startLine": 231,
+        "startChar": 24,
+        "endLine": 231,
+        "endChar": 39
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "14555ebb_c1c28781",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "eh. No need for a default value?",
+      "range": {
+        "startLine": 249,
+        "startChar": 18,
+        "endLine": 249,
+        "endChar": 39
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d43e2af6_f283fc0a",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 252,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "eh. No need for a default value?",
+      "range": {
+        "startLine": 252,
+        "startChar": 18,
+        "endLine": 252,
+        "endChar": 51
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a2a0d50_98f98999",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "not something we want on lineagE?",
+      "range": {
+        "startLine": 255,
+        "startChar": 18,
+        "endLine": 255,
+        "endChar": 50
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49e40a2f_8efe2d89",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 258,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "only if IMS",
+      "range": {
+        "startLine": 258,
+        "startChar": 18,
+        "endLine": 258,
+        "endChar": 59
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "787250ab_29508838",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "only if IMS",
+      "range": {
+        "startLine": 262,
+        "startChar": 18,
+        "endLine": 262,
+        "endChar": 50
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9dedb767_b9181cb9",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "only if IMS",
+      "range": {
+        "startLine": 266,
+        "startChar": 18,
+        "endLine": 266,
+        "endChar": 53
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cfce1ce7_73514771",
+        "filename": "overlay/qssi/TelephonyResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "long dead?",
+      "range": {
+        "startLine": 29,
+        "startChar": 16,
+        "endLine": 29,
+        "endChar": 27
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b7a870e2_ed3b23f4",
+        "filename": "overlay/qssi/TelephonyResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "not on lineage",
+      "range": {
+        "startLine": 33,
+        "startChar": 19,
+        "endLine": 33,
+        "endChar": 41
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "edc9c2e8_356a5f86",
+        "filename": "overlay/qssi/WifiResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-06T22:59:44Z",
+      "side": 1,
+      "message": "not all devices..",
+      "range": {
+        "startLine": 21,
+        "startChar": 16,
+        "endLine": 21,
+        "endChar": 46
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
