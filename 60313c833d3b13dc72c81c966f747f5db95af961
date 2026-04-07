@@ -87,6 +87,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3a5ab104_c2e7136c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-07T12:53:11Z",
+      "side": 1,
+      "message": "Or should I squash commits with this?",
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6167b9f0_9969e304",
