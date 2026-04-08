@@ -34,6 +34,23 @@
       "parentUuid": "4c76b43e_701d109f",
       "revId": "cb311f2a1ac0645999d78f9b62071806ee18f3fa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "11ef7090_9c2b3403",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-08T20:19:10Z",
+      "side": 1,
+      "message": "Just will separate to 5G-specific overlay",
+      "revId": "cb311f2a1ac0645999d78f9b62071806ee18f3fa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
