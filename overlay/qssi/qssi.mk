@@ -6,8 +6,13 @@
 
 PRODUCT_PACKAGES += \
     QssiFrameworksOverlay \
-    QssiTelephonyOverlay \
     QssiWifiOverlay
+
+ifeq ($(ENABLE_VENDOR_RIL_SERVICE), true)
+PRODUCT_PACKAGES += \
+    QssiFrameworksTelephonyOverlay \
+    QssiTelephonyOverlay
+endif
 
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
