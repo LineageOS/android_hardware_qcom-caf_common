@@ -590,6 +590,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a03cb1ef_07803490",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T20:43:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "884cab6b_c26180bf",
+      "range": {
+        "startLine": 115,
+        "startChar": 19,
+        "endLine": 115,
+        "endChar": 46
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ead898c7_7892e5b2",
@@ -603,6 +627,30 @@
       "writtenOn": "2026-04-06T22:59:44Z",
       "side": 1,
       "message": "very device specific...",
+      "range": {
+        "startLine": 122,
+        "startChar": 25,
+        "endLine": 122,
+        "endChar": 64
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7be10209_55fd374b",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T20:43:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ead898c7_7892e5b2",
       "range": {
         "startLine": 122,
         "startChar": 25,
@@ -636,6 +684,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "463a8fcf_419d2195",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T20:43:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "782e2775_53605dfa",
+      "range": {
+        "startLine": 153,
+        "startChar": 25,
+        "endLine": 153,
+        "endChar": 52
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5c485c69_6a62450b",
@@ -649,6 +721,30 @@
       "writtenOn": "2026-04-06T22:59:44Z",
       "side": 1,
       "message": "no way accurate for all",
+      "range": {
+        "startLine": 164,
+        "startChar": 25,
+        "endLine": 164,
+        "endChar": 51
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "168dcc35_c3a837c7",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T20:43:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5c485c69_6a62450b",
       "range": {
         "startLine": 164,
         "startChar": 25,
