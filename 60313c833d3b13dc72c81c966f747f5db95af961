@@ -127,6 +127,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a876095_08042d2e",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/481036",
+      "parentUuid": "6167b9f0_9969e304",
+      "range": {
+        "startLine": 21,
+        "startChar": 16,
+        "endLine": 21,
+        "endChar": 46
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1c0ae23e_85f25cce",
@@ -140,6 +164,30 @@
       "writtenOn": "2026-04-06T22:59:44Z",
       "side": 1,
       "message": "samsung qcom is supported, this is not true",
+      "range": {
+        "startLine": 24,
+        "startChar": 16,
+        "endLine": 24,
+        "endChar": 45
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "702577d7_7d82565e",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/481036",
+      "parentUuid": "1c0ae23e_85f25cce",
       "range": {
         "startLine": 24,
         "startChar": 16,
@@ -173,6 +221,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "43c3cbf5_87dc5220",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/481036",
+      "parentUuid": "3564bc70_31774c42",
+      "range": {
+        "startLine": 27,
+        "startChar": 16,
+        "endLine": 27,
+        "endChar": 42
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "40c43f3d_b1c1ce6c",
@@ -186,6 +258,30 @@
       "writtenOn": "2026-04-06T22:59:44Z",
       "side": 1,
       "message": "samsung qcom is supported, this is not true",
+      "range": {
+        "startLine": 30,
+        "startChar": 16,
+        "endLine": 30,
+        "endChar": 47
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6a9efa3_9edc3c78",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/481036",
+      "parentUuid": "40c43f3d_b1c1ce6c",
       "range": {
         "startLine": 30,
         "startChar": 16,
@@ -336,6 +432,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "699cd198_473d4fee",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "32e41771_1de9d337",
+      "range": {
+        "startLine": 48,
+        "startChar": 16,
+        "endLine": 48,
+        "endChar": 40
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9cd1e3ac_95ae98fc",
@@ -359,6 +479,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "633f1e57_9e5f66ca",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9cd1e3ac_95ae98fc",
+      "range": {
+        "startLine": 51,
+        "startChar": 16,
+        "endLine": 51,
+        "endChar": 49
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8f70ee69_e9772bd2",
@@ -372,6 +516,30 @@
       "writtenOn": "2026-04-06T22:59:44Z",
       "side": 1,
       "message": "telephony only",
+      "range": {
+        "startLine": 63,
+        "startChar": 16,
+        "endLine": 63,
+        "endChar": 61
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f590d38_7b08f1e1",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8f70ee69_e9772bd2",
       "range": {
         "startLine": 63,
         "startChar": 16,
@@ -428,6 +596,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "81cdf717_aef1b037",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0413a3e1_0537c266",
+      "range": {
+        "startLine": 69,
+        "startChar": 16,
+        "endLine": 69,
+        "endChar": 51
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "16bb5b47_298803cb",
@@ -464,6 +656,30 @@
       "writtenOn": "2026-04-06T22:59:44Z",
       "side": 1,
       "message": "telephony only",
+      "range": {
+        "startLine": 87,
+        "startChar": 16,
+        "endLine": 87,
+        "endChar": 48
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "458ec494_bdd4c4fc",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bba7ea52_e1bff1bc",
       "range": {
         "startLine": 87,
         "startChar": 16,
@@ -872,6 +1088,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5735c80_8067b6c5",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b726af5c_98e98c4b",
+      "range": {
+        "startLine": 231,
+        "startChar": 24,
+        "endLine": 231,
+        "endChar": 39
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "14555ebb_c1c28781",
@@ -1036,6 +1276,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "922e2d94_2bc06fa0",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 258,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/481036",
+      "parentUuid": "49e40a2f_8efe2d89",
+      "range": {
+        "startLine": 258,
+        "startChar": 18,
+        "endLine": 258,
+        "endChar": 59
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "787250ab_29508838",
@@ -1059,6 +1323,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2480e008_92c58267",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/481036",
+      "parentUuid": "787250ab_29508838",
+      "range": {
+        "startLine": 262,
+        "startChar": 18,
+        "endLine": 262,
+        "endChar": 50
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9dedb767_b9181cb9",
@@ -1072,6 +1360,30 @@
       "writtenOn": "2026-04-06T22:59:44Z",
       "side": 1,
       "message": "only if IMS",
+      "range": {
+        "startLine": 266,
+        "startChar": 18,
+        "endLine": 266,
+        "endChar": 53
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71419901_8afe49ff",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-17T21:19:30Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/481036",
+      "parentUuid": "9dedb767_b9181cb9",
       "range": {
         "startLine": 266,
         "startChar": 18,
