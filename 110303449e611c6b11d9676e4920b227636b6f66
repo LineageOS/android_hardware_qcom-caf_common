@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2c1234a_91e12fbf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-04-20T20:42:08Z",
+      "side": 1,
+      "message": "i doubt sm8650 hals work as is, so this will wait until someone (maybe you?) submits a device to devrel@ for official support.",
+      "revId": "110303449e611c6b11d9676e4920b227636b6f66",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
