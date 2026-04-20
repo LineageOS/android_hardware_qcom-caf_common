@@ -52,6 +52,24 @@
       "parentUuid": "a4904eb6_52e64e28",
       "revId": "110303449e611c6b11d9676e4920b227636b6f66",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dfac4acc_5b730789",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-04-20T21:38:12Z",
+      "side": 1,
+      "message": "that\u0027s what i thought and since it requires new hals, we need *official* device maintainer for them.",
+      "parentUuid": "25b2e5f0_1d3b84e0",
+      "revId": "110303449e611c6b11d9676e4920b227636b6f66",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
