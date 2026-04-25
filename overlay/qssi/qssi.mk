@@ -8,6 +8,11 @@ PRODUCT_PACKAGES += \
     QssiFrameworksOverlay \
     QssiWifiOverlay
 
+ifneq ($(filter true,$(PRODUCT_IS_AUTOMOTIVE) $(PRODUCT_IS_ATV)),true)
+PRODUCT_PACKAGES += \
+    QssiFrameworksNoCarAtvOverlay
+endif
+
 ifeq ($(ENABLE_VENDOR_RIL_SERVICE), true)
 PRODUCT_PACKAGES += \
     QssiFrameworksTelephonyOverlay \
