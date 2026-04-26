@@ -90,6 +90,11 @@ else ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_NON_5G_PLATFORMS)))
         QssiFrameworksTelephony5gOverlay
 endif
 
+ifneq ($(TARGET_HAS_NO_QCOM_WFD), true)
+PRODUCT_PACKAGES += \
+    QssiFrameworksWfdOverlay
+endif
+
 ifneq ($(TARGET_HAS_NO_IMS), true)
 PRODUCT_PACKAGES += \
     QssiFrameworksTelephonyImsOverlay \
