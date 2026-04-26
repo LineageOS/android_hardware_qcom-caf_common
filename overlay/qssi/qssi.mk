@@ -38,6 +38,11 @@ PRODUCT_PACKAGES += \
     QssiFrameworksOverlay \
     QssiWifiOverlay
 
+ifneq ($(TARGET_HAS_NO_QCOM_WFD), true)
+PRODUCT_PACKAGES += \
+    QssiFrameworksWfdOverlay
+endif
+
 ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_NON_6GHZ_PLATFORMS)))
 PRODUCT_PACKAGES += \
     QssiWifi6gOverlay
