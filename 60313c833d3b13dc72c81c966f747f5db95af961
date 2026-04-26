@@ -761,6 +761,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a86cb503_88279e57",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-26T14:36:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c9969b6c_d44180f5",
+      "range": {
+        "startLine": 97,
+        "startChar": 19,
+        "endLine": 97,
+        "endChar": 48
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d59d1a49_a9fec298",
@@ -774,6 +798,30 @@
       "writtenOn": "2026-04-06T22:59:44Z",
       "side": 1,
       "message": "we shouldn\u0027t set this. Some devices do smooth display",
+      "range": {
+        "startLine": 107,
+        "startChar": 19,
+        "endLine": 107,
+        "endChar": 44
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc2170c8_0ebecb1c",
+        "filename": "overlay/qssi/FrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-26T14:36:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d59d1a49_a9fec298",
       "range": {
         "startLine": 107,
         "startChar": 19,
@@ -1549,6 +1597,30 @@
       "writtenOn": "2026-04-06T22:59:44Z",
       "side": 1,
       "message": "not all devices..",
+      "range": {
+        "startLine": 21,
+        "startChar": 16,
+        "endLine": 21,
+        "endChar": 46
+      },
+      "revId": "60313c833d3b13dc72c81c966f747f5db95af961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "957ec725_94349d0a",
+        "filename": "overlay/qssi/WifiResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-26T14:36:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "edc9c2e8_356a5f86",
       "range": {
         "startLine": 21,
         "startChar": 16,
