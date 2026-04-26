@@ -4,6 +4,20 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+QCOM_NON_5G_PLATFORMS := \
+    atoll \
+    bengal \
+    msm8937 \
+    msm8953 \
+    msm8996 \
+    msm8998 \
+    msmnile \ # Some devices have Snapdragon X50 external modem, which supports 5G (Samsung Galaxy S10 5G, A90 5G, Xiaomi Mi 9 Pro 5G, OnePlus 7 Pro 5G)
+    sdm660 \
+    sdm710 \
+    sdm845 \
+    sm6150 \
+    trinket
+
 PRODUCT_PACKAGES += \
     QssiFrameworksOverlay \
     QssiWifiOverlay
@@ -17,6 +31,14 @@ ifeq ($(ENABLE_VENDOR_RIL_SERVICE), true)
 PRODUCT_PACKAGES += \
     QssiFrameworksTelephonyOverlay \
     QssiTelephonyOverlay
+
+ifeq ($(TARGET_FORCES_5G_SUPPORT),true) # Needed for some msmnile devices with Snapdragon X50 external modem.
+    PRODUCT_PACKAGES += \
+        QssiFrameworksTelephony5gOverlay
+else ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_NON_5G_PLATFORMS)))
+    PRODUCT_PACKAGES += \
+        QssiFrameworksTelephony5gOverlay
+endif
 
 ifneq ($(TARGET_HAS_NO_IMS), true)
 PRODUCT_PACKAGES += \
