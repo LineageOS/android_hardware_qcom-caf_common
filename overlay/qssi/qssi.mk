@@ -4,21 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-QCOM_NON_5G_PLATFORMS := \
-    atoll \
-    bengal \
-    msm8937 \
-    msm8953 \
-    msm8996 \
-    msm8998 \
-    msmnile \ # Some devices have Snapdragon X50 external modem, which supports 5G (Samsung Galaxy S10 5G, A90 5G, Xiaomi Mi 9 Pro 5G, OnePlus 7 Pro 5G)
-    sdm660 \
-    sdm710 \
-    sdm845 \
-    sm6150 \
-    trinket
-
-QCOM_NON_WIFI_6GHZ_PLATFORMS := \
+QCOM_NON_6GHZ_PLATFORMS := \
     atoll \
     bengal \
     holi \
@@ -49,58 +35,30 @@ QCOM_WIFI_BRIDGED_SOFT_AP_PLATFROMS := \
     $(QCOM_WIFI_MULTISTA_PLATFORMS) \
     crow
 
-PRODUCT_PACKAGES += \
-    QssiFrameworksOverlay \
-    QssiWifiOverlay
+$(call soong_config_set_bool,qssi,atv_or_car,$(filter true,$(PRODUCT_IS_AUTOMOTIVE) $(PRODUCT_IS_ATV)))
 
-ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_NON_WIFI_6GHZ_PLATFORMS)))
-PRODUCT_PACKAGES += \
-    QssiWifi6gOverlay
-
-ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_BRIDGED_SOFT_AP_PLATFROMS)))
-PRODUCT_PACKAGES += \
-    QssiWifiBridgedOverlay
-endif
-
-ifeq (,$(filter	$(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_MULTISTA_PLATFORMS)))
-PRODUCT_PACKAGES += \
-    QssiWifiMultiStaOverlay
-ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_MULTISTA_ADVANCED_PLATFORMS)))
-PRODUCT_PACKAGES += \
-    QssiWifiMultiStaAdvancedOverlay
+ifeq ($(filter $(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_NON_6GHZ_PLATFORMS)),)
+$(call soong_config_set,qssi,wifi,6g)
+ifneq ($(filter $(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_MULTISTA_PLATFORMS)),)
+$(call soong_config_set,qssi,wifi,multista)
+ifneq ($(filter $(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_MULTISTA_ADVANCED_PLATFORMS)),)
+$(call soong_config_set,qssi,wifi,multista_advanced)
 endif
 endif
 endif
 
-ifneq ($(filter true,$(PRODUCT_IS_AUTOMOTIVE) $(PRODUCT_IS_ATV)),true)
-PRODUCT_PACKAGES += \
-    QssiFrameworksNoCarAtvOverlay
+ifneq ($(ENABLE_VENDOR_RIL_SERVICE),true)
+$(call soong_config_set,qssi,telephony,none)
+else ifneq ($(filter $(UM_5_4_FAMILY) $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+$(call soong_config_set,qssi,telephony,5g)
+else
+$(call soong_config_set,qssi,telephony,lte)
 endif
+$(call soong_config_set_bool,qssi,supports_ims,$(filter-out true,$(TARGET_HAS_NO_IMS)))
+$(call soong_config_set_bool,qssi,supports_wfd,$(filter-out true,$(TARGET_HAS_NO_QCOM_WFD)))
 
-ifeq ($(ENABLE_VENDOR_RIL_SERVICE), true)
 PRODUCT_PACKAGES += \
-    QssiFrameworksTelephonyOverlay \
-    QssiTelephonyOverlay
-
-ifeq ($(TARGET_FORCES_5G_SUPPORT),true) # Needed for some msmnile devices with Snapdragon X50 external modem.
-    PRODUCT_PACKAGES += \
-        QssiFrameworksTelephony5gOverlay
-else ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_NON_5G_PLATFORMS)))
-    PRODUCT_PACKAGES += \
-        QssiFrameworksTelephony5gOverlay
-endif
-
-ifneq ($(TARGET_HAS_NO_QCOM_WFD), true)
-PRODUCT_PACKAGES += \
-    QssiFrameworksWfdOverlay
-endif
-
-ifneq ($(TARGET_HAS_NO_IMS), true)
-PRODUCT_PACKAGES += \
-    QssiFrameworksTelephonyImsOverlay \
-    QssiTelephonyImsOverlay
-endif
-endif
+   QssiCommonOverlay
 
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
