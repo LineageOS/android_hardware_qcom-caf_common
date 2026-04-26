@@ -1,2 +1,33 @@
 soong_namespace {
 }
+
+phony {
+    name: "QssiCommonOverlay",
+    required: [
+        "QssiFrameworksOverlay",
+        "QssiWifiOverlay",
+    ] + select(soong_config_variable("qssi", "atv_or_car"), {
+        true: [],
+        default: ["QssiFrameworksNoCarAtvOverlay"],
+    }) + select(soong_config_variable("qssi", "telephony"), {
+        "none": [],
+        "lte": [
+            "QssiFrameworksTelephonyOverlay",
+            "QssiTelephonyOverlay",
+        ],
+        default: [
+            "QssiFrameworksTelephonyOverlay",
+            "QssiFrameworksTelephony5gOverlay",
+            "QssiTelephonyOverlay",
+        ],
+    }) + select(soong_config_variable("qssi", "supports_ims"), {
+        false: [],
+        default:[
+            "QssiFrameworksTelephonyImsOverlay",
+            "QssiTelephonyImsOverlay",
+        ],
+    }) + select(soong_config_variable("qssi", "supports_wfd"), {
+        true: ["QssiFrameworksWfdOverlay"],
+        default: [],
+    }),
+}
