@@ -18,9 +18,30 @@ QCOM_NON_5G_PLATFORMS := \
     sm6150 \
     trinket
 
+QCOM_NON_6GHZ_PLATFORMS := \
+    atoll \
+    bengal \
+    holi \
+    kona \
+    msm8937 \
+    msm8953 \
+    msm8996 \
+    msm8998 \
+    msmnile \
+    lito \
+    sdm660 \
+    sdm710 \
+    sm6150 \
+    trinket
+
 PRODUCT_PACKAGES += \
     QssiFrameworksOverlay \
     QssiWifiOverlay
+
+ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_NON_6GHZ_PLATFORMS)))
+PRODUCT_PACKAGES += \
+    QssiWifi6gOverlay
+endif
 
 ifneq ($(filter true,$(PRODUCT_IS_AUTOMOTIVE) $(PRODUCT_IS_ATV)),true)
 PRODUCT_PACKAGES += \
@@ -49,3 +70,4 @@ endif
 
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
