@@ -17,9 +17,6 @@
      -->
     <bool name="config_wifiAllowMultipleNetworksOnSameAwareNdi">true</bool>
 
-    <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
-    <bool name="config_wifiSoftap6ghzSupported">true</bool>
-
     <!-- Wifi driver Automatic channel selection (ACS) for softap to include DFS channels -->
     <bool name="config_wifiSoftapAcsIncludeDfs">true</bool>
 
