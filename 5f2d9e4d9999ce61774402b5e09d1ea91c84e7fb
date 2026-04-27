@@ -68,6 +68,24 @@
       "parentUuid": "e6337ced_5e41f87b",
       "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76a7a6af_3ee92047",
+        "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-27T23:20:23Z",
+      "side": 1,
+      "message": ".",
+      "parentUuid": "05a3fa8a_2248b359",
+      "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
