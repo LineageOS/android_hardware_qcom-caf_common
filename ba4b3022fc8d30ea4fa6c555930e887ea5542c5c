@@ -33,6 +33,24 @@
       "message": "Also, before I forget, I\u0027ll leave my thoughts here.\n\n1. Are regexs needed? Not sure is this really unused/deprecated.\nhttps://github.com/LineageOS/android_device_sony_nile-common/blob/1dea3b66a7b264aabbf8a881a308211341d5ec29/rro_overlays/TetheringOverlay/res/values/config.xml#L28-L74\n\n2. I guess we can add pinner overlays to common, but we need check arch (32/64-bit support)\n\n3. What about these overlays? \n- https://github.com/LineageOS/android_device_xiaomi_sm8450-common/blob/dc02816f349ea035782cb45990bb2facd0b7fa9b/overlay/FrameworksResCommon/res/values/config_telephony.xml#L48-L53\n- https://github.com/LineageOS/android_device_xiaomi_sm8450-common/blob/dc02816f349ea035782cb45990bb2facd0b7fa9b/overlay/FrameworksResCommon/res/values/config_telephony.xml#L32-L35",
       "revId": "ba4b3022fc8d30ea4fa6c555930e887ea5542c5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "628f59d8_f6afe4d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-27T23:30:38Z",
+      "side": 1,
+      "message": "6. Are values-mcc* still needed? They were added by QCOM in 2017",
+      "parentUuid": "ef0c3340_37e8f199",
+      "revId": "ba4b3022fc8d30ea4fa6c555930e887ea5542c5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
