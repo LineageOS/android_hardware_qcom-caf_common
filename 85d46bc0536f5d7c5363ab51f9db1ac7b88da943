@@ -69,6 +69,24 @@
       "message": "This shouldn\u0027t go to vendor because WFD is not implemented in vendor. It should go to product or even system_ext",
       "revId": "85d46bc0536f5d7c5363ab51f9db1ac7b88da943",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "61e7fbeb_076e4454",
+        "filename": "overlay/qssi/QssiFrameworksWfdOverlay/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-27T23:12:21Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_hardware_oplus/blob/64b01a38f231c83119b8a073e5e0d256269aff87/overlay/qssi/FrameworksResCommon/Android.bp\n\nMost of devices use FrameworksResCommon which goes to vendor, but I think it really will be better to add separated wfd overlay to product/system_ext. \n\nAs far as I remember, it is stored in system_ext. Tbh idk where should I store this overlay.",
+      "parentUuid": "cd1ac3c8_16e3246b",
+      "revId": "85d46bc0536f5d7c5363ab51f9db1ac7b88da943",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
