@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9f44bc8d_65685bf7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2026-04-27T21:17:35Z",
+      "side": 1,
+      "message": "vendor.qti.iwlan is duplicated in QssiFrameworksTelephonyOverlay and QssiFrameworksTelephonyImsOverlay",
+      "revId": "d48145583665edfad1c3061a57dbb81260f97d9e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
