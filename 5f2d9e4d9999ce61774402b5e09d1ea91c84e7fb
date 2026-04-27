@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "410f6097_b618b922",
+        "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2026-04-27T21:08:10Z",
+      "side": 1,
+      "message": "If it\u0027s really needed, I\u0027d rather fix it in the kernel driver",
+      "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bfd2582c_b254c7a9",
+        "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2026-04-27T21:08:10Z",
+      "side": 1,
+      "message": "Why is this needed?",
+      "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e6337ced_5e41f87b",
+        "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2026-04-27T21:08:10Z",
+      "side": 1,
+      "message": "Logically speaking, a device may support 6 Ghz but may not support it in AP mode. I don\u0027t know if such device on QCOM platform exists, though",
+      "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
