@@ -54,6 +54,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "798505bc_8ddbb196",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-27T23:12:36Z",
+      "side": 1,
+      "message": "So it\u0027s actually ok.",
+      "parentUuid": "3f10e6e6_27bed791",
+      "revId": "85d46bc0536f5d7c5363ab51f9db1ac7b88da943",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cd1ac3c8_16e3246b",
