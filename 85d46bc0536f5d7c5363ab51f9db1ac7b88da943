@@ -72,6 +72,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4913111_0ca8058b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-27T23:13:16Z",
+      "side": 1,
+      "message": "I thought that I understood something wrong, but seems I was right that it is unsupported by aosp.",
+      "parentUuid": "798505bc_8ddbb196",
+      "revId": "85d46bc0536f5d7c5363ab51f9db1ac7b88da943",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cd1ac3c8_16e3246b",
