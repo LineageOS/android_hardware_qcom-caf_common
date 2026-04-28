@@ -16,6 +16,24 @@
       "message": "My bad, for some reason I read this as `config_enableWifiDisplay` instead of `config_wifiDisplaySupportsProtectedBuffers`. Then it\u0027s duplicated in `QssiFrameworksOverlay`. And tbh only few devices support WFD protected buffers, this feature requires special flags in BSP and depends on firmware: https://github.com/LineageOS/android_device_asus_sake/blob/2886645643f23557e4540af23d82a55beab12e3f/proprietary-files.txt#L1574",
       "revId": "2eb7a3752ab57bb381c613130c7c622a33a6255b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "75a577c0_7e51a137",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2026-04-28T06:51:37Z",
+      "side": 1,
+      "message": "Well, I could be wrong that few devices support it but none of my 4 devices can cast protected content even with this overlay set",
+      "parentUuid": "8cda4214_154a6f4c",
+      "revId": "2eb7a3752ab57bb381c613130c7c622a33a6255b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
