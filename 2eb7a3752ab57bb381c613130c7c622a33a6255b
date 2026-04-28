@@ -34,6 +34,24 @@
       "parentUuid": "8cda4214_154a6f4c",
       "revId": "2eb7a3752ab57bb381c613130c7c622a33a6255b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "99f32e65_790c1b01",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-28T10:34:16Z",
+      "side": 1,
+      "message": "Can\u0027t say anything about it, because I have Moto where we use AOSP WFD.",
+      "parentUuid": "75a577c0_7e51a137",
+      "revId": "2eb7a3752ab57bb381c613130c7c622a33a6255b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
