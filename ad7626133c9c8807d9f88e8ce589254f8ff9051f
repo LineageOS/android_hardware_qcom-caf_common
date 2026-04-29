@@ -16,6 +16,24 @@
       "message": "This should go in vendor/lineage",
       "revId": "ad7626133c9c8807d9f88e8ce589254f8ff9051f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a64de399_8bda559e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-04-29T08:39:01Z",
+      "side": 1,
+      "message": "You\u0027re right, I have same thoughts. Just picked it from oplus.",
+      "parentUuid": "0b82ddfc_2497ef73",
+      "revId": "ad7626133c9c8807d9f88e8ce589254f8ff9051f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
