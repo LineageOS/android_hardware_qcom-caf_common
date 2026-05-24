@@ -196,6 +196,7 @@ SOONG_CONFIG_qtidisplay += \
     target_no_raw10_custom_format \
     target_uses_aligned_ycbcr_height \
     target_uses_aligned_ycrcb_height \
+    target_uses_legacy_buffer_alignment \
     target_uses_unaligned_nv21_zsl \
     target_uses_unaligned_ycrcb \
     target_uses_ycrcb_camera_preview \
@@ -231,6 +232,7 @@ SOONG_CONFIG_qtidisplay_target_no_camera_custom_format ?= false
 SOONG_CONFIG_qtidisplay_target_no_raw10_custom_format ?= false
 SOONG_CONFIG_qtidisplay_target_uses_aligned_ycbcr_height ?= false
 SOONG_CONFIG_qtidisplay_target_uses_aligned_ycrcb_height ?= false
+SOONG_CONFIG_qtidisplay_target_uses_legacy_buffer_alignment ?= false
 SOONG_CONFIG_qtidisplay_target_uses_unaligned_nv21_zsl ?= false
 SOONG_CONFIG_qtidisplay_target_uses_unaligned_ycrcb ?= false
 SOONG_CONFIG_qtidisplay_target_uses_ycrcb_camera_preview ?= false
@@ -293,10 +295,11 @@ ifneq ($(filter $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_4_19_LEGACY_FAMILY) $(U
     SOONG_CONFIG_qtidisplay_gralloc4 := true
 endif
 
-# Enable TARGET_NO_CAMERA_CUSTOM_FORMAT on sdm845 devices with kernel 4.19
+# Enable TARGET_NO_CAMERA_CUSTOM_FORMAT and USE_LEGACY_BUFFER_ALIGNMENT on sdm845 devices with kernel 4.19
 ifneq ($(filter sdm845,$(TARGET_BOARD_PLATFORM)),)
 ifneq ($(filter $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_target_no_camera_custom_format := true
+    SOONG_CONFIG_qtidisplay_target_uses_legacy_buffer_alignment := true
 endif
 endif
 
