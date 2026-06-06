@@ -1,15 +1,12 @@
 include hardware/qcom-caf/common/qcom_boards.mk
 include hardware/qcom-caf/common/qcom_defs.mk
 
-UM_3_18_HAL_FAMILY := msm8996
-UM_4_4_HAL_FAMILY := msm8998
-
 ifeq (,$(TARGET_ENFORCES_QSSI))
-UM_3_18_HAL_FAMILY += msm8937 msm8953
-UM_4_4_HAL_FAMILY += sdm660
+UM_3_18_HAL_FAMILY += msm8937 msm8953 msm8996
+UM_4_4_HAL_FAMILY += msm8998 sdm660
 else
 UM_4_9_LEGACY_FAMILY := msm8937 msm8953
-UM_4_19_LEGACY_FAMILY := sdm660
+UM_4_19_LEGACY_FAMILY := msm8996 msm8998 sdm660
 endif
 
 UM_PLATFORMS := \
