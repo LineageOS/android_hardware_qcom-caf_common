@@ -16,6 +16,24 @@
       "message": "are you sure about drmpp? we only enabled gralloc4 on 23.2 https://github.com/LineageOS/android_hardware_qcom-caf_common/commit/6f6010d33d4badf84225c74c6181390c2a84dab8",
       "revId": "9811a7ffef1b91bebb44a3e5fa0d76184597dff2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2cf4a96_b116b0ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-06-11T18:10:48Z",
+      "side": 1,
+      "message": "Not sure but haven\u0027t checked what qcom does either",
+      "parentUuid": "982f38bc_c1c59205",
+      "revId": "9811a7ffef1b91bebb44a3e5fa0d76184597dff2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
