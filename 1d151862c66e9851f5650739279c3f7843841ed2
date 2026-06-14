@@ -16,6 +16,24 @@
       "message": "Is this not for 3.5mm jack? Why would we want this? Correct if wrong.",
       "revId": "1d151862c66e9851f5650739279c3f7843841ed2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0acf18d9_f1d483ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-06-14T10:07:11Z",
+      "side": 1,
+      "message": "Qualcomm enables it for everyone and nothing changes even if device does not support  3.5mm jack\n\nhttps://git.codelinaro.org/clo/la/device/qcom/common/-/blob/clo/main/device/overlay/frameworks/base/core/res/res/values/config.xml?ref_type\u003dheads#L137\n\nOn paros stock ROM (paros doesn\u0027t support 3.5mm) it is enabled./",
+      "parentUuid": "5435dec4_d08bd86d",
+      "revId": "1d151862c66e9851f5650739279c3f7843841ed2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
