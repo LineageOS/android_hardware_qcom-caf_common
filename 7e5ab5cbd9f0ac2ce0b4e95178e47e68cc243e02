@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c06edc3_c4307c78",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-14T06:05:40Z",
+      "side": 1,
+      "message": "lol just use \"mobile\" suffix or something not nocaratv lol",
+      "revId": "7e5ab5cbd9f0ac2ce0b4e95178e47e68cc243e02",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
