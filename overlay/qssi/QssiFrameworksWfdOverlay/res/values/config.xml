@@ -4,7 +4,6 @@
      SPDX-License-Identifier: BSD-3-Clause
 -->
 <resources>
-
     <!-- Set to true if the wifi display supports compositing content stored
          in gralloc protected buffers.  For this to be true, there must exist
          a protected hardware path for surface flinger to composite and send
