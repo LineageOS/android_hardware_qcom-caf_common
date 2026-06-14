@@ -16,6 +16,24 @@
       "message": "telephony specific.",
       "revId": "cc6b7e1cb6e46f0ab6f10d1884b0e79b2e6cac53",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6f9d233_42995af1",
+        "filename": "overlay/qssi/QssiFrameworksOverlay/res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-06-14T11:25:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "26965070_31218829",
+      "revId": "cc6b7e1cb6e46f0ab6f10d1884b0e79b2e6cac53",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
