@@ -69,6 +69,23 @@
       "parentUuid": "628f59d8_f6afe4d9",
       "revId": "ba4b3022fc8d30ea4fa6c555930e887ea5542c5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "15f1f3dd_c9accc4e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-14T06:11:46Z",
+      "side": 1,
+      "message": "topic wide:\n- you need to decide how to do xml spacing from header.\n\nI like to just have no newline before content starts but some do some don\u0027t - pick one.\n\n- QssiWifiOverlay\nSo much in this screams not needed. I would strongly review what is actually needed\n\n\nLastly: Once you address my comments... I fear this has just become \"general enablable overlay\" and outside of WFD/IMS ins\u0027t QCOM specific.",
+      "revId": "ba4b3022fc8d30ea4fa6c555930e887ea5542c5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
