@@ -51,6 +51,24 @@
       "parentUuid": "ef0c3340_37e8f199",
       "revId": "ba4b3022fc8d30ea4fa6c555930e887ea5542c5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c74761dc_08815a27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-14T05:40:42Z",
+      "side": 1,
+      "message": "`1.` Please actually check in the apex, but I believe these are all in the default list now.\n\n  `2.` Yeah this would need arch specific stuff. I\u0027d say that we should vendor/lineage that probably anyway?\n\n  `3.4.5.` No, device specific.\n\n  `6.` Given that it is just enabling volte for specific carriers and we have other ways of doing that, no, nuke them",
+      "parentUuid": "628f59d8_f6afe4d9",
+      "revId": "ba4b3022fc8d30ea4fa6c555930e887ea5542c5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
