@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5d78b851_d994e9f4",
+        "filename": "overlay/qssi/qssi.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-14T06:01:38Z",
+      "side": 1,
+      "message": "opposite, opt-in please, this requires a lot of blobs that many of us choose not to carry.",
+      "range": {
+        "startLine": 41,
+        "startChar": 9,
+        "endLine": 41,
+        "endChar": 31
+      },
+      "revId": "45c92b991a487652dc1e0dd96cc7acd46c7a9bda",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

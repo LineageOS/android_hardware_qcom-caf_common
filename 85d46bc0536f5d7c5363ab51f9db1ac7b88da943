@@ -123,6 +123,24 @@
       "parentUuid": "cd1ac3c8_16e3246b",
       "revId": "85d46bc0536f5d7c5363ab51f9db1ac7b88da943",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4a7fa58d_36e36f74",
+        "filename": "overlay/qssi/QssiFrameworksWfdOverlay/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-14T06:01:38Z",
+      "side": 1,
+      "message": "this looks to belong on product to me.",
+      "parentUuid": "61e7fbeb_076e4454",
+      "revId": "85d46bc0536f5d7c5363ab51f9db1ac7b88da943",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
