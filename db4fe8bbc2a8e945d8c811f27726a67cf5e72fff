@@ -34,6 +34,23 @@
       "parentUuid": "9b89574b_ca95543b",
       "revId": "db4fe8bbc2a8e945d8c811f27726a67cf5e72fff",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2b7859ec_62497b62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-14T05:44:24Z",
+      "side": 1,
+      "message": "sooooo string-array exists on fw/b, but I see it referenced... nowhere else?",
+      "revId": "db4fe8bbc2a8e945d8c811f27726a67cf5e72fff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
