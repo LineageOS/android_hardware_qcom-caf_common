@@ -74,6 +74,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "889ed76e_c6e052a3",
+        "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-14T20:36:50Z",
+      "side": 1,
+      "message": "then drop it just note in commit msg",
+      "parentUuid": "e6080af7_d7b0235c",
+      "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "bfd2582c_b254c7a9",
         "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
         "patchSetId": 3
@@ -139,6 +157,24 @@
       "side": 1,
       "message": "Yeah, that\u0027s not needed for most QCOM devices and we don\u0027t have it in BSPs.",
       "parentUuid": "8e0fcf2c_ecb5be3e",
+      "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bc42f663_81b7a7e3",
+        "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-14T20:36:50Z",
+      "side": 1,
+      "message": "then drop it just note in commit msg",
+      "parentUuid": "67ca8e9b_59677387",
       "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
