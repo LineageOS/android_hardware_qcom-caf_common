@@ -56,6 +56,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "e6080af7_d7b0235c",
+        "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-06-14T10:15:04Z",
+      "side": 1,
+      "message": "Yeah, that\u0027s not needed for most QCOM devices and we don\u0027t have it in BSPs.",
+      "parentUuid": "f9aa8087_43bbd211",
+      "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "bfd2582c_b254c7a9",
         "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
         "patchSetId": 3
@@ -103,6 +121,24 @@
       "side": 1,
       "message": "These are PSC channels per IEEE. The intention is to set a default set that the world agrees on.\n\nI would remove it likely. Channel lists across the board aren\u0027t enforced right now and god knows we\u0027ll piss off someone in some country that doesn\u0027t limit these/selected diff channels",
       "parentUuid": "2dc63920_e4f0b226",
+      "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "67ca8e9b_59677387",
+        "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-06-14T10:15:04Z",
+      "side": 1,
+      "message": "Yeah, that\u0027s not needed for most QCOM devices and we don\u0027t have it in BSPs.",
+      "parentUuid": "8e0fcf2c_ecb5be3e",
       "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
