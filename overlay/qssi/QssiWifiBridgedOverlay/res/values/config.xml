@@ -4,7 +4,7 @@
      SPDX-License-Identifier: BSD-3-Clause
 -->
 <resources>
-    <!-- dual sap mode is supported on this device. -->
+    <!-- Indicates that bridged AP mode is supported on this device provided that
+     the device interface combination allows for it -->
     <bool name="config_wifiBridgedSoftApSupported">true</bool>
-
 </resources>

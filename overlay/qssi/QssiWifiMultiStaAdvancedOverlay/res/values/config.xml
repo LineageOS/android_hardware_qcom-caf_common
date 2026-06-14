@@ -6,8 +6,9 @@
 <resources>
     <!-- Enable Make-Before-Break Wifi network switching.
          Note: this is conditional on the device supporting dual concurrent STAs. -->
-    <bool translatable="false" name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled">true</bool>
+    <bool name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled">true</bool>
+
     <!-- Enable concurrent internet connectivity + internet connectivity
          Note: this is conditional on the device supporting dual concurrent STAs. -->
-    <bool translatable="false" name="config_wifiMultiStaMultiInternetConcurrencyEnabled">true</bool>
+    <bool name="config_wifiMultiStaMultiInternetConcurrencyEnabled">true</bool>
 </resources>

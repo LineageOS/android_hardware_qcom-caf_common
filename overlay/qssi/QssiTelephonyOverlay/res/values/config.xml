@@ -4,8 +4,6 @@
      SPDX-License-Identifier: BSD-3-Clause
 -->
 <resources>
-
     <!-- Flag indicating whether the device supports RTT (real-time text) -->
     <bool name="config_support_rtt">true</bool>
-
 </resources>
