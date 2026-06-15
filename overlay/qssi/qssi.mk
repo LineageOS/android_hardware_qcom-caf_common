@@ -34,6 +34,15 @@ QCOM_NON_6GHZ_PLATFORMS := \
     sm6150 \
     trinket
 
+QCOM_BRIDGED_SOFT_AP_PLATFROMS := \
+    taro \
+    kalama \
+    crow \
+    pineapple \
+    volcano \
+    sun \
+    canoe
+
 PRODUCT_PACKAGES += \
     QssiFrameworksOverlay \
     QssiWifiOverlay
@@ -41,6 +50,11 @@ PRODUCT_PACKAGES += \
 ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_NON_6GHZ_PLATFORMS)))
 PRODUCT_PACKAGES += \
     QssiWifi6gOverlay
+endif
+
+ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_BRIDGED_SOFT_AP_PLATFROMS)))
+PRODUCT_PACKAGES += \
+    QssiWifiBridgedOverlay
 endif
 
 ifneq ($(filter true,$(PRODUCT_IS_AUTOMOTIVE) $(PRODUCT_IS_ATV)),true)
