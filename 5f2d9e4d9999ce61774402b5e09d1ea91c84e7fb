@@ -90,6 +90,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "613805dc_2516a6bf",
+        "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-06-15T22:34:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "889ed76e_c6e052a3",
+      "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bfd2582c_b254c7a9",
@@ -175,6 +193,24 @@
       "side": 1,
       "message": "then drop it just note in commit msg",
       "parentUuid": "67ca8e9b_59677387",
+      "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "73f539d9_a9700056",
+        "filename": "overlay/qssi/QssiWifi6gOverlay/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-06-15T22:34:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bc42f663_81b7a7e3",
       "revId": "5f2d9e4d9999ce61774402b5e09d1ea91c84e7fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
