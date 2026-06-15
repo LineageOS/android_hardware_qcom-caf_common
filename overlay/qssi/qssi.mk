@@ -18,7 +18,7 @@ QCOM_NON_5G_PLATFORMS := \
     sm6150 \
     trinket
 
-QCOM_NON_6GHZ_PLATFORMS := \
+QCOM_NON_WIFI_6GHZ_PLATFORMS := \
     atoll \
     bengal \
     holi \
@@ -34,27 +34,42 @@ QCOM_NON_6GHZ_PLATFORMS := \
     sm6150 \
     trinket
 
-QCOM_BRIDGED_SOFT_AP_PLATFROMS := \
-    taro \
-    kalama \
-    crow \
-    pineapple \
-    volcano \
+QCOM_WIFI_MULTISTA_ADVANCED_PLATFORMS := \
     sun \
     canoe
+
+QCOM_WIFI_MULTISTA_PLATFORMS := \
+    taro \
+    kalama \
+    pineapple \
+    volcano \
+    $(QCOM_WIFI_MULTISTA_ADVANCED_PLATFORMS)
+
+QCOM_WIFI_BRIDGED_SOFT_AP_PLATFROMS := \
+    $(QCOM_WIFI_MULTISTA_PLATFORMS) \
+    crow
 
 PRODUCT_PACKAGES += \
     QssiFrameworksOverlay \
     QssiWifiOverlay
 
-ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_NON_6GHZ_PLATFORMS)))
+ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_NON_WIFI_6GHZ_PLATFORMS)))
 PRODUCT_PACKAGES += \
     QssiWifi6gOverlay
-endif
 
-ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_BRIDGED_SOFT_AP_PLATFROMS)))
+ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_BRIDGED_SOFT_AP_PLATFROMS)))
 PRODUCT_PACKAGES += \
     QssiWifiBridgedOverlay
+endif
+
+ifeq (,$(filter	$(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_MULTISTA_PLATFORMS)))
+PRODUCT_PACKAGES += \
+    QssiWifiMultiStaOverlay
+ifeq (,$(filter $(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_MULTISTA_ADVANCED_PLATFORMS)))
+PRODUCT_PACKAGES += \
+    QssiWifiMultiStaAdvancedOverlay
+endif
+endif
 endif
 
 ifneq ($(filter true,$(PRODUCT_IS_AUTOMOTIVE) $(PRODUCT_IS_ATV)),true)

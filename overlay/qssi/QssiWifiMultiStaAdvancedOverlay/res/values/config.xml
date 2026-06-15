@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Linux Foundation
+     SPDX-License-Identifier: BSD-3-Clause
+-->
+<resources>
+    <!-- Enable Make-Before-Break Wifi network switching.
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool translatable="false" name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled">true</bool>
+    <!-- Enable concurrent internet connectivity + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool translatable="false" name="config_wifiMultiStaMultiInternetConcurrencyEnabled">true</bool>
+</resources>
