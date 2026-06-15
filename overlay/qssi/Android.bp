@@ -46,6 +46,14 @@ phony {
         default: [
             "QssiWifiOverlay",
         ],
+    }) + select(soong_config_variable("qssi", "wifi_generation"), {
+        "11ax": [
+            "QssiWifi11AxOverlay",
+        ],
+        "11be": [
+            "QssiWifi11AxOverlay",
+            "QssiWifi11BeOverlay",
+        ],
     }) + select(soong_config_variable("qssi", "supports_ims"), {
         false: [],
         default: [
