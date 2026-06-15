@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Linux Foundation
+     SPDX-License-Identifier: BSD-3-Clause
+-->
+<resources>
+    <!-- Wifi driver supports IEEE80211BE for softap -->
+    <bool translatable="false" name="config_wifiSoftapIeee80211beSupported">true</bool>
+</resources>

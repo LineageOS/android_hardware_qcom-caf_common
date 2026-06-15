@@ -17,7 +17,7 @@ QCOM_NON_6GHZ_PLATFORMS := \
     lito \
     sdm660 \
     sdm710 \
-    sm6150 \
+     sm6150 \
     trinket
 
 QCOM_WIFI_MULTISTA_ADVANCED_PLATFORMS := \
@@ -31,9 +31,22 @@ QCOM_WIFI_MULTISTA_PLATFORMS := \
     volcano \
     $(QCOM_WIFI_MULTISTA_ADVANCED_PLATFORMS)
 
-QCOM_WIFI_BRIDGED_SOFT_AP_PLATFROMS := \
+QCOM_WIFI_BRIDGED_SOFT_AP_PLATFORMS := \
     $(QCOM_WIFI_MULTISTA_PLATFORMS) \
     crow
+
+QCOM_WIFI_11BE_PLATFORMS := \
+    kalama \
+    pineapple \
+    volcano \
+    $(QCOM_WIFI_MULTISTA_ADVANCED_PLATFORMS)
+
+QCOM_WIFI_11AX_PLATFORMS := \
+    $(QCOM_WIFI_MULTISTA_PLATFORMS) \
+    crow \
+    lahaina \
+    parrot \
+    kona
 
 $(call soong_config_set_bool,qssi,atv_or_car,$(filter true,$(PRODUCT_IS_AUTOMOTIVE) $(PRODUCT_IS_ATV)))
 
@@ -44,6 +57,13 @@ $(call soong_config_set,qssi,wifi,multista)
 ifneq ($(filter $(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_MULTISTA_ADVANCED_PLATFORMS)),)
 $(call soong_config_set,qssi,wifi,multista_advanced)
 endif
+endif
+endif
+
+ifneq ($(filter $(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_11AX_PLATFORMS)),)
+$(call soong_config_set,qssi,wifi_generation,11ax)
+ifneq ($(filter $(TARGET_BOARD_PLATFORM),$(QCOM_WIFI_11BE_PLATFORMS)),)
+$(call soong_config_set,qssi,wifi_generation,11be)
 endif
 endif
 
