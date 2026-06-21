@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21821f80_fb1cab3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-06-21T12:59:23Z",
+      "side": 1,
+      "message": "We should use WIFI_FEATURE_HOSTAPD_11AX and WIFI_FEATURE_HOSTAPD_11BE",
+      "revId": "b4eec0bd4a50f54d6916b38a4a6a85de29a2f5a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
