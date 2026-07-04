@@ -399,6 +399,9 @@ ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
     ifeq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
         PRODUCT_SOONG_NAMESPACES += \
             vendor/qcom/opensource/display
+        $(call soong_config_set,qtidisplay,libdisplayconfig_qti_namespace,vendor/qcom/opensource/display)
+    else
+        $(call soong_config_set,qtidisplay,libdisplayconfig_qti_namespace,$(QCOM_SOONG_NAMESPACE))
     endif
     $(call soong_config_set,qtidisplay,headers_namespace,vendor/qcom/opensource/commonsys-intf/display)
 else
