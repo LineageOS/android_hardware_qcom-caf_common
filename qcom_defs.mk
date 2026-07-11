@@ -14,6 +14,12 @@ UM_5_15_FAMILY := kalama crow
 UM_6_1_FAMILY := pineapple volcano
 UM_6_6_FAMILY := sun
 
+ifeq ($(TARGET_KERNEL_VERSION),6.1)
+# UM 5.4 upgraded to UM 6.1
+UM_6_1_FAMILY := $(UM_6_1_FAMILY) $(UM_5_4_FAMILY)
+UM_5_4_FAMILY :=
+endif
+
 ifeq ($(TARGET_KERNEL_VERSION),6.6)
 # UM 5.10 upgraded to UM 6.6
 UM_6_6_FAMILY := $(UM_6_6_FAMILY) $(UM_5_10_FAMILY)
