@@ -394,7 +394,8 @@ PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/bootctrl
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
     PRODUCT_SOONG_NAMESPACES += \
         vendor/qcom/opensource/commonsys/display \
-        vendor/qcom/opensource/commonsys-intf/display
+        vendor/qcom/opensource/commonsys-intf/display \
+        vendor/qcom/opensource/interfaces/qacs/ambientdatacapture
 
     ifeq ($(filter $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
         PRODUCT_SOONG_NAMESPACES += \
