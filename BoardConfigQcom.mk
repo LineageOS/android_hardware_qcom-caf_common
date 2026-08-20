@@ -303,7 +303,9 @@ endif
 
 # Enable SMMU proxy on UM platforms that support it
 ifneq ($(filter $(UM_6_1_FAMILY) $(UM_6_6_FAMILY) $(UM_6_12_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifeq ($(filter parrot taro,$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_smmu_proxy := true
+endif
 endif
 
 # Expose UBWCP headers to UM platforms that require it
