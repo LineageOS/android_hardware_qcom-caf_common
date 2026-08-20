@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19b9975e_eae970fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-08-20T14:55:14Z",
+      "side": 1,
+      "message": "No more \u0027W SnapAlloc: Failed to open smmu proxy node\u0027 spam",
+      "revId": "f2dd89660c68d7641be621c96ae27902478bf9b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
