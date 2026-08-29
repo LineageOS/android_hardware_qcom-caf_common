@@ -271,9 +271,6 @@ else ifeq ($(TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW),true)
     SOONG_CONFIG_qtidisplay_target_uses_ycrcb_venus_camera_preview := true
 endif
 
-# Tell HALs that we're compiling an AOSP build with an in-line kernel
-TARGET_COMPILE_WITH_MSM_KERNEL := true
-
 # Enable DRM PP driver on UM platforms that support it
 ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY) $(UM_5_15_FAMILY) $(UM_6_1_FAMILY) $(UM_6_6_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_drmpp := true
