@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "033447fe_59c4e8d6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35533
+      },
+      "writtenOn": "2026-09-01T03:07:36Z",
+      "side": 1,
+      "message": "This symlink is common across all devices that use it, so it\u0027s better to commonize it to avoid duplicating it per device tree.",
+      "revId": "5528e95b399878d63ca9144c29f766d879ba9e50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
