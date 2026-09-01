@@ -16,6 +16,23 @@
       "message": "This symlink is common across all devices that use it, so it\u0027s better to commonize it to avoid duplicating it per device tree.",
       "revId": "5528e95b399878d63ca9144c29f766d879ba9e50",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e5fc00a_11e38738",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37345
+      },
+      "writtenOn": "2026-09-01T05:15:01Z",
+      "side": 1,
+      "message": "Well yeah this patch seams good, qcom devices have that symlinks in common",
+      "revId": "5528e95b399878d63ca9144c29f766d879ba9e50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
