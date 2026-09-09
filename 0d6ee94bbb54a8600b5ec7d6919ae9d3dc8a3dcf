@@ -52,6 +52,24 @@
       "parentUuid": "06fe4919_27910f0a",
       "revId": "0d6ee94bbb54a8600b5ec7d6919ae9d3dc8a3dcf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d8d40670_cda5508f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-09-09T19:44:20Z",
+      "side": 1,
+      "message": "Still waiting for a confirmation here",
+      "parentUuid": "2b1f9690_682432a4",
+      "revId": "0d6ee94bbb54a8600b5ec7d6919ae9d3dc8a3dcf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
