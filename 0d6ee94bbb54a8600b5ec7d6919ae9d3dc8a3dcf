@@ -70,6 +70,24 @@
       "parentUuid": "2b1f9690_682432a4",
       "revId": "0d6ee94bbb54a8600b5ec7d6919ae9d3dc8a3dcf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f3600f5_a9f9d0ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-09-09T19:47:33Z",
+      "side": 1,
+      "message": "the only github search results are oneplus specific; @chandudyavanapelli03@gmail.com does /mnt/vendor/persist/modem/dycnvbk even exist for you? it doesn\u0027t exist here.",
+      "parentUuid": "d8d40670_cda5508f",
+      "revId": "0d6ee94bbb54a8600b5ec7d6919ae9d3dc8a3dcf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
