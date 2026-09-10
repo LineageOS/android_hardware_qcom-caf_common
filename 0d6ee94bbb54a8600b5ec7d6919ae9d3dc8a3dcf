@@ -88,6 +88,24 @@
       "parentUuid": "d8d40670_cda5508f",
       "revId": "0d6ee94bbb54a8600b5ec7d6919ae9d3dc8a3dcf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "699c2c27_1a1025f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30975
+      },
+      "writtenOn": "2026-09-10T14:26:57Z",
+      "side": 1,
+      "message": "Yes.\n\nOP611FL1:/ # ls /mnt/vendor/persist/modem/dycnvbk\nmcfg_backup.mbn  modemuo.jsn  qdsp6_oemsw.mbn  qdsp6m.qdb",
+      "parentUuid": "4f3600f5_a9f9d0ae",
+      "revId": "0d6ee94bbb54a8600b5ec7d6919ae9d3dc8a3dcf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
