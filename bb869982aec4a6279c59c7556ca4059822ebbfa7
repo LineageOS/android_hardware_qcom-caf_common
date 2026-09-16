@@ -33,6 +33,23 @@
       "message": "Pixels seem to define some powerhints with names not defined in the power aidl. Can we also do that?\nhttps://cs.android.com/android/platform/superproject/+/android-15.0.0_r1:device/google/pantah/powerhint-cheetah.json;l\u003d2228 for example",
       "revId": "bb869982aec4a6279c59c7556ca4059822ebbfa7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "56151753_d4ee79c1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-16T08:50:11Z",
+      "side": 1,
+      "message": "I forgot about those, but code is fine, ids seem to match BSP/configs",
+      "revId": "bb869982aec4a6279c59c7556ca4059822ebbfa7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
