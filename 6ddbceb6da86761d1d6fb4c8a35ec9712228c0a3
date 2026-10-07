@@ -16,6 +16,24 @@
       "message": "maybe do something like this instead?\n\nhttps://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/475169",
       "revId": "6ddbceb6da86761d1d6fb4c8a35ec9712228c0a3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa5a79e8_0ab7518b",
+        "filename": "BoardConfigQcom.mk",
+        "patchSetId": 10
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-10-07T07:13:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "67c1e0cc_0076c426",
+      "revId": "6ddbceb6da86761d1d6fb4c8a35ec9712228c0a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
