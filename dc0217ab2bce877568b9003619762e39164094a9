@@ -16,6 +16,109 @@
       "message": "Verified on parrot66 devices",
       "revId": "dc0217ab2bce877568b9003619762e39164094a9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f028372_459ea99d",
+        "filename": "libqti-perfd-client/client.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-10-08T06:51:22Z",
+      "side": 1,
+      "message": "```\nstruct DeathCookie {\n    AIBinder* binder;\n};\n```",
+      "revId": "dc0217ab2bce877568b9003619762e39164094a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "75fe0930_cf392487",
+        "filename": "libqti-perfd-client/client.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-10-08T06:51:22Z",
+      "side": 1,
+      "message": "Since this is global you don\u0027t really have to pass it as cookie, but let\u0027s redo this",
+      "revId": "dc0217ab2bce877568b9003619762e39164094a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4ac883eb_1d08322b",
+        "filename": "libqti-perfd-client/client.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-10-08T06:51:22Z",
+      "side": 1,
+      "message": "```suggestion\nstatic void powerHalDied(void* cookie) {\n    auto* deathCookie \u003d static_cast\u003cDeathCookie*\u003e(cookie);\n\n    ALOGW(\"Power HAL binder died\");\n\n    std::lock_guard\u003cstd::mutex\u003e lock(gMutex);\n\n    if (gPowerHal \u0026\u0026\n        gPowerHal-\u003easBinder().get() \u003d\u003d deathCookie-\u003ebinder) {\n        gPowerHal.reset();\n    }\n}\n```\n\nAlso we possibly want gHasActiveCameraMode set to false?",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 1
+      },
+      "revId": "dc0217ab2bce877568b9003619762e39164094a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a4565a3a_dc7f55e9",
+        "filename": "libqti-perfd-client/client.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-10-08T06:51:22Z",
+      "side": 1,
+      "message": "```suggestion\nstatic ndk::ScopedAIBinder_DeathRecipient gDeathRecipient([] {\n    auto* recipient \u003d AIBinder_DeathRecipient_new(powerHalDied);\n    AIBinder_DeathRecipient_setOnUnlinked(\n            recipient, powerHalUnlinked);\n    return recipient;\n}());\n```",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 51
+      },
+      "revId": "dc0217ab2bce877568b9003619762e39164094a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ce9a0a89_eeff8c40",
+        "filename": "libqti-perfd-client/client.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-10-08T06:51:22Z",
+      "side": 1,
+      "message": "cookie handling is not exactly correct, let me redo it\n\n```\nstruct DeathCookie {\n    AIBinder* binder;\n};\n```\n\n```suggestion\n    auto* cookie \u003d new DeathCookie{binder.get()};\n\n    binder_status_t status \u003d\n        AIBinder_linkToDeath(binder.get(), gDeathRecipient.get(), cookie);\n```",
+      "range": {
+        "startLine": 57,
+        "startChar": 0,
+        "endLine": 58,
+        "endChar": 79
+      },
+      "revId": "dc0217ab2bce877568b9003619762e39164094a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
