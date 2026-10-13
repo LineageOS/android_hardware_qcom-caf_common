@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b32e6890_99211175",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 741,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-10-13T20:45:25Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "355715d8_1116a72e",
+      "revId": "5e84e6f8fc47530881fa8d95cf533617ff51e820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aed297f8_92b5ec62",
@@ -35,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2edb41db_36534864",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 775,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-10-13T20:45:25Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "aed297f8_92b5ec62",
+      "revId": "5e84e6f8fc47530881fa8d95cf533617ff51e820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "316d511b_a6c0f943",
@@ -48,6 +84,24 @@
       "writtenOn": "2026-10-13T20:36:14Z",
       "side": 0,
       "message": "This looks suspicious, vendor/qcom/opensource/interfaces/display/config has up to 1.20",
+      "revId": "5e84e6f8fc47530881fa8d95cf533617ff51e820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53f31e7e_11d5900b",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 938,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-10-13T20:45:25Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "316d511b_a6c0f943",
       "revId": "5e84e6f8fc47530881fa8d95cf533617ff51e820",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
