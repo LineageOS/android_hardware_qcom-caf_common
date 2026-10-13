@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f7bc9db3_20e3b2bb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-13T23:20:33Z",
+      "side": 1,
+      "message": "Leaving a comment like this also does nothing but spam, so you can keep it to yourself. You can see that the last review has left 5 unresolved comments.",
+      "parentUuid": "ba65b97b_9ecdf3d0",
+      "revId": "dc0217ab2bce877568b9003619762e39164094a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6f028372_459ea99d",
