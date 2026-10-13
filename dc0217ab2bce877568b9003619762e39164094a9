@@ -18,6 +18,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba65b97b_9ecdf3d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-10-13T23:19:07Z",
+      "side": 1,
+      "message": "Still on PatchSet 1, still getting Code-Review votes, but no Verified +1 in sight. At this rate, we\u0027ll be celebrating this change\u0027s anniversary before it gets merged.",
+      "revId": "dc0217ab2bce877568b9003619762e39164094a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6f028372_459ea99d",
