@@ -69,6 +69,14 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
          </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.bhs</name>
+         <version>1</version>
+         <interface>
+            <name>Ibhs</name>
+            <instance>default</instance>
+         </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.bluetooth_fmd</name>
          <version>1</version>
          <interface>
@@ -78,7 +86,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.snapdragonServices.qape</name>
-         <version>1</version>
+         <version>1-2</version>
          <interface>
             <name>IQape</name>
             <instance>default</instance>
@@ -302,18 +310,6 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
        </interface>
    </hal>
     <hal format="hidl" optional="true">
-        <name>com.qualcomm.qti.wifidisplayhal</name>
-        <version>1.0</version>
-        <interface>
-            <name>IHDCPSession</name>
-            <instance>wifidisplayhdcphal</instance>
-        </interface>
-        <interface>
-            <name>IDSManager</name>
-            <instance>wifidisplaydshal</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.wifidisplaysession</name>
         <version>1.0</version>
         <interface>
@@ -335,7 +331,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.wifidisplaysession_aidl</name>
-        <version>1</version>
+        <version>1-2</version>
         <interface>
              <name>IWifiDisplaySession</name>
              <instance>default</instance>
@@ -447,7 +443,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.data.factoryservice</name>
-        <version>1-2</version>
+        <version>1-3</version>
         <interface>
             <name>IFactory</name>
             <instance>default</instance>
@@ -539,7 +535,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.radio.ims</name>
-        <version>1-20</version>
+        <version>1-23</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
@@ -619,7 +615,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.radio.qtiradio</name>
-        <version>1-16</version>
+        <version>1-18</version>
         <interface>
             <name>IQtiRadioStable</name>
             <instance>slot1</instance>
@@ -628,7 +624,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.radio.qtiradioconfig</name>
-        <version>1-6</version>
+        <version>1-10</version>
         <interface>
             <name>IQtiRadioConfig</name>
             <instance>default</instance>
@@ -755,7 +751,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.hexlp</name>
-        <version>1-2</version>
+        <version>1-3</version>
         <interface>
             <name>IHexlpService</name>
             <instance>default</instance>
@@ -855,14 +851,6 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.voiceprint</name>
-        <version>1.0</version>
-        <interface>
-            <name>IQtiVoicePrintService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.hardware.gnss</name>
         <version>1.0-1</version>
         <version>2.0-1</version>
@@ -885,7 +873,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.gnss</name>
-        <version>1-9</version>
+        <version>1-10</version>
         <interface>
             <name>ILocAidlGnss</name>
             <instance>default</instance>
@@ -933,7 +921,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
             <instance>default</instance>
         </interface>
     </hal>
-   <hal format="hidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>vendor.display.config</name>
         <version>1.0-22</version>
         <version>2.0</version>
@@ -1044,7 +1032,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
    </hal>
    <hal format="aidl" optional="true">
        <name>vendor.qti.hardware.data.iwlandata</name>
-       <version>1-3</version>
+       <version>1-4</version>
        <interface>
            <name>IIWlan</name>
            <instance>slot1</instance>
@@ -1281,9 +1269,13 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.c2pa</name>
-        <version>1</version>
+        <version>1-2</version>
         <interface>
             <name>IC2PA</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IC2PAv2</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -1319,7 +1311,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     <!-- Camera AIDL PostProcessing service -->
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.camera.postproc</name>
-        <version>1</version>
+        <version>1-2</version>
         <interface>
             <name>IPostProcService</name>
             <instance>camerapostprocservice</instance>
@@ -1328,7 +1320,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     <!-- Offline Camera service -->
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.camera.offlinecamera</name>
-        <version>1-2</version>
+        <version>1-4</version>
         <interface>
             <name>IOfflineCameraService</name>
             <instance>default</instance>
@@ -1347,7 +1339,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     <!-- Camera AON AIDL service -->
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.camera.aon</name>
-        <version>1-3</version>
+        <version>1-4</version>
         <interface>
             <name>IAONService</name>
             <instance>default</instance>
@@ -1534,18 +1526,9 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.paleventnotifier</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IPALEventNotifier</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.ListenSoundModelAidl</name>
-        <version>1-2</version>
+        <version>1-4</version>
         <interface>
             <name>IListenSoundModel</name>
             <instance>default</instance>
@@ -1553,7 +1536,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.qasr</name>
-        <version>1-3</version>
+        <version>1-4</version>
         <interface>
             <name>IQasr</name>
             <instance>default</instance>
@@ -1578,7 +1561,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.display.config</name>
-        <version>1-14</version>
+        <version>1-18</version>
         <interface>
             <name>IDisplayConfig</name>
             <instance>default</instance>
@@ -1611,7 +1594,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.wifi.wificfr</name>
-        <version>1-2</version>
+        <version>1-3</version>
         <interface>
            <name>IWificfr</name>
            <instance>default</instance>
@@ -1628,7 +1611,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.qesdhalaidl</name>
-        <version>1-2</version>
+        <version>1-3</version>
         <interface>
             <name>IQesdhal</name>
             <instance>default</instance>
@@ -1647,6 +1630,14 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
         <version>1-2</version>
         <interface>
             <name>ISnapdragonServices</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.snapdragonServices.mpamService</name>
+        <version>1</version>
+        <interface>
+            <name>IMpamService</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -1721,7 +1712,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.data.txpwrservice</name>
-        <version>1-7</version>
+        <version>1-8</version>
         <interface>
             <name>ITxPwrService</name>
             <instance>default</instance>
@@ -1875,17 +1866,6 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
          <instance>default</instance>
     </interface>
     </hal>
-
-    <!-- UMD Adaptor Service -->
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.umd</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IUMDAdaptor</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="aidl" optional="true">
         <name>vendor.qti.ims.uceaidlservice</name>
         <version>1</version>
@@ -1951,37 +1931,117 @@ SPDX-License-Identifier: BSD-3-Clause-Clear.
             <instance>default</instance>
         </interface>
     </hal>
-    <!-- SEC Platform Service -->
     <hal format="aidl" optional="true">
-        <name>vendor.qti.sec.featuremanager</name>
+        <name>vendor.qti.frameworks.utils</name>
         <version>1</version>
         <interface>
-            <name>IFeatureManager</name>
+            <name>IFrameworksUtils</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>vendor.qti.sec.provisioningmanager</name>
-        <version>1</version>
+        <name>vendor.qti.hardware.qrs.qrsprovider</name>
+        <version>1-3</version>
         <interface>
-            <name>IProvisioningManager</name>
+            <name>IQrsProvider</name>
+            <instance>default</instance>
+         </interface>
+   </hal>
+    <!-- UMD Adaptor Service -->
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.umd</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IUMDAdaptor</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>vendor.qti.sec.datamanager</name>
+        <name>vendor.qti.hardware.qacs.ambientdatacapture</name>
         <version>1</version>
         <interface>
-            <name>IDataManager</name>
+            <name>IAmbientDataCapture</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>vendor.qti.sec.cloudagent</name>
+        <name>vendor.qti.screen_understanding.display_capture</name>
+        <version>1-2</version>
+        <interface>
+            <name>IDisplayCaptureControl</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDisplayCaptureData</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.qaior.screen_understanding</name>
+        <version>1-2</version>
+        <interface>
+            <name>IScreenUnderstandingService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.AmbientDataControl</name>
         <version>1</version>
         <interface>
-            <name>ICloudAgent</name>
+            <name>IAmbientDataControl</name>
             <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.AmbientDataReporting</name>
+        <version>1</version>
+        <interface>
+            <name>IAmbientDataReporting</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.sub</name>
+        <version>1</version>
+        <interface>
+            <name>ICoreInterfaceRegistration</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.SensorDataCollectionControl</name>
+        <version>1</version>
+        <interface>
+            <name>IAmbientDataRegisterService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- VoiceAI Life Logger Service -->
+    <hal format="aidl" optional="true">
+        <name>com.qualcomm.qti.voiceai.lifelogger.service.control</name>
+        <version>1</version>
+        <interface>
+            <name>IVoiceAILifeLoggerService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Agentic Core Interface Adaptation Service -->
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.coreif</name>
+        <version>1</version>
+        <interface>
+            <name>ICoreInterfaceAdaptation</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.umd_aidl</name>
+        <version>1</version>
+        <interface>
+            <name>IUMDAdaptor</name>
+            <instance>audio</instance>
+            <instance>camera</instance>
         </interface>
     </hal>
 </compatibility-matrix>
