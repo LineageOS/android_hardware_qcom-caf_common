@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "355715d8_1116a72e",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 741,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-13T20:36:14Z",
+      "side": 0,
+      "message": "You probably need to restore this, ref: https://github.com/LineageOS/android_hardware_qcom-caf_common/commit/6e292bb01fcedfb29864b7752f807160444c1fef",
+      "revId": "5e84e6f8fc47530881fa8d95cf533617ff51e820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aed297f8_92b5ec62",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 775,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-13T20:36:14Z",
+      "side": 0,
+      "message": "Same as above, ref: https://github.com/LineageOS/android_hardware_qcom-caf_common/commit/6c12ae9a7cca1c2f6948c59358f0837d84c15585",
+      "revId": "5e84e6f8fc47530881fa8d95cf533617ff51e820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "316d511b_a6c0f943",
+        "filename": "vendor_framework_compatibility_matrix.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 938,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-13T20:36:14Z",
+      "side": 0,
+      "message": "This looks suspicious, vendor/qcom/opensource/interfaces/display/config has up to 1.20",
+      "revId": "5e84e6f8fc47530881fa8d95cf533617ff51e820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
