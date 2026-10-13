@@ -53,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "72c93e3f_fc84060d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-10-13T23:29:22Z",
+      "side": 1,
+      "message": "Got it, point taken. Sorry, the joke was out of place.",
+      "parentUuid": "f7bc9db3_20e3b2bb",
+      "revId": "dc0217ab2bce877568b9003619762e39164094a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6f028372_459ea99d",
