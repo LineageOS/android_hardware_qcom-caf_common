@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a72ab90_fd271613",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36517
+      },
+      "writtenOn": "2026-10-26T01:05:30Z",
+      "side": 1,
+      "message": "Reason for bringing this one back:\n\nSpacewar and Pong will require this to fix an issue where 5G SA is may not be enabled after a modem firmware reload/upgrade. This mainly seems to affect users on Reliance Jio. Other qualcomm devices may be affected but unsure due to limited reports and testing.",
+      "revId": "8ae8472b425c75da7294a7434913cbdf6ba699bb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
