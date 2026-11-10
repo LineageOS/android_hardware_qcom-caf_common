@@ -295,8 +295,8 @@ ifneq ($(filter $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_4_19_LEGACY_FAMILY) $(U
     SOONG_CONFIG_qtidisplay_gralloc4 := true
 endif
 
-# Enable TARGET_NO_CAMERA_CUSTOM_FORMAT and USE_LEGACY_BUFFER_ALIGNMENT on sdm845 devices with kernel 4.19
-ifneq ($(filter sdm845,$(TARGET_BOARD_PLATFORM)),)
+# Enable TARGET_NO_CAMERA_CUSTOM_FORMAT and USE_LEGACY_BUFFER_ALIGNMENT on sdm710/sdm845 devices with kernel 4.19
+ifneq ($(filter sdm710 sdm845,$(TARGET_BOARD_PLATFORM)),)
 ifneq ($(filter $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_target_no_camera_custom_format := true
     SOONG_CONFIG_qtidisplay_target_uses_legacy_buffer_alignment := true
